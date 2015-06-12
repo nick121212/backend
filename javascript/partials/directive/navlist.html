@@ -1,0 +1,7 @@
+<ul ng-class="{'submenu':isSubmenu,'nav nav-list':!isSubmenu}"
+    ng-show="display=='block'">
+
+    <nav ng-repeat='child in children' menu='child'></nav>
+    <!-- ng-style="{display:display}"-->
+</ul>
+
