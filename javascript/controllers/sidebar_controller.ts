@@ -74,7 +74,19 @@ define([
                 href: "#",
                 icon: "fa-list-alt",
                 isActive: false,
-                children: []
+                children: [
+                    {
+                        title: "button",
+                        href: "#",
+                        icon: "fa-tachometer",
+                        isActive: false,
+                    }, {
+                        title: "slider",
+                        href: "#",
+                        icon: "fa-tachometer",
+                        isActive: false,
+                    }
+                ]
             }, {
                 title: 'Calendar',
                 href: "#",

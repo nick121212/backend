@@ -119,7 +119,7 @@ define([
                         //如果存在children，继续添加进子节点
                         if ($scope.menu.children && angular.isArray($scope.menu.children) && $scope.menu.children.length) {
                             //添加html语句到节点最后
-                            $element.append("<navlist submenu='true' display='display' children='menu.children'></collection>");
+                            $element.append("<navlist submenu='true'  display='display' children='menu.children'></collection>");
                             //编译解释代码
                             $compile($element.contents())($scope);
                         }
