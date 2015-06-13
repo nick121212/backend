@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9399724e-0f7b-4e68-b881-68a7dba0fcda" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/home_content.html" afterPath="$PROJECT_DIR$/javascript/partials/home_content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/navlist.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/navlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js" afterPath="$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/sidebar_controller.js.map" afterPath="$PROJECT_DIR$/javascript/controllers/sidebar_controller.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/sidebar_controller.js" afterPath="$PROJECT_DIR$/javascript/controllers/sidebar_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/sidebar_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/sidebar_controller.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js.map" afterPath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js" afterPath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/app_module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backend.iws" />
@@ -40,12 +33,13 @@
         <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="57" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="57" />
+              <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
               <folding>
                 <element signature="e#197#429#0" expanded="true" />
-                <element signature="e#671#1561#0" expanded="true" />
-                <element signature="e#2815#2927#0" expanded="true" />
-                <element signature="e#3248#3357#0" expanded="true" />
+                <element signature="e#671#1594#0" expanded="true" />
+                <element signature="e#2418#2527#0" expanded="true" />
+                <element signature="e#2848#2960#0" expanded="true" />
+                <element signature="e#3281#3390#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +84,8 @@
       <file leaf-file-name="home_content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/partials/home_content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.056925997">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.113851994">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -228,7 +222,6 @@
         <option value="$PROJECT_DIR$/javascript/partials/pages/test.html" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.min.js" />
         <option value="$PROJECT_DIR$/javascript/main.ts" />
-        <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js" />
         <option value="$PROJECT_DIR$/javascript/controllers/sidebar_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/subnavlist.html" />
@@ -236,6 +229,7 @@
         <option value="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascript/partials/home_content.html" />
+        <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
       </list>
     </option>
   </component>
@@ -365,6 +359,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="directive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,7 +552,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434191014854</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改了特效">
+      <created>1434196545097</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1434196545097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -584,7 +602,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="修改了特效" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了特效" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -944,19 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="57" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="57" />
-          <folding>
-            <element signature="e#197#429#0" expanded="true" />
-            <element signature="e#671#1561#0" expanded="true" />
-            <element signature="e#2815#2927#0" expanded="true" />
-            <element signature="e#3248#3357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/partials/directive/navlist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25">
@@ -989,10 +995,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="e#197#429#0" expanded="true" />
+            <element signature="e#671#1594#0" expanded="true" />
+            <element signature="e#2418#2527#0" expanded="true" />
+            <element signature="e#2848#2960#0" expanded="true" />
+            <element signature="e#3281#3390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/partials/home_content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056925997">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.113851994">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>

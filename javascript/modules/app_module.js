@@ -38,6 +38,7 @@ define([
                 }
             };
             $rootScope.size.onResize();
+            //添加全局更改浏览器尺寸的事件
             window.addEventListener("resize", $rootScope.size.onResize);
         }
     ]).config([
