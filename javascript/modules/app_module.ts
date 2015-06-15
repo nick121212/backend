@@ -114,11 +114,8 @@ define([
                     .state('home.page', {
                         url: 'page/:page',
                         views: {
-                            'breadcrumbsView': {
-                                template: '<h5>MYPAGE</h5>',
-                            },
                             'pageContentView': {
-                                template: 'oh yes page'
+                                templateUrl: requirejs.toUrl('partials/pages/test.html')
                             }
                         }
                     });
