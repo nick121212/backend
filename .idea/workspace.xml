@@ -8,8 +8,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/app_module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/home_content.html" afterPath="$PROJECT_DIR$/javascript/partials/home_content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/pages/test.html" afterPath="$PROJECT_DIR$/javascript/partials/pages/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backend.iws" />
@@ -31,17 +29,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app_module.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app_module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34900543">
-              <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding>
-                <element signature="e#197#429#0" expanded="true" />
-                <element signature="e#671#1594#0" expanded="true" />
-                <element signature="e#2418#2527#0" expanded="true" />
-                <element signature="e#2848#2960#0" expanded="true" />
-                <element signature="e#3281#3390#0" expanded="true" />
+                <element signature="e#686#1609#0" expanded="true" />
+                <element signature="e#1618#4731#0" expanded="true" />
+                <element signature="e#2433#2542#0" expanded="true" />
+                <element signature="e#2863#2975#0" expanded="true" />
+                <element signature="e#3296#3405#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +74,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,7 +121,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subnavlist.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="subnavlist.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/partials/directive/subnavlist.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -317,68 +315,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -459,7 +395,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../activity" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="true" />
@@ -567,27 +503,33 @@
       <option name="project" value="LOCAL" />
       <updated>1434197613525</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改了特效">
+      <created>1434334065660</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1434334065660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25409836" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20628415" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20684932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37021858" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -904,26 +846,26 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3717" column="27" selection-start-line="3717" selection-start-column="27" selection-end-line="3717" selection-end-column="27" />
           <folding>
-            <element signature="e#0#126#0" expanded="true" />
-            <element signature="e#7594#9455#0" expanded="true" />
-            <element signature="e#9495#10022#0" expanded="true" />
-            <element signature="e#10029#21826#0" expanded="true" />
-            <element signature="e#28682#57540#0" expanded="true" />
-            <element signature="e#28861#57532#0" expanded="true" />
-            <element signature="e#57580#69148#0" expanded="true" />
-            <element signature="e#57950#69140#0" expanded="true" />
-            <element signature="e#69303#81015#0" expanded="true" />
-            <element signature="e#69374#81007#0" expanded="true" />
-            <element signature="e#81054#83651#0" expanded="true" />
-            <element signature="e#81194#83643#0" expanded="true" />
-            <element signature="e#83784#114613#0" expanded="true" />
-            <element signature="e#86664#114605#0" expanded="true" />
-            <element signature="e#114644#114923#0" expanded="true" />
-            <element signature="e#114959#118954#0" expanded="true" />
-            <element signature="e#118987#135544#0" expanded="true" />
-            <element signature="e#119525#135536#0" expanded="true" />
-            <element signature="e#135888#166729#0" expanded="true" />
-            <element signature="e#166735#167038#0" expanded="true" />
+            <element signature="e#0#126#0" expanded="false" />
+            <element signature="e#7594#9455#0" expanded="false" />
+            <element signature="e#9495#10022#0" expanded="false" />
+            <element signature="e#10029#21826#0" expanded="false" />
+            <element signature="e#28682#57540#0" expanded="false" />
+            <element signature="e#28861#57532#0" expanded="false" />
+            <element signature="e#57580#69148#0" expanded="false" />
+            <element signature="e#57950#69140#0" expanded="false" />
+            <element signature="e#69303#81015#0" expanded="false" />
+            <element signature="e#69374#81007#0" expanded="false" />
+            <element signature="e#81054#83651#0" expanded="false" />
+            <element signature="e#81194#83643#0" expanded="false" />
+            <element signature="e#83784#114613#0" expanded="false" />
+            <element signature="e#86664#114605#0" expanded="false" />
+            <element signature="e#114644#114923#0" expanded="false" />
+            <element signature="e#114959#118954#0" expanded="false" />
+            <element signature="e#118987#135544#0" expanded="false" />
+            <element signature="e#119525#135536#0" expanded="false" />
+            <element signature="e#135888#166729#0" expanded="false" />
+            <element signature="e#166735#167038#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -939,14 +881,6 @@
             <element signature="e#1358#1774#0" expanded="true" />
             <element signature="e#2303#2719#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/subnavlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="56" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,14 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="326" column="14" selection-start-line="326" selection-start-column="14" selection-end-line="326" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1008,15 +934,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34900543">
-          <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
-            <element signature="e#197#429#0" expanded="true" />
-            <element signature="e#671#1594#0" expanded="true" />
-            <element signature="e#2418#2527#0" expanded="true" />
-            <element signature="e#2848#2960#0" expanded="true" />
-            <element signature="e#3281#3390#0" expanded="true" />
+            <element signature="e#686#1609#0" expanded="true" />
+            <element signature="e#1618#4731#0" expanded="true" />
+            <element signature="e#2433#2542#0" expanded="true" />
+            <element signature="e#2863#2975#0" expanded="true" />
+            <element signature="e#3296#3405#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/subnavlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="56" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
