@@ -4,8 +4,8 @@
  * qq:289412378
  * copyright NICK
  */
-///<reference path="../typescripts/require.d.ts" />
-///<reference path="../typescripts/angular.d.ts" />
+///<reference path="../../typescripts/require.d.ts" />
+///<reference path="../../typescripts/angular.d.ts" />
 define([
     'underscore',
     'angular',

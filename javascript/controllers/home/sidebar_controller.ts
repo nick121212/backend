@@ -4,17 +4,22 @@
  * qq:289412378
  * copyright NICK
  */
-///<reference path="../typescripts/require.d.ts" />
-///<reference path="../typescripts/angular.d.ts" />
+
+///<reference path="../../typescripts/require.d.ts" />
+///<reference path="../../typescripts/angular.d.ts" />
+
 define([
     'underscore',
     'angular',
     'modules/app_module'
 ], function (_, angular, appModule) {
     appModule.controller('SidebarController', SidebarController);
+
     SidebarController.$inject = ['$scope', 'navlist'];
+
     function SidebarController($scope, navlistProvider) {
         var sidebarCtrl = this;
+
         sidebarCtrl.sidebarDatas = [
             {
                 title: "Dashboard",
@@ -27,16 +32,14 @@ define([
                         href: "#index",
                         icon: "fa-tachometer",
                         isActive: false
-                    },
-                    {
+                    }, {
                         title: "Dashboard-2",
-                        href: "#page/mypage",
+                        href: "#page/index",
                         icon: "fa-tachometer",
-                        isActive: false
+                        isActive: false,
                     }
                 ]
-            },
-            {
+            }, {
                 title: 'UI & Elements',
                 href: "#",
                 icon: "fa-desktop",
@@ -44,33 +47,29 @@ define([
                 children: [
                     {
                         title: "button",
-                        href: "#",
+                        href: "#page/test1",
                         icon: "fa-tachometer",
-                        isActive: false
-                    },
-                    {
+                        isActive: false,
+                    }, {
                         title: "slider",
-                        href: "#",
+                        href: "#page/test2",
                         icon: "fa-tachometer",
-                        isActive: false
+                        isActive: false,
                     }
                 ]
-            },
-            {
+            }, {
                 title: 'Tables',
                 href: "#",
                 icon: "fa-list",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Forms',
                 href: "#",
                 icon: "fa-pencil-square-o",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Widgets',
                 href: "#",
                 icon: "fa-list-alt",
@@ -80,38 +79,33 @@ define([
                         title: "button",
                         href: "#",
                         icon: "fa-tachometer",
-                        isActive: false
-                    },
-                    {
+                        isActive: false,
+                    }, {
                         title: "slider",
                         href: "#",
                         icon: "fa-tachometer",
-                        isActive: false
+                        isActive: false,
                     }
                 ]
-            },
-            {
+            }, {
                 title: 'Calendar',
                 href: "#",
                 icon: "fa-calendar",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Gallery',
                 href: "#",
                 icon: "fa-picture-o",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'More Pages',
                 href: "#",
                 icon: "fa-tag",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Other Pages',
                 href: "#",
                 icon: "fa-file-o",
@@ -122,4 +116,3 @@ define([
         navlistProvider.navlistDatas = sidebarCtrl.sidebarDatas;
     }
 });
-//# sourceMappingURL=sidebar_controller.js.map

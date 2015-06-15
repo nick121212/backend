@@ -4,21 +4,17 @@
  * qq:289412378
  * copyright NICK
  */
-
-///<reference path="../typescripts/require.d.ts" />
-///<reference path="../typescripts/angular.d.ts" />
-
+///<reference path="../../typescripts/require.d.ts" />
+///<reference path="../../typescripts/angular.d.ts" />
 define(["angular", "modules/app_module"], function (angular, appModule) {
-
     appModule.controller("HomeController", HomeController);
-
     HomeController.$inject = ["$scope"];
-
     function HomeController($scope) {
         var homeCtl = this;
-
-        $scope.$on("menu-show", function (event:any, isShow:boolean) {
-            //$scope.$broadcast("menu-show", isShow);
-        });
+        homeCtl.now = Date.now();
+        //$scope.$on("menu-show", function (event:any, isShow:boolean) {
+        //    //$scope.$broadcast("menu-show", isShow);
+        //});
     }
 });
+//# sourceMappingURL=home_controller.js.map

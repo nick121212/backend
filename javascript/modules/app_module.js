@@ -57,7 +57,7 @@ define([
                         templateUrl: requirejs.toUrl('partials/home.html'),
                         resolve: {
                             deps: $requireProvider.requireJS([
-                                'controllers/home_controller'
+                                'controllers/home/home_controller'
                             ])
                         }
                     },
@@ -65,7 +65,7 @@ define([
                         templateUrl: requirejs.toUrl('partials/home_sidebar.html'),
                         resolve: {
                             deps: $requireProvider.requireJS([
-                                'controllers/sidebar_controller'
+                                'controllers/home/sidebar_controller'
                             ])
                         }
                     },
@@ -73,7 +73,7 @@ define([
                         templateUrl: requirejs.toUrl('partials/home_content.html'),
                         resolve: {
                             deps: $requireProvider.requireJS([
-                                'controllers/main_controller'
+                                'controllers/home/main_controller'
                             ])
                         }
                     },
@@ -84,9 +84,9 @@ define([
             }).state('home.index', {
                 url: 'index',
                 views: {
-                    'breadcrumbsView': {
-                        template: '<h5>Dashboard</h5>'
-                    },
+                    //'breadcrumbsView': {
+                    //    template: '<h5>Dashboard</h5>',
+                    //},
                     'pageContentView': {
                         template: 'oh yes'
                     }
@@ -95,7 +95,25 @@ define([
                 url: 'page/:page',
                 views: {
                     'pageContentView': {
-                        templateUrl: requirejs.toUrl('partials/pages/test.html')
+                        templateUrl: function ($stateParams) {
+                            requirejs.toUrl('partials/pages/' + $stateParams.page + '.html');
+                        },
+                        resolve: {
+                            load: [
+                                '$q',
+                                '$stateParams',
+                                '$rootScope',
+                                function ($q, $stateParams, $rootScope) {
+                                    var deferred = $q.defer();
+                                    require(['controllers/page/' + $stateParams.page], function () {
+                                        $rootScope.$apply(function () {
+                                            deferred.resolve();
+                                        });
+                                    });
+                                    return deferred.promise;
+                                }
+                            ]
+                        }
                     }
                 }
             });
