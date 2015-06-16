@@ -22,5 +22,7 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
         //$scope.$on("menu-show", function (event:any, isShow:boolean) {
         //    //$scope.$broadcast("menu-show", isShow);
         //});
+
+
     }
 });

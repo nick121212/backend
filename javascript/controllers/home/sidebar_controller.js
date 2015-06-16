@@ -13,6 +13,10 @@ define([
 ], function (_, angular, appModule) {
     appModule.controller('SidebarController', SidebarController);
     SidebarController.$inject = ['$scope', 'navlist'];
+    /*
+    * @param $scope 数据源
+    * @param navlistProvider 保存菜单中的数据服务
+     * */
     function SidebarController($scope, navlistProvider) {
         var sidebarCtrl = this;
         sidebarCtrl.sidebarDatas = [

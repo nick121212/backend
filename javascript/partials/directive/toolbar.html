@@ -1,0 +1,10 @@
+<button class="btn"
+        ng-repeat="tool in tools"
+        ng-class="tool.level"
+        ng-click="tool.click()"
+        popover="{{ tool.title }}" popover-trigger="mouseenter">
+    <i class="ace-icon fa"
+       ng-if="tool.iconCls"
+       ng-class="tool.iconCls"></i>
+    <span ng-bind="tool.title" ng-if="showtitle"></span>
+</button>

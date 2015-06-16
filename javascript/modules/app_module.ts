@@ -14,10 +14,12 @@ define([
         'modules/directive_module',
         'modules/service_module',
         'directives/sidebar_directive',
+        'directives/toolbar_directive',
         'angular-animate',
+        'angular-uibootstrap',
         'template'],
     function (angular, uiRoute, ngRequire, dirModule, srvModule) {
-        var app = angular.module('appModule', ['ngAnimate', 'ui.router', 'ngRequire', dirModule.name, srvModule.name, 'template.js']);
+        var app = angular.module('appModule', ['ngAnimate', 'ui.router', 'ngRequire', 'ui.bootstrap.tpls', 'ui.bootstrap', dirModule.name, srvModule.name, 'template.js']);
 
         //angular运行时
         app.run([
@@ -116,7 +118,7 @@ define([
                         views: {
                             'pageContentView': {
                                 templateUrl: function ($stateParams) {
-                                    requirejs.toUrl('partials/pages/' + $stateParams.page + '.html')
+                                    return requirejs.toUrl('partials/pages/' + $stateParams.page + '.html');
                                 },
                                 resolve: {
                                     load: [
@@ -125,14 +127,13 @@ define([
                                         '$rootScope',
                                         function ($q, $stateParams, $rootScope) {
                                             var deferred = $q.defer();
-                                            require(['controllers/page/' + $stateParams.page], function () {
+                                            require(['controllers/page/' + $stateParams.page + '_controller'], function () {
                                                 $rootScope.$apply(function () {
                                                     deferred.resolve();
                                                 });
                                             });
                                             return deferred.promise;
-                                        }],
-                                    //deps: $requireProvider.requireJS([])
+                                        }]
                                 }
                             }
                         }

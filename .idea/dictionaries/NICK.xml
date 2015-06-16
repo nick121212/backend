@@ -2,6 +2,7 @@
   <dictionary name="NICK">
     <words>
       <w>deps</w>
+      <w>glyphicon</w>
       <w>navbar</w>
     </words>
   </dictionary>

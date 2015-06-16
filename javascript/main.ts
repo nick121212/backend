@@ -41,6 +41,12 @@
             },
             'template': {
                 deps: ['angular']
+            },
+            'angular-uibootstrap-tpl': {
+                deps: ['angular']
+            },
+            'angular-uibootstrap': {
+                deps: ['angular', 'angular-uibootstrap-tpl']
             }
         },
         paths: {
@@ -50,7 +56,9 @@
             'underscore': './libs/underscore/underscore',
             'angular-require': './libs/angular-require/angular-require',
             'angular-animate': './libs/angular-animate/ng-animate',
-            'template': './partials/partials'
+            'template': './partials/partials',
+            'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
+            'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls'
         },
         //使得程序可以加载不同版本的模块
         map: {
