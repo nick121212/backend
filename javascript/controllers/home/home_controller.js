@@ -11,7 +11,18 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
     HomeController.$inject = ['$scope', '$rootScope'];
     function HomeController($scope, $rootScope) {
         var homeCtl = this;
+        //隐藏因为登录引起的body的class
         $rootScope.bodyCls = " ";
+        //小屏幕下的菜单显示与否
+        homeCtl.isShowMenu = false;
+        //隐藏/显示菜单
+        homeCtl.doEmitMenuShow = function () {
+            homeCtl.isShowMenu = !homeCtl.isShowMenu;
+        };
+        //注册切换state事件
+        $rootScope.$on('$stateChangeSuccess', function () {
+            homeCtl.isShowMenu = false;
+        });
     }
 });
 //# sourceMappingURL=home_controller.js.map

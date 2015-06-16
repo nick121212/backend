@@ -3,7 +3,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-container">
             <!--菜单按钮 只有在小屏幕时出现-->
-            <button type="button" class="navbar-toggle menu-toggler pull-left" ng-click="navbar.doEmitMenuShow($event)">
+            <button type="button" class="navbar-toggle pull-left" ng-click="homeCtl.doEmitMenuShow($event)">
                 <span class="sr-only">切换</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -11,7 +11,7 @@
             </button>
             <!--页面logo-->
             <div class="navbar-header pull-left">
-                <a href="index.html" class="navbar-brand">
+                <a href="/" class="navbar-brand">
                     <small>
                         <i class="fa fa-leaf"></i>
                         后台管理
@@ -321,12 +321,13 @@
     <div class="main-container main-container-fixed-top">
 
         <!--侧边栏-->
-        <div ui-view="sidebarView" class="sidebar sidebar-fixed responsive sidebar-scroll"></div>
+        <div class="sidebar sidebar-fixed responsive sidebar-scroll" ng-class="{'display':homeCtl.isShowMenu}">
+            <div ui-view="sidebarView" ></div>
+        </div>
         <!--主要内容-->
         <div ui-view="contentView" class="main-content"></div>
         <!--底部-->
         <div ui-view="footerView" class="footer"></div>
-
         <!--返回头部按钮-->
         <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
             <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
