@@ -13,15 +13,17 @@ define([
         'angular-require',
         'modules/directive_module',
         'modules/service_module',
+        'modules/animation_module',
         'directives/sidebar_directive',
         'directives/toolbar_directive',
         'angular-animate',
         'angular-uibootstrap',
         'angular-growl',
-        'services/httpinterceptor_factory',
         'angular-loadingbar',
+        'services/httpinterceptor_factory',
+        'animations/rotatein_animation',
         'template'],
-    function (angular, uiRoute, ngRequire, dirModule, srvModule) {
+    function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
         var app = angular.module('appModule',
             [
                 'ngAnimate',
@@ -33,6 +35,7 @@ define([
                 'angular-loading-bar',
                 dirModule.name,
                 srvModule.name,
+                aniModule.name,
                 'template.js']);
 
         //angular运行时
@@ -90,7 +93,7 @@ define([
                     //消息提示框的位置
                     growlProvider.messagePosition("rb");
                     //消息提示框是否是唯一的
-                    growlProvider.onlyUniqueMessages(false);
+                    growlProvider.onlyUniqueMessages(true);
                     //消息提示框中可以出现html代码
                     growlProvider.globalEnableHtml = true;
 
@@ -108,7 +111,7 @@ define([
                             url: '/',
                             views: {
                                 '': {
-                                    templateUrl: requirejs.toUrl('partials/home.html'),
+                                    templateUrl: requirejs.toUrl('partials/home/index.html'),
                                     resolve: {
                                         deps: $requireProvider.requireJS([
                                             'controllers/home/home_controller'
@@ -116,7 +119,7 @@ define([
                                     }
                                 },
                                 'sidebarView@home': {
-                                    templateUrl: requirejs.toUrl('partials/home_sidebar.html'),
+                                    templateUrl: requirejs.toUrl('partials/home/home_sidebar.html'),
                                     resolve: {
                                         deps: $requireProvider.requireJS([
                                             'controllers/home/sidebar_controller'
@@ -124,15 +127,42 @@ define([
                                     }
                                 },
                                 'contentView@home': {
-                                    templateUrl: requirejs.toUrl('partials/home_content.html'),
+                                    templateUrl: requirejs.toUrl('partials/home/home_content.html')
+                                },
+                                'footerView@home': {
+                                    templateUrl: requirejs.toUrl('partials/home/home_footer.html'),
+                                }
+                            }
+                        })
+                        .state('login', {
+                            url: '/login',
+                            views: {
+                                '': {
+                                    templateUrl: requirejs.toUrl('partials/login/index.html'),
                                     resolve: {
                                         deps: $requireProvider.requireJS([
-                                            'controllers/home/main_controller'
+                                            'controllers/home/login_controller'
                                         ])
                                     }
                                 },
-                                'footerView@home': {
-                                    templateUrl: requirejs.toUrl('partials/home_footer.html'),
+                                'contentView@login': {
+                                    templateUrl: requirejs.toUrl('partials/login/login.html')
+                                }
+                            }
+                        })
+                        .state('login.forget', {
+                            url: '/forget',
+                            views: {
+                                'contentView': {
+                                    templateUrl: requirejs.toUrl('partials/login/forget.html')
+                                }
+                            }
+                        })
+                        .state('login.register', {
+                            url: '/register',
+                            views: {
+                                'contentView': {
+                                    templateUrl: requirejs.toUrl('partials/login/register.html')
                                 }
                             }
                         })

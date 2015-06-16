@@ -12,17 +12,11 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
 
     appModule.controller("HomeController", HomeController);
 
-    HomeController.$inject = ["$scope"];
+    HomeController.$inject = ['$scope', '$rootScope'];
 
-    function HomeController($scope) {
+    function HomeController($scope, $rootScope) {
         var homeCtl = this;
 
-
-        homeCtl.now = Date.now();
-        //$scope.$on("menu-show", function (event:any, isShow:boolean) {
-        //    //$scope.$broadcast("menu-show", isShow);
-        //});
-
-
+        $rootScope.bodyCls = " ";
     }
 });

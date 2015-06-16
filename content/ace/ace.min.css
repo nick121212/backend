@@ -13226,10 +13226,12 @@ th .lbl:only-child, td .lbl:only-child {
 .login-container {
     width: 375px;
     margin: 0 auto
+    /*overflow:hidden;*/
 }
 
 .login-layout {
-    background-color: #1D2024
+    background-color: #1D2024;
+    overflow:hidden;
 }
 
 .login-layout .main-container:before {
@@ -13448,7 +13450,7 @@ th .lbl:only-child, td .lbl:only-child {
 }
 
 .blur-login {
-    background: #394557 url(images/meteorshower2.jpg) repeat
+    background: #394557 url(../images/meteorshower2.jpg) repeat
 }
 
 .invoice-info {

@@ -7,7 +7,7 @@
     <title>后台管理系统</title>
     <link href="content/bootstrap/bootstrap.css" rel="stylesheet">
     <!--<link href="content/bootstrap/bootstrap-theme.css" rel="stylesheet">-->
-    <link href="content/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="content/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="content/ace/ace.min.css" rel="stylesheet" id="main-ace-style">
     <!--<link href="content/animate/animate.css" rel="stylesheet">-->
     <link href="content/ng-animate/ng-animation.css" rel="stylesheet">
@@ -15,10 +15,13 @@
     <link href="content/ng-loadingbar/loadingbar.css" rel="stylesheet">
 
 </head>
-<body>
+<body ng-class="$root.bodyCls">
 
-<div ui-view></div>
+<!--主容器-->
+<div ui-view class="slide-left"></div>
+<!--消息提示-->
 <div growl></div>
+<!--js加载-->
 <script src="javascript/libs/requirejs/require.js" data-main="javascript/main.js"></script>
 
 </body>

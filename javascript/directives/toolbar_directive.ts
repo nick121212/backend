@@ -17,18 +17,29 @@ define([
 
         dirModule.directive('toolbar', [
             '$compile',
+            '$templateCache',
             'eventService',
-            function ($compile, eventService) {
+            function ($compile, $templateCache, eventService) {
                 return {
                     restrict: 'A',
                     templateUrl: requirejs.toUrl('partials/directive/toolbar.html'),
                     replace: false,
                     scope: {
                         tools: '=',
-                        showtitle: '='
+                        showtitle: '=',
+                        showmini: '='
                     },
                     link: function ($scope, $element, $attr, $controller) {
                         $scope.showtitle == undefined && ($scope.showtitle = true);
+                        $scope.doShowMenu = function () {
+                            $scope.isOpen = !$scope.isOpen;
+                        }
+                        $scope.doBlur=function(){
+                            $scope.isOpen=false;
+                        }
+                    },
+                    compile1: function ($element, $attrs) {
+
                     }
                 };
             }]);

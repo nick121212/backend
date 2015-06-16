@@ -12,12 +12,10 @@ define([
     'modules/app_module'
 ], function (_, angular, appModule) {
     appModule.controller('MainController', MainController);
-    MainController.$inject = ['$scope'];
-    function MainController($scope) {
+    MainController.$inject = ['$scope', '$rootScope'];
+    function MainController($scope, $rootScope) {
         var mainCtrl = this;
-        //$scope.$on("menu-show", function (event:any, isShow:boolean) {
-        //    alert("menu-show-receve");
-        //});
+        $rootScope.bodyCls = "";
     }
 });
 //# sourceMappingURL=main_controller.js.map

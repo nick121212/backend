@@ -15,13 +15,11 @@ define([
 ], function (_, angular, appModule) {
     appModule.controller('MainController', MainController);
 
-    MainController.$inject = ['$scope'];
+    MainController.$inject = ['$scope','$rootScope'];
 
-    function MainController($scope) {
+    function MainController($scope,$rootScope) {
         var mainCtrl = this;
 
-        //$scope.$on("menu-show", function (event:any, isShow:boolean) {
-        //    alert("menu-show-receve");
-        //});
+        $rootScope.bodyCls="";
     }
 });

@@ -26,7 +26,6 @@ define([
                     //} else if (response.status == 404) {
                     //    growl.addErrorMessage("404", { position: "rb" });
                     //}
-
                     growl.addErrorMessage("404", {position: "rb"});
 
                     return $q.reject(response);
@@ -36,12 +35,14 @@ define([
                         if (angular.isNumber(response.data.result_code) && response.data.result_code !== 1) {
 
                             switch (response.data.result_code) {
-                                case -1601://未登录错误，需要跳转到登陆页面
+                                //未登录错误，需要跳转到登陆页面
+                                case -1601:
                                     var $rootScope = $injector.get("$rootScope");
 
                                     $rootScope.$state.go("login");
                                     break;
-                                default://默认显示错误信息
+                                //默认显示错误信息
+                                default:
                                     growl.addErrorMessage(response.data.msg, {position: "rb"});
                             }
                         }
