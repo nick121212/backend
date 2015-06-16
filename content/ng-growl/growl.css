@@ -1,0 +1,53 @@
+.growl {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  float: right;
+  width: 250px;
+}
+
+  .growl.lt {
+    top: 10px;
+    left: 10px;
+    right: inherit;
+    bottom: inherit;
+  }
+
+  .growl.rt {
+    top: 10px;
+    left: inherit;
+    right: 10px;
+    bottom: inherit;
+  }
+
+  .growl.lb {
+    top: inherit;
+    left: 10px;
+    right: inherit;
+    bottom: 10px;
+  }
+
+  .growl.rb {
+    top: inherit;
+    left: inherit;
+    right: 10px;
+    bottom: 10px;
+  }
+
+.growl-item.ng-enter,
+.growl-item.ng-leave {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+
+  .growl-item.ng-enter,
+  .growl-item.ng-leave.ng-leave-active {
+    opacity: 0;
+  }
+
+    .growl-item.ng-leave,
+    .growl-item.ng-enter.ng-enter-active {
+      opacity: 1;
+    }

@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9399724e-0f7b-4e68-b881-68a7dba0fcda" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/angular-growl/angular-growl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/angular-loadingbar/angular-loadingbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/app_module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.js.map" afterPath="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.js" afterPath="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.ts" afterPath="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.js.map" afterPath="$PROJECT_DIR$/javascript/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.js" afterPath="$PROJECT_DIR$/javascript/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.ts" afterPath="$PROJECT_DIR$/javascript/main.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/ng-growl/growl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/ng-loadingbar/loadingbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backend.iws" />
@@ -38,11 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="angular-growl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app_module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="81" column="108" selection-start-line="81" selection-start-column="95" selection-end-line="81" selection-end-column="108" />
+              <folding>
+                <element signature="e#212#614#0" expanded="true" />
+                <element signature="e#741#1065#0" expanded="true" />
+                <element signature="e#1106#2101#0" expanded="true" />
+                <element signature="e#1240#2091#0" expanded="true" />
+                <element signature="e#1632#1904#0" expanded="true" />
+                <element signature="e#1688#1880#0" expanded="true" />
+                <element signature="e#2630#7393#0" expanded="true" />
+                <element signature="e#3912#4034#0" expanded="true" />
+                <element signature="e#4379#4504#0" expanded="true" />
+                <element signature="e#4849#4971#0" expanded="true" />
+                <element signature="e#6151#6303#0" expanded="true" />
+                <element signature="e#6398#7245#0" expanded="true" />
+                <element signature="e#6652#7244#0" expanded="true" />
+                <element signature="e#6856#7123#0" expanded="true" />
+                <element signature="e#6940#7071#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-growl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/libs/angular-growl/angular-growl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2722323">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            <state vertical-scroll-proportion="-18.333334">
+              <caret line="210" column="37" selection-start-line="210" selection-start-column="20" selection-end-line="210" selection-end-column="37" />
               <folding>
                 <element signature="e#101#242#0" expanded="true" />
                 <element signature="e#382#3776#0" expanded="true" />
@@ -56,7 +74,6 @@
                 <element signature="e#2322#2555#0" expanded="true" />
                 <element signature="e#2909#3152#0" expanded="true" />
                 <element signature="e#3221#3704#0" expanded="true" />
-                <element signature="e#3845#8982#0" expanded="true" />
                 <element signature="e#4175#4210#0" expanded="true" />
                 <element signature="e#4266#4315#0" expanded="true" />
                 <element signature="e#4367#4418#0" expanded="true" />
@@ -70,8 +87,6 @@
                 <element signature="e#5342#5443#0" expanded="true" />
                 <element signature="e#5485#5597#0" expanded="true" />
                 <element signature="e#5640#5716#0" expanded="true" />
-                <element signature="e#5763#8975#0" expanded="true" />
-                <element signature="e#5857#8965#0" expanded="true" />
                 <element signature="e#6065#6275#0" expanded="true" />
                 <element signature="e#6337#6787#0" expanded="true" />
                 <element signature="e#6842#6916#0" expanded="true" />
@@ -101,10 +116,27 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ng-animate.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.6">
+              <caret line="3088" column="19" selection-start-line="3088" selection-start-column="12" selection-end-line="3088" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#126#0" expanded="true" />
+                <element signature="e#69303#81015#0" expanded="true" />
+                <element signature="e#69352#81014#0" expanded="true" />
+                <element signature="e#69374#81007#0" expanded="true" />
+                <element signature="e#69505#81006#0" expanded="true" />
+                <element signature="e#69708#80305#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,11 +189,11 @@
       <file leaf-file-name="test1_controller.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state vertical-scroll-proportion="-4.285714">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
-                <element signature="e#529#567#0" expanded="true" />
-                <element signature="e#604#641#0" expanded="true" />
+                <element signature="e#636#691#0" expanded="true" />
+                <element signature="e#716#1111#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,17 +256,17 @@
         <option value="$PROJECT_DIR$/javascript/partials/pages/test.html" />
         <option value="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascript/controllers/home/home_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/pages/test1.html" />
         <option value="$PROJECT_DIR$/javascript/directives/toolbar_directive.ts" />
-        <option value="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/toolbar.html" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-growl/angular-growl.js" />
         <option value="$PROJECT_DIR$/javascript/services/httpinterceptor_factory.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-loadingbar/angular-loadingbar.js" />
         <option value="$PROJECT_DIR$/javascript/main.ts" />
         <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
+        <option value="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -373,176 +405,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -564,11 +426,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/ng-loadingbar" />
+      <recent name="$PROJECT_DIR$/content/ng-growl" />
       <recent name="$PROJECT_DIR$/content/uibootstrap" />
       <recent name="$PROJECT_DIR$/javascript/libs/angular-uibootstrap" />
       <recent name="$PROJECT_DIR$/javascript/partials/pages" />
-      <recent name="$PROJECT_DIR$/javascript/controllers/page" />
-      <recent name="$PROJECT_DIR$/content/ng-animate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/javascript/controllers/home" />
@@ -692,7 +554,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434422520335</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加了 growl和http拦截器">
+      <created>1434429454100</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1434429454100</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -706,7 +574,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25342464" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -717,9 +585,9 @@
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20684932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20684932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -749,7 +617,8 @@
     <MESSAGE value="修改了特效" />
     <MESSAGE value="修改了路由的加载" />
     <MESSAGE value="toolbars指令" />
-    <option name="LAST_COMMIT_MESSAGE" value="toolbars指令" />
+    <MESSAGE value="添加了 growl和http拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了 growl和http拦截器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -921,35 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28803545">
           <caret line="2279" column="0" selection-start-line="2279" selection-start-column="0" selection-end-line="2279" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3717" column="27" selection-start-line="3717" selection-start-column="27" selection-end-line="3717" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#126#0" expanded="false" />
-            <element signature="e#7594#9455#0" expanded="false" />
-            <element signature="e#9495#10022#0" expanded="false" />
-            <element signature="e#10029#21826#0" expanded="false" />
-            <element signature="e#28682#57540#0" expanded="false" />
-            <element signature="e#28861#57532#0" expanded="false" />
-            <element signature="e#57580#69148#0" expanded="false" />
-            <element signature="e#57950#69140#0" expanded="false" />
-            <element signature="e#69303#81015#0" expanded="false" />
-            <element signature="e#69374#81007#0" expanded="false" />
-            <element signature="e#81054#83651#0" expanded="false" />
-            <element signature="e#81194#83643#0" expanded="false" />
-            <element signature="e#83784#114613#0" expanded="false" />
-            <element signature="e#86664#114605#0" expanded="false" />
-            <element signature="e#114644#114923#0" expanded="false" />
-            <element signature="e#114959#118954#0" expanded="false" />
-            <element signature="e#118987#135544#0" expanded="false" />
-            <element signature="e#119525#135536#0" expanded="false" />
-            <element signature="e#135888#166729#0" expanded="false" />
-            <element signature="e#166735#167038#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,17 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding>
-            <element signature="e#529#567#0" expanded="true" />
-            <element signature="e#604#641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/libs/angular-uibootstrap/uibootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1387,44 +1216,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="31" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45553538">
-          <caret line="85" column="58" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
-          <folding>
-            <element signature="e#212#614#0" expanded="true" />
-            <element signature="e#741#1065#0" expanded="true" />
-            <element signature="e#1106#2101#0" expanded="true" />
-            <element signature="e#1240#2091#0" expanded="true" />
-            <element signature="e#1632#1904#0" expanded="true" />
-            <element signature="e#1688#1880#0" expanded="true" />
-            <element signature="e#3912#4034#0" expanded="true" />
-            <element signature="e#4379#4504#0" expanded="true" />
-            <element signature="e#4849#4971#0" expanded="true" />
-            <element signature="e#6151#6303#0" expanded="true" />
-            <element signature="e#6398#7245#0" expanded="true" />
-            <element signature="e#6652#7244#0" expanded="true" />
-            <element signature="e#6856#7123#0" expanded="true" />
-            <element signature="e#6940#7071#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1473,18 +1269,42 @@
         <state vertical-scroll-proportion="0.8711434">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#162#209#0" expanded="true" />
-            <element signature="e#294#2036#0" expanded="true" />
-            <element signature="e#364#2035#0" expanded="true" />
-            <element signature="e#447#1081#0" expanded="true" />
+            <element signature="e#162#209#0" expanded="false" />
+            <element signature="e#294#2036#0" expanded="false" />
+            <element signature="e#364#2035#0" expanded="false" />
+            <element signature="e#447#1081#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="108" selection-start-line="81" selection-start-column="95" selection-end-line="81" selection-end-column="108" />
+          <folding>
+            <element signature="e#212#614#0" expanded="true" />
+            <element signature="e#741#1065#0" expanded="true" />
+            <element signature="e#1106#2101#0" expanded="true" />
+            <element signature="e#1240#2091#0" expanded="true" />
+            <element signature="e#1632#1904#0" expanded="true" />
+            <element signature="e#1688#1880#0" expanded="true" />
+            <element signature="e#2630#7393#0" expanded="true" />
+            <element signature="e#3912#4034#0" expanded="true" />
+            <element signature="e#4379#4504#0" expanded="true" />
+            <element signature="e#4849#4971#0" expanded="true" />
+            <element signature="e#6151#6303#0" expanded="true" />
+            <element signature="e#6398#7245#0" expanded="true" />
+            <element signature="e#6652#7244#0" expanded="true" />
+            <element signature="e#6856#7123#0" expanded="true" />
+            <element signature="e#6940#7071#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/libs/angular-growl/angular-growl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2722323">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state vertical-scroll-proportion="-18.333334">
+          <caret line="210" column="37" selection-start-line="210" selection-start-column="20" selection-end-line="210" selection-end-column="37" />
           <folding>
             <element signature="e#101#242#0" expanded="true" />
             <element signature="e#382#3776#0" expanded="true" />
@@ -1498,7 +1318,6 @@
             <element signature="e#2322#2555#0" expanded="true" />
             <element signature="e#2909#3152#0" expanded="true" />
             <element signature="e#3221#3704#0" expanded="true" />
-            <element signature="e#3845#8982#0" expanded="true" />
             <element signature="e#4175#4210#0" expanded="true" />
             <element signature="e#4266#4315#0" expanded="true" />
             <element signature="e#4367#4418#0" expanded="true" />
@@ -1512,8 +1331,6 @@
             <element signature="e#5342#5443#0" expanded="true" />
             <element signature="e#5485#5597#0" expanded="true" />
             <element signature="e#5640#5716#0" expanded="true" />
-            <element signature="e#5763#8975#0" expanded="true" />
-            <element signature="e#5857#8965#0" expanded="true" />
             <element signature="e#6065#6275#0" expanded="true" />
             <element signature="e#6337#6787#0" expanded="true" />
             <element signature="e#6842#6916#0" expanded="true" />
@@ -1522,6 +1339,42 @@
             <element signature="e#7234#7311#0" expanded="true" />
             <element signature="e#7365#8484#0" expanded="true" />
             <element signature="e#8523#8590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.285714">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#636#691#0" expanded="true" />
+            <element signature="e#716#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.6">
+          <caret line="3088" column="19" selection-start-line="3088" selection-start-column="12" selection-end-line="3088" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#126#0" expanded="true" />
+            <element signature="e#69303#81015#0" expanded="true" />
+            <element signature="e#69352#81014#0" expanded="true" />
+            <element signature="e#69374#81007#0" expanded="true" />
+            <element signature="e#69505#81006#0" expanded="true" />
+            <element signature="e#69708#80305#0" expanded="true" />
           </folding>
         </state>
       </provider>
