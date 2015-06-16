@@ -57,6 +57,8 @@
             'angular-require': './libs/angular-require/angular-require',
             'angular-animate': './libs/angular-animate/ng-animate',
             'template': './partials/partials',
+            'angular-growl':'./libs/angular-growl/angular-growl',
+            'angular-loadingbar':'./libs/angular-loadingbar/angular-loadingbar',
             'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
             'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls'
         },

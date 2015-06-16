@@ -16,15 +16,32 @@ define([
     'directives/toolbar_directive',
     'angular-animate',
     'angular-uibootstrap',
+    'angular-growl',
+    'services/httpinterceptor_factory',
+    'angular-loadingbar',
     'template'
 ], function (angular, uiRoute, ngRequire, dirModule, srvModule) {
-    var app = angular.module('appModule', ['ngAnimate', 'ui.router', 'ngRequire', 'ui.bootstrap.tpls', 'ui.bootstrap', dirModule.name, srvModule.name, 'template.js']);
+    var app = angular.module('appModule', [
+        'ngAnimate',
+        'ui.router',
+        'ngRequire',
+        'angular-growl',
+        'ui.bootstrap.tpls',
+        'ui.bootstrap',
+        'angular-loading-bar',
+        dirModule.name,
+        srvModule.name,
+        'template.js'
+    ]);
     //angular运行时
     app.run([
         '$rootScope',
         '$state',
         '$stateParams',
         function ($rootScope, $state, $stateParams) {
+            /*
+             * 定义路由的状态和参数
+             * */
             $rootScope.$state = $state;
             $rootScope.$stateParams = $stateParams;
             /*
@@ -48,7 +65,20 @@ define([
         '$stateProvider',
         '$urlRouterProvider',
         '$requireProvider',
-        function ($stateProvider, $urlRouterProvider, $requireProvider) {
+        '$httpProvider',
+        'growlProvider',
+        function ($stateProvider, $urlRouterProvider, $requireProvider, $httpProvider, growlProvider) {
+            //添加http拦截器
+            $httpProvider.interceptors.push('httpInterceptor');
+            $httpProvider.interceptors.push(growlProvider.serverMessagesInterceptor);
+            //消息提示框的小时延迟
+            growlProvider.globalTimeToLive(3000);
+            //消息提示框的位置
+            growlProvider.messagePosition("rb");
+            //消息提示框是否是唯一的
+            growlProvider.onlyUniqueMessages(false);
+            //消息提示框中可以出现html代码
+            growlProvider.globalEnableHtml = true;
             //默认路由
             $urlRouterProvider.otherwise('/');
             //路由配置
@@ -86,9 +116,6 @@ define([
             }).state('home.index', {
                 url: 'index',
                 views: {
-                    //'breadcrumbsView': {
-                    //    template: '<h5>Dashboard</h5>',
-                    //},
                     'pageContentView': {
                         template: 'oh yes'
                     }

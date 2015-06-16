@@ -9,43 +9,44 @@ define([
     'angular',
     'modules/service_module'
 ], function (angular, module) {
-    module.service('eventService', [
-        function () {
-            //http拦截器服务
-            module.factory("httpInterceptor", ["$q", "$injector", "growl", function ($q, $injector, growl) {
-                var factory = {
-                    'responseError': function (response) {
-                        //if (response.status == 401) {
-                        //    var $rootScope = $injector.get("$rootScope"),
-                        //        state = $rootScope / $state.current.name;
-                        //
-                        //    $rootScope.stateBeforLogin = state;
-                        //    $rootScope.$state.go("login");
-                        //} else if (response.status == 404) {
-                        //    growl.addErrorMessage("404", { position: "rb" });
-                        //}
-                        growl.addErrorMessage("404", { position: "rb" });
-                        return $q.reject(response);
-                    },
-                    'response': function (response) {
-                        if (response.status == 200 && response.data instanceof Object) {
-                            if (angular.isNumber(response.data.result_code) && response.data.result_code !== 1) {
-                                switch (response.data.result_code) {
-                                    case -1601:
-                                        var $rootScope = $injector.get("$rootScope");
-                                        $rootScope.$state.go("login");
-                                        break;
-                                    default:
-                                        growl.addErrorMessage(response.data.msg, { position: "rb" });
-                                }
+    //http拦截器服务
+    module.factory("httpInterceptor", [
+        "$q",
+        "$injector",
+        "growl",
+        function ($q, $injector, growl) {
+            var factory = {
+                'responseError': function (response) {
+                    //if (response.status == 401) {
+                    //    var $rootScope = $injector.get("$rootScope"),
+                    //        state = $rootScope / $state.current.name;
+                    //
+                    //    $rootScope.stateBeforLogin = state;
+                    //    $rootScope.$state.go("login");
+                    //} else if (response.status == 404) {
+                    //    growl.addErrorMessage("404", { position: "rb" });
+                    //}
+                    growl.addErrorMessage("404", { position: "rb" });
+                    return $q.reject(response);
+                },
+                'response': function (response) {
+                    if (response.status == 200 && response.data instanceof Object) {
+                        if (angular.isNumber(response.data.result_code) && response.data.result_code !== 1) {
+                            switch (response.data.result_code) {
+                                case -1601:
+                                    var $rootScope = $injector.get("$rootScope");
+                                    $rootScope.$state.go("login");
+                                    break;
+                                default:
+                                    growl.addErrorMessage(response.data.msg, { position: "rb" });
                             }
-                            return $q.reject(response);
                         }
-                        return response;
+                        return $q.reject(response);
                     }
-                };
-                return factory;
-            }]);
+                    return response;
+                }
+            };
+            return factory;
         }
     ]);
 });
