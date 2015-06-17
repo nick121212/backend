@@ -1,6 +1,6 @@
 <li ng-class="{'active':menu.isActive,'open':menu.isOpen}"
     ng-click="doClickMenu($event)">
-    <a ng-href="{{ menu.href }}">
+    <a href="javascript:;">
         <i class="menu-icon fa" ng-class="menu.icon"></i>
         <span class="menu-text" ng-bind="menu.title"></span>
         <b ng-if="menu.children && menu.children.length" class="arrow fa fa-angle-down"></b>

@@ -84,7 +84,7 @@ define([
                 }
             };
         }).directive("nav", [
-            '$compile', 'eventService', 'navlist', function ($compile, eventService, navlistProvider) {
+            '$compile', '$state', 'eventService', 'navlist', function ($compile, $state, eventService, navlistProvider) {
                 return {
                     restrict: 'E',
                     templateUrl: requirejs.toUrl('partials/directive/subnavlist.html'),
@@ -111,9 +111,10 @@ define([
                                 navlistProvider.doClearActive($scope.menu);
 
                                 //执行路由跳转
-                                if ($scope.menu.href) {
-                                    location.href = $scope.menu.href;
-                                }
+                                //if ($scope.menu.href) {
+                                $scope.menu.href && (location.hash = $scope.menu.href);
+                                //location.hash = $scope.menu.href;
+                                //}
                             }
                         };
                         //如果存在children，继续添加进子节点

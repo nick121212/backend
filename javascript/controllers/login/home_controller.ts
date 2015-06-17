@@ -10,12 +10,12 @@
 
 define(["angular", "modules/app_module"], function (angular, appModule) {
 
-    appModule.controller("LoginController", LoginController);
+    appModule.controller("LoginHomeController", LoginHomeController);
 
-    LoginController.$inject = ["$scope", '$rootScope'];
+    LoginHomeController.$inject = ["$scope", '$rootScope'];
 
-    function LoginController($scope, $rootScope) {
-        var loginCtl = this;
+    function LoginHomeController($scope, $rootScope) {
+        var loginHomeCtl = this;
 
         $rootScope.bodyCls = "login-layout blur-login";
     }

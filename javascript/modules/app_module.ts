@@ -21,7 +21,7 @@ define([
         'angular-growl',
         'angular-loadingbar',
         'services/httpinterceptor_factory',
-        'animations/rotatein_animation',
+        'animations/noneleave_animation',
         'template'],
     function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
         var app = angular.module('appModule',
@@ -98,7 +98,7 @@ define([
                     growlProvider.globalEnableHtml = true;
 
                     //默认路由
-                    $urlRouterProvider.otherwise('/');
+                    $urlRouterProvider.otherwise('/index');
                     //路由配置
                     $stateProvider
                         /*
@@ -134,6 +134,10 @@ define([
                                 }
                             }
                         })
+                        /*
+                        * 登录页路由
+                        * 1.加载页面
+                        * */
                         .state('login', {
                             url: '/login',
                             views: {
@@ -141,7 +145,7 @@ define([
                                     templateUrl: requirejs.toUrl('partials/login/index.html'),
                                     resolve: {
                                         deps: $requireProvider.requireJS([
-                                            'controllers/home/login_controller'
+                                            'controllers/login/home_controller'
                                         ])
                                     }
                                 },
@@ -150,6 +154,9 @@ define([
                                 }
                             }
                         })
+                        /*
+                        * 登陆页忘记密码页面
+                        * */
                         .state('login.forget', {
                             url: '/forget',
                             views: {
@@ -158,6 +165,9 @@ define([
                                 }
                             }
                         })
+                        /*
+                        * 登陆页注册页面
+                        * */
                         .state('login.register', {
                             url: '/register',
                             views: {
@@ -174,7 +184,7 @@ define([
                             url: 'index',
                             views: {
                                 'pageContentView': {
-                                    template: 'oh yes'
+                                    templateUrl: requirejs.toUrl('partials/home/welcome.html')
                                 }
                             }
                         })

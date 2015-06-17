@@ -20,7 +20,7 @@ define([
     'angular-growl',
     'angular-loadingbar',
     'services/httpinterceptor_factory',
-    'animations/rotatein_animation',
+    'animations/noneleave_animation',
     'template'
 ], function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
     var app = angular.module('appModule', [
@@ -83,7 +83,7 @@ define([
             //消息提示框中可以出现html代码
             growlProvider.globalEnableHtml = true;
             //默认路由
-            $urlRouterProvider.otherwise('/');
+            $urlRouterProvider.otherwise('/index');
             //路由配置
             $stateProvider.state('home', {
                 url: '/',
@@ -118,7 +118,7 @@ define([
                         templateUrl: requirejs.toUrl('partials/login/index.html'),
                         resolve: {
                             deps: $requireProvider.requireJS([
-                                'controllers/home/login_controller'
+                                'controllers/login/home_controller'
                             ])
                         }
                     },
@@ -144,7 +144,7 @@ define([
                 url: 'index',
                 views: {
                     'pageContentView': {
-                        template: 'oh yes'
+                        templateUrl: requirejs.toUrl('partials/home/welcome.html')
                     }
                 }
             }).state('home.page', {

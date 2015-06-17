@@ -14,7 +14,7 @@ define([
 ], function (angular, animatonModule) {
     /*
     * */
-    animatonModule.animation('.my-rotate-in', function () {
+    animatonModule.animation('.none-leave', function () {
         return {
             leave: function (element, done) {
                 element.remove(done);

@@ -21,40 +21,52 @@ define([
         var sidebarCtrl = this;
         sidebarCtrl.sidebarDatas = [
             {
-                title: "Dashboard",
+                title: "登录",
                 href: "#",
                 icon: "fa-tachometer",
                 isActive: false,
                 children: [
                     {
-                        title: "Dashboard-1",
-                        href: "#index",
+                        title: "登录",
+                        href: "#/login",
                         icon: "fa-tachometer",
                         isActive: false
                     },
                     {
-                        title: "Dashboard-2",
-                        href: "#page/index",
+                        title: "注册",
+                        href: "#/login/register",
+                        icon: "fa-tachometer",
+                        isActive: false
+                    },
+                    {
+                        title: "忘记密码",
+                        href: "#/login/forget",
                         icon: "fa-tachometer",
                         isActive: false
                     }
                 ]
             },
             {
-                title: 'UI & Elements',
+                title: '测试',
                 href: "#",
                 icon: "fa-desktop",
                 isActive: false,
                 children: [
                     {
-                        title: "button",
-                        href: "#page/test1",
+                        title: "首页",
+                        href: "#/index",
                         icon: "fa-tachometer",
                         isActive: false
                     },
                     {
-                        title: "slider",
-                        href: "#page/test2",
+                        title: "测试1",
+                        href: "#/page/test1",
+                        icon: "fa-tachometer",
+                        isActive: false
+                    },
+                    {
+                        title: "测试2",
+                        href: "#/page/test2",
                         icon: "fa-tachometer",
                         isActive: false
                     }

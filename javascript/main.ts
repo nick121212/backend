@@ -57,8 +57,8 @@
             'angular-require': './libs/angular-require/angular-require',
             'angular-animate': './libs/angular-animate/ng-animate',
             'template': './partials/partials',
-            'angular-growl':'./libs/angular-growl/angular-growl',
-            'angular-loadingbar':'./libs/angular-loadingbar/angular-loadingbar',
+            'angular-growl': './libs/angular-growl/angular-growl',
+            'angular-loadingbar': './libs/angular-loadingbar/angular-loadingbar',
             'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
             'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls'
         },
@@ -74,7 +74,10 @@
         //常常需要将配置信息传给一个模块。这些配置往往是application级别的信息，需要一个手段将它们向下传递给模块。在RequireJS中，
         //基于requirejs.config()的config配置项来实现。要获取这些信息的模块可以加载特殊的依赖“module”，并调用module.config()
         config: {},
-        package: {}
+        package: {},
+        priority: [
+            'angular'
+        ]
     });
 
     require(['bootstrap'], function () {
