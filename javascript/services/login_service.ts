@@ -7,22 +7,31 @@
 
 ///<reference path="../typescripts/require.d.ts" />
 ///<reference path="../typescripts/angular.d.ts" />
+///<reference path="../models/passport_models.d.ts" />
 
 define([
     'angular',
     'modules/service_module'
 ], function (angular, svrModule) {
-    svrModule.service('', [
+    svrModule.service('loginService', [
         '$q',
         '$http',
-        function ($q, $http) {
+        'config',
+        function ($q, $http, config) {
             var service = {
-                loginCheck: function (loginMdl) {
+                loginCheck: function (loginMdl:Passport.LoginModel) {
                     //发送请求，返回promise对象
-                    var promise = $http.post("/admin/account/login", loginMdl)
-                        .success(function () {
-                            console.log(arguments);
-                        });
+
+                    var promise = $http({
+                        method: 'POST',
+                        url: config.api_url + "/login?app_token=JVVVVW_3",
+                        data: {
+                            username: loginMdl.username,
+                            password: loginMdl.password
+                        }
+                    }).success(function (data) {
+                        console.log(arguments);
+                    });
 
                     return promise;
                 }

@@ -11,8 +11,8 @@
 define([
     'angular',
     'modules/service_module'
-], function (angular, module) {
-    module.service('eventService', [
+], function (angular, svrModule) {
+    svrModule.service('eventService', [
         function () {
             var service = {
                 //阻止默认事件

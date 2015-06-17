@@ -73,7 +73,11 @@
         },
         //常常需要将配置信息传给一个模块。这些配置往往是application级别的信息，需要一个手段将它们向下传递给模块。在RequireJS中，
         //基于requirejs.config()的config配置项来实现。要获取这些信息的模块可以加载特殊的依赖“module”，并调用module.config()
-        config: {},
+        config: {
+            'services/config_constant': {
+                api_url: 'http://192.168.1.102:3001/api/v1'
+            }
+        },
         package: {},
         priority: [
             'angular'

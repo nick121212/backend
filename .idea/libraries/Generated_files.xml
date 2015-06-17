@@ -2,13 +2,25 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/javascript/models/login_model.js" />
-        <item url="file://$PROJECT_DIR$/javascript/models/test.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
+        <item url="file://$PROJECT_DIR$/javascript/main.js" />
+        <item url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
+        <item url="file://$PROJECT_DIR$/javascript/services/config_constant.js" />
+        <item url="file://$PROJECT_DIR$/javascript/modules/app_module.js" />
+        <item url="file://$PROJECT_DIR$/javascript/models/passport_models.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/javascript/models/login_model.js" />
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
+      <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
+      <root url="file://$PROJECT_DIR$/javascript/main.js" />
+      <root url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
+      <root url="file://$PROJECT_DIR$/javascript/services/config_constant.js" />
+      <root url="file://$PROJECT_DIR$/javascript/modules/app_module.js" />
+      <root url="file://$PROJECT_DIR$/javascript/models/passport_models.js" />
     </CLASSES>
     <SOURCES />
   </library>

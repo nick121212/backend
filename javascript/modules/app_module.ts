@@ -21,6 +21,8 @@ define([
         'angular-growl',
         'angular-loadingbar',
         'services/httpinterceptor_factory',
+        'services/login_service',
+        'services/config_constant',
         'animations/noneleave_animation',
         'template'],
     function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
@@ -84,6 +86,54 @@ define([
                 'growlProvider',
                 function ($stateProvider, $urlRouterProvider, $requireProvider, $httpProvider, growlProvider) {
 
+                    //添加默认的headers
+                    $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';
+                    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+
+                    // Override $http service's default transformRequest
+                    $httpProvider.defaults.transformRequest = [function (data) {
+                        /**
+                         * The workhorse; converts an object to x-www-form-urlencoded serialization.
+                         * @param {Object} obj
+                         * @return {String}
+                         */
+                        var param = function (obj) {
+                            var query = '';
+                            var name, value, fullSubName, subName, subValue, innerObj, i;
+
+                            for (name in obj) {
+                                value = obj[name];
+
+                                if (value instanceof Array) {
+                                    for (i = 0; i < value.length; ++i) {
+                                        subValue = value[i];
+                                        fullSubName = name + '[' + i + ']';
+                                        innerObj = {};
+                                        innerObj[fullSubName] = subValue;
+                                        query += param(innerObj) + '&';
+                                    }
+                                } else if (value instanceof Object) {
+                                    for (subName in value) {
+                                        subValue = value[subName];
+                                        fullSubName = name + '[' + subName + ']';
+                                        innerObj = {};
+                                        innerObj[fullSubName] = subValue;
+                                        query += param(innerObj) + '&';
+                                    }
+                                } else if (value !== undefined && value !== null) {
+                                    query += encodeURIComponent(name) + '='
+                                        + encodeURIComponent(value) + '&';
+                                }
+                            }
+
+                            return query.length ? query.substr(0, query.length - 1) : query;
+                        };
+
+                        return angular.isObject(data) && String(data) !== '[object File]'
+                            ? param(data)
+                            : data;
+                    }];
+
                     //添加http拦截器
                     $httpProvider.interceptors.push('httpInterceptor');
                     $httpProvider.interceptors.push(growlProvider.serverMessagesInterceptor);
@@ -135,9 +185,9 @@ define([
                             }
                         })
                         /*
-                        * 登录页路由
-                        * 1.加载页面
-                        * */
+                         * 登录页路由
+                         * 1.加载页面
+                         * */
                         .state('login', {
                             url: '/login',
                             views: {
@@ -150,13 +200,18 @@ define([
                                     }
                                 },
                                 'contentView@login': {
-                                    templateUrl: requirejs.toUrl('partials/login/login.html')
+                                    templateUrl: requirejs.toUrl('partials/login/login.html'),
+                                    resolve: {
+                                        deps: $requireProvider.requireJS([
+                                            'controllers/login/login_controller'
+                                        ])
+                                    }
                                 }
                             }
                         })
                         /*
-                        * 登陆页忘记密码页面
-                        * */
+                         * 登陆页忘记密码页面
+                         * */
                         .state('login.forget', {
                             url: '/forget',
                             views: {
@@ -166,8 +221,8 @@ define([
                             }
                         })
                         /*
-                        * 登陆页注册页面
-                        * */
+                         * 登陆页注册页面
+                         * */
                         .state('login.register', {
                             url: '/register',
                             views: {

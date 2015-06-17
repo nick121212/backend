@@ -20,9 +20,10 @@ define([
     'angular-growl',
     'angular-loadingbar',
     'services/httpinterceptor_factory',
+    'services/login_service',
+    'services/config_constant',
     'animations/noneleave_animation',
-    'template'
-], function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
+    'template'], function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
     var app = angular.module('appModule', [
         'ngAnimate',
         'ui.router',
@@ -34,8 +35,7 @@ define([
         dirModule.name,
         srvModule.name,
         aniModule.name,
-        'template.js'
-    ]);
+        'template.js']);
     //angular运行时
     app.run([
         '$rootScope',
@@ -64,13 +64,58 @@ define([
             //添加全局更改浏览器尺寸的事件
             window.addEventListener("resize", $rootScope.size.onResize);
         }
-    ]).config([
+    ])
+        .config([
         '$stateProvider',
         '$urlRouterProvider',
         '$requireProvider',
         '$httpProvider',
         'growlProvider',
         function ($stateProvider, $urlRouterProvider, $requireProvider, $httpProvider, growlProvider) {
+            //添加默认的headers
+            $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';
+            $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+            // Override $http service's default transformRequest
+            $httpProvider.defaults.transformRequest = [function (data) {
+                    /**
+                     * The workhorse; converts an object to x-www-form-urlencoded serialization.
+                     * @param {Object} obj
+                     * @return {String}
+                     */
+                    var param = function (obj) {
+                        var query = '';
+                        var name, value, fullSubName, subName, subValue, innerObj, i;
+                        for (name in obj) {
+                            value = obj[name];
+                            if (value instanceof Array) {
+                                for (i = 0; i < value.length; ++i) {
+                                    subValue = value[i];
+                                    fullSubName = name + '[' + i + ']';
+                                    innerObj = {};
+                                    innerObj[fullSubName] = subValue;
+                                    query += param(innerObj) + '&';
+                                }
+                            }
+                            else if (value instanceof Object) {
+                                for (subName in value) {
+                                    subValue = value[subName];
+                                    fullSubName = name + '[' + subName + ']';
+                                    innerObj = {};
+                                    innerObj[fullSubName] = subValue;
+                                    query += param(innerObj) + '&';
+                                }
+                            }
+                            else if (value !== undefined && value !== null) {
+                                query += encodeURIComponent(name) + '='
+                                    + encodeURIComponent(value) + '&';
+                            }
+                        }
+                        return query.length ? query.substr(0, query.length - 1) : query;
+                    };
+                    return angular.isObject(data) && String(data) !== '[object File]'
+                        ? param(data)
+                        : data;
+                }];
             //添加http拦截器
             $httpProvider.interceptors.push('httpInterceptor');
             $httpProvider.interceptors.push(growlProvider.serverMessagesInterceptor);
@@ -85,7 +130,8 @@ define([
             //默认路由
             $urlRouterProvider.otherwise('/index');
             //路由配置
-            $stateProvider.state('home', {
+            $stateProvider
+                .state('home', {
                 url: '/',
                 views: {
                     '': {
@@ -111,7 +157,8 @@ define([
                         templateUrl: requirejs.toUrl('partials/home/home_footer.html')
                     }
                 }
-            }).state('login', {
+            })
+                .state('login', {
                 url: '/login',
                 views: {
                     '': {
@@ -123,31 +170,40 @@ define([
                         }
                     },
                     'contentView@login': {
-                        templateUrl: requirejs.toUrl('partials/login/login.html')
+                        templateUrl: requirejs.toUrl('partials/login/login.html'),
+                        resolve: {
+                            deps: $requireProvider.requireJS([
+                                'controllers/login/login_controller'
+                            ])
+                        }
                     }
                 }
-            }).state('login.forget', {
+            })
+                .state('login.forget', {
                 url: '/forget',
                 views: {
                     'contentView': {
                         templateUrl: requirejs.toUrl('partials/login/forget.html')
                     }
                 }
-            }).state('login.register', {
+            })
+                .state('login.register', {
                 url: '/register',
                 views: {
                     'contentView': {
                         templateUrl: requirejs.toUrl('partials/login/register.html')
                     }
                 }
-            }).state('home.index', {
+            })
+                .state('home.index', {
                 url: 'index',
                 views: {
                     'pageContentView': {
                         templateUrl: requirejs.toUrl('partials/home/welcome.html')
                     }
                 }
-            }).state('home.page', {
+            })
+                .state('home.page', {
                 url: 'page/:page',
                 views: {
                     'pageContentView': {
@@ -167,14 +223,12 @@ define([
                                         });
                                     });
                                     return deferred.promise;
-                                }
-                            ]
+                                }]
                         }
                     }
                 }
             });
-        }
-    ]);
+        }]);
     return app;
 });
 //# sourceMappingURL=app_module.js.map
