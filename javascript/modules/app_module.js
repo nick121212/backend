@@ -133,6 +133,7 @@ define([
             $stateProvider
                 .state('home', {
                 url: '/',
+                abstract: true,
                 views: {
                     '': {
                         templateUrl: requirejs.toUrl('partials/home/index.html'),

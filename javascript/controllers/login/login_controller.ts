@@ -18,9 +18,9 @@ define([
 
     appModule.controller("LoginController", LoginController);
 
-    LoginController.$inject = ['$scope', 'loginService'];
+    LoginController.$inject = ['$scope', '$modal', 'loginService'];
 
-    function LoginController($scope, loginService) {
+    function LoginController($scope, $modal, loginService) {
         var loginCtl = this;
 
         loginCtl.doLogin = function () {
@@ -31,10 +31,19 @@ define([
 
             var promise = loginService.loginCheck(model);
 
-            promise.then(function(){
-                console.log("success",arguments);
-            },function(){
-                console.log("error",arguments);
+            promise.then(function () {
+                console.log("success", arguments);
+            }, function () {
+                //$modal.open({
+                //    animation: $scope.animationsEnabled,
+                //    templateUrl: requirejs.toUrl('partials/login/login.html'),
+                //    //size: 'lg',
+                //    resolve: {
+                //        items: function () {
+                //            return [];
+                //        }
+                //    }
+                //});
             });
         }
     }

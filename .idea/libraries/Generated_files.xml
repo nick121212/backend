@@ -3,6 +3,7 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/simpleForm_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
         <item url="file://$PROJECT_DIR$/javascript/main.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
@@ -15,6 +16,7 @@
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
       <root url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/simpleForm_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
       <root url="file://$PROJECT_DIR$/javascript/main.js" />
       <root url="file://$PROJECT_DIR$/javascript/services/login_service.js" />

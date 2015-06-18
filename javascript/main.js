@@ -18,15 +18,11 @@
         shim: {
             'underscore': {
                 deps: [],
-                exports: '_',
-                init: function () {
-                }
+                exports: '_'
             },
             'angular': {
                 deps: [],
-                exports: 'angular',
-                init: function () {
-                }
+                exports: 'angular'
             },
             'angular-ui-route': {
                 deps: ['angular']
@@ -66,6 +62,7 @@
         //基于requirejs.config()的config配置项来实现。要获取这些信息的模块可以加载特殊的依赖“module”，并调用module.config()
         config: {
             'services/config_constant': {
+                //api接口地址
                 api_url: 'http://192.168.1.102:3001/api/v1'
             }
         },
