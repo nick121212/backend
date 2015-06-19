@@ -3,10 +3,11 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.js" />
-        <item url="file://$PROJECT_DIR$/javascript/directives/mutiemail.directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/controllers/home/home_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/mutiemail.directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/main.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/config_constant.js" />
         <item url="file://$PROJECT_DIR$/javascript/modules/app_module.js" />
@@ -22,8 +23,9 @@
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.js" />
-      <root url="file://$PROJECT_DIR$/javascript/controllers/home/home_controller.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/mutiemail.directive.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/home/home_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/main.js" />
       <root url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
