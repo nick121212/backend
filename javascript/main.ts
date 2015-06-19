@@ -41,6 +41,9 @@
             },
             'angular-dynamicform':{
                 deps:['angular']
+            },
+            'angular-messages':{
+                deps:['angular']
             }
         },
         paths: {
@@ -55,7 +58,8 @@
             'angular-loadingbar': './libs/angular-loadingbar/angular-loadingbar',
             'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
             'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls',
-            'angular-dynamicform':'./libs/angular-dynamicform/ng-nynamicform'
+            'angular-dynamicform':'./libs/angular-dynamicform/ng-nynamicform',
+            'angular-messages':'./libs/angular-messages/angular-messages',
         },
         //使得程序可以加载不同版本的模块
         map: {
