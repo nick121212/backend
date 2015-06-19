@@ -18,6 +18,11 @@ define([
 
     appModule.controller("LoginController", LoginController);
 
+    /*
+    * @param $scope
+    * @param $modal ui-bootstrap弹窗模块
+    * @param loginService 登录服务
+    * */
     LoginController.$inject = ['$scope', '$modal', 'loginService'];
 
     function LoginController($scope, $modal, loginService) {
@@ -29,21 +34,10 @@ define([
             model.password = "123456";
             model.username = "nick";
 
-            var promise = loginService.loginCheck(model);
-
-            promise.then(function () {
+            loginService.loginCheck(model).then(function () {
                 console.log("success", arguments);
             }, function () {
-                //$modal.open({
-                //    animation: $scope.animationsEnabled,
-                //    templateUrl: requirejs.toUrl('partials/login/login.html'),
-                //    //size: 'lg',
-                //    resolve: {
-                //        items: function () {
-                //            return [];
-                //        }
-                //    }
-                //});
+
             });
         }
     }

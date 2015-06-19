@@ -1,0 +1,7 @@
+<form role="form" novalidate name="{{ setting.name }}">
+    <simple-form-editor ng-model="model"
+                        field="field"
+                        key="key"
+                        form-ele="{{setting.name}}"
+                        ng-repeat="(key, field) in setting.fields"></simple-form-editor>
+</form>

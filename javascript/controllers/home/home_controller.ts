@@ -20,6 +20,10 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
         //隐藏因为登录引起的body的class
         $rootScope.bodyCls = " ";
 
+        homeCtl.status = {
+            isOpen: false
+        };
+
         //小屏幕下的菜单显示与否
         homeCtl.isShowMenu = false;
         //隐藏/显示菜单

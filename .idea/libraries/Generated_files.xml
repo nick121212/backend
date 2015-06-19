@@ -2,27 +2,39 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
-        <item url="file://$PROJECT_DIR$/javascript/directives/simpleForm_directive.js" />
-        <item url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/mutiemail.directive.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/home/home_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/main.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/config_constant.js" />
         <item url="file://$PROJECT_DIR$/javascript/modules/app_module.js" />
         <item url="file://$PROJECT_DIR$/javascript/models/passport_models.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/bootstrap.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
+        <item url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
       <root url="file://$PROJECT_DIR$/javascript/models/test.js" />
-      <root url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
-      <root url="file://$PROJECT_DIR$/javascript/directives/simpleForm_directive.js" />
-      <root url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/home/home_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/mutiemail.directive.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/main.js" />
       <root url="file://$PROJECT_DIR$/javascript/services/login_service.js" />
       <root url="file://$PROJECT_DIR$/javascript/services/config_constant.js" />
       <root url="file://$PROJECT_DIR$/javascript/modules/app_module.js" />
       <root url="file://$PROJECT_DIR$/javascript/models/passport_models.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/bootstrap.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
+      <root url="file://$PROJECT_DIR$/javascript/services/event_service.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js" />
     </CLASSES>
     <SOURCES />
   </library>

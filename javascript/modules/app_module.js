@@ -15,6 +15,7 @@ define([
     'modules/animation_module',
     'directives/sidebar_directive',
     'directives/toolbar_directive',
+    'directives/simpleform_directive',
     'angular-animate',
     'angular-uibootstrap',
     'angular-growl',
@@ -23,6 +24,7 @@ define([
     'services/login_service',
     'services/config_constant',
     'animations/noneleave_animation',
+    'angular-dynamicform',
     'template'], function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
     var app = angular.module('appModule', [
         'ngAnimate',
@@ -32,6 +34,7 @@ define([
         'ui.bootstrap.tpls',
         'ui.bootstrap',
         'angular-loading-bar',
+        'dynamic-forms',
         dirModule.name,
         srvModule.name,
         aniModule.name,

@@ -4,11 +4,6 @@
  * qq:289412378
  * copyright NICK
  */
-/**
- * Created by NICK on 15/6/5.
- * email:nick121212@126.com
- * copyright NICK
- */
 ///<reference path="typescripts/require.d.ts" />
 +(function () {
     requirejs.config({
@@ -41,6 +36,9 @@
             },
             'angular-uibootstrap': {
                 deps: ['angular', 'angular-uibootstrap-tpl']
+            },
+            'angular-dynamicform': {
+                deps: ['angular']
             }
         },
         paths: {
@@ -54,7 +52,8 @@
             'angular-growl': './libs/angular-growl/angular-growl',
             'angular-loadingbar': './libs/angular-loadingbar/angular-loadingbar',
             'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
-            'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls'
+            'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls',
+            'angular-dynamicform': './libs/angular-dynamicform/ng-nynamicform'
         },
         //使得程序可以加载不同版本的模块
         map: {},

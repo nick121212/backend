@@ -22,7 +22,7 @@ define([
             function ($compile, $templateCache, eventService) {
                 return {
                     restrict: 'A',
-                    templateUrl: requirejs.toUrl('partials/directive/toolbar.html'),
+                    templateUrl: requirejs.toUrl('partials/directive/toolbar/toolbar.html'),
                     replace: false,
                     scope: {
                         tools: '=',
@@ -37,9 +37,6 @@ define([
                         $scope.doBlur=function(){
                             $scope.isOpen=false;
                         }
-                    },
-                    compile1: function ($element, $attrs) {
-
                     }
                 };
             }]);

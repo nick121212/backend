@@ -9,8 +9,7 @@
 define([
     'angular',
     'modules/directive_module',
-    'services/event_service'
-], function (angular, dirModule) {
+    'services/event_service'], function (angular, dirModule) {
     /*
      * navlist的配置项
      * navlistDatas当前的菜单数据项目
@@ -53,12 +52,11 @@ define([
                         digest(this.navlistDatas);
                     }
                 };
-            }
-        ];
+            }];
     }).directive("navlist", function () {
         return {
             restrict: 'EA',
-            templateUrl: requirejs.toUrl('partials/directive/navlist.html'),
+            templateUrl: requirejs.toUrl('partials/directive/nav/navlist.html'),
             transclude: true,
             replace: true,
             scope: {
@@ -74,14 +72,10 @@ define([
             }
         };
     }).directive("nav", [
-        '$compile',
-        '$state',
-        'eventService',
-        'navlist',
-        function ($compile, $state, eventService, navlistProvider) {
+        '$compile', '$state', 'eventService', 'navlist', function ($compile, $state, eventService, navlistProvider) {
             return {
                 restrict: 'E',
-                templateUrl: requirejs.toUrl('partials/directive/subnavlist.html'),
+                templateUrl: requirejs.toUrl('partials/directive/nav/subnavlist.html'),
                 replace: true,
                 //transclude: true,
                 require: '^?navlist',
@@ -116,7 +110,6 @@ define([
                     }
                 }
             };
-        }
-    ]);
+        }]);
 });
 //# sourceMappingURL=sidebar_directive.js.map

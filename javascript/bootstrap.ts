@@ -6,7 +6,11 @@
 
 ///<reference path="typescripts/require.d.ts"/>
 
-define(['angular', 'domReady', 'modules/app_module'], function (angular, domReady, appModule) {
+define([
+    'angular',
+    'domReady',
+    'modules/app_module'
+], function (angular, domReady, appModule) {
 
     domReady(function () {
         angular.bootstrap(document, [appModule.name]);
