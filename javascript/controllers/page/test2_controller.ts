@@ -37,7 +37,10 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
                     readonly: false,
                     disabled: false,
                     required: true,
-                    validation: {}
+                    validation: {
+                        'maxlength': 15,
+                        'minlength': 8
+                    }
                 },
                 email1: {
                     element: 'input',
@@ -46,7 +49,8 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
                     placeholder: '请输入邮箱地址',
                     readonly: false,
                     disabled: false,
-                    required: false
+                    required: false,
+                    validation: {}
                 },
             }
         };

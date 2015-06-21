@@ -10,8 +10,18 @@
 
 define([
     'angular',
-    'modules/directive_module'
+    'modules/directive_module',
+    'modules/app_module'
 ], function (angular, dirModule) {
+
+    var msgs = {
+        'minlength': '的长度不能少于',
+        'maxlength': '的长度不能超过',
+        'required': '是必填项',
+        'email': '邮箱格式不正确'
+    };
+
+
     dirModule.directive('simpleForm', [
         function () {
             return {
@@ -66,7 +76,25 @@ define([
             link: function ($scope, $element, $attrs, simpleFormCtl) {
                 $http.get(requirejs.toUrl('partials/directive/simpleform/views/' + $scope.field.element + '.html')).success(function (tmp) {
                     var fieldElement = angular.element(tmp);
+                    $scope.errMsgs = {};
 
+                    if ($scope.field.required) {
+                        $scope.errMsgs['required'] = $scope.field.label + msgs['required'];
+                    }
+                    if ($scope.field.type && msgs[$scope.field.type]) {
+                        $scope.errMsgs[$scope.field.type] = msgs[$scope.field.type];
+                    }
+                    angular.forEach($scope.field.validation, function (value, key) {
+                        fieldElement.attr("ng-" + key, value);
+
+                        $scope.errMsgs[key] = $scope.field.label + msgs[key] + value || key;
+                    });
+                    //
+                    //for(var key in $scope.field.validation){
+                    //    console.log(valid);
+                    //    var valid = $scope.field
+                    //    $element.attr(key,valid);
+                    //}
                     $element.replaceWith(fieldElement);
                     $compile(fieldElement)($scope);
                 });

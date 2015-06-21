@@ -6,11 +6,15 @@
        ng-readonly="field.readonly"
        ng-disabled="field.disabled"
        ng-required="field.required">
+
 <span ng-if="$form[key].$valid" class="glyphicon glyphicon-ok form-control-feedback"></span>
 <span ng-if="$form[key].$invalid" class="glyphicon glyphicon-remove form-control-feedback"></span>
 
-<div ng-show="$form[key].$invalid" class="toggle">
-       <span class="help-block">
-              A block of help text that breaks onto a new line and may extend beyond one line.
+<div class="toggle none-leave" ng-messages="$form[key].$error" ng-messages-multiple>
+       <span class="help-block"
+             ng-message-exp="key"
+             ng-repeat="(key,value) in errMsgs">
+            {{ value }}
        </span>
+
 </div>

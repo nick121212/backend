@@ -1,4 +1,4 @@
-<div class="no-skin" ng-controller="HomeController as homeCtl">
+<div class="no-skin mob-safari" ng-controller="HomeController as homeCtl">
     <!--navbar-->
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-container">
@@ -19,43 +19,41 @@
                 </a>
             </div>
             <!--头部右边容器-->
-            <div class="navbar-buttons navbar-header pull-right" role="navigation">
-                <div class="navbar-buttons navbar-header pull-right" role="navigation">
-                    <ul class="nav ace-nav">
-                        <li class="light-blue" dropdown>
-                            <a class="dropdown-toggle" dropdown-toggle >
-                                <img class="nav-user-photo" src="images/avatars/user.jpg" alt="Jason's Photo">
+            <div class="navbar-buttons navbar-header pull-right">
+                <ul class="nav ace-nav">
+                    <li class="light-blue" dropdown>
+                        <a class="dropdown-toggle" dropdown-toggle>
+                            <img class="nav-user-photo" src="images/avatars/user.jpg" alt="Jason's Photo">
 								<span class="user-info">
 									<small>欢迎您,</small>
 									NICK
 								</span>
 
-                                <i class="ace-icon fa fa-caret-down"></i>
-                            </a>
-                            <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                                <li>
-                                    <a href="#">
-                                        <i class="ace-icon fa fa-cog"></i>
-                                        设置
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="ace-icon fa fa-user"></i>
-                                        个人主页
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="#">
-                                        <i class="ace-icon fa fa-power-off"></i>
-                                        退出登录
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                            <i class="ace-icon fa fa-caret-down"></i>
+                        </a>
+                        <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-cog"></i>
+                                    设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-user"></i>
+                                    个人主页
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-power-off"></i>
+                                    退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -64,8 +62,8 @@
     <div class="main-container main-container-fixed-top">
 
         <!--侧边栏-->
-        <div class="sidebar sidebar-fixed responsive sidebar-scroll" ng-class="{'display':homeCtl.isShowMenu}">
-            <div ui-view="sidebarView" ></div>
+        <div id="sidebar" class="sidebar sidebar-fixed responsive sidebar-scroll" ng-class="{'display':homeCtl.isShowMenu}">
+            <div ui-view="sidebarView"></div>
         </div>
         <!--主要内容-->
         <div ui-view="contentView" class="main-content"></div>
