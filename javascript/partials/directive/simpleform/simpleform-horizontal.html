@@ -1,9 +1,8 @@
-<form role="form" novalidate name="{{ setting.name }}" class="form-horizontal" ng-submit="submit()">
+<form role="form" novalidate name="{{ setting.name }}" class="form-horizontal" ng-submit="prevSubmit()">
     <simple-form-editor ng-model="model"
                         field="field"
                         key="key"
                         ng-repeat="(key, field) in setting.fields"></simple-form-editor>
 
-    <input type="submit" value="提交">
-
+    <ng-transclude></ng-transclude>
 </form>

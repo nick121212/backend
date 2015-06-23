@@ -1,7 +1,8 @@
-<form role="form" novalidate name="{{ setting.name }}">
+<form role="form" novalidate name="{{ setting.name }}" ng-submit="prevSubmit()">
     <simple-form-editor ng-model="model"
                         field="field"
                         key="key"
-                        form-ele="{{setting.name}}"
                         ng-repeat="(key, field) in setting.fields"></simple-form-editor>
+
+    <ng-transclude></ng-transclude>
 </form>

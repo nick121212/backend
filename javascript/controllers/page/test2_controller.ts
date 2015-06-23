@@ -19,9 +19,12 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
 
         homeCtl.formData = {
             email: 'nick@126.com',
-            email1: 'nora@126.com'
+            email1: 'nora@126.com',
+            phone: 13564548667,
+            url: 'http://www.baidu.com',
+            radio:0,
+            checkbox:{}
         };
-        homeCtl.now = Date.now();
 
         homeCtl.formSettings = {
             name: 'loginForm',
@@ -52,46 +55,82 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
                     required: false,
                     validation: {}
                 },
-            }
-        };
-
-        homeCtl.formSchema = {
-            type: 'object',
-            title: 'Basic Example',
-            description: 'Example description for angular dynamic form',
-            format: 'horizontal',
-
-            properties: {
-                firstName: {
-                    type: 'string',
-                    title: 'First Name',
-                    fieldType: 'horizontal',
-                    required: true
+                phone: {
+                    element: 'input',
+                    type: 'number',
+                    label: '手机',
+                    placeholder: '请输入手机号码',
+                    readonly: false,
+                    disabled: false,
+                    required: true,
+                    validation: {}
                 },
-                lastName: {
-                    type: 'string',
-                    title: 'Last Name',
-                    fieldType: 'horizontal',
-                    required: true
+                url: {
+                    element: 'input',
+                    type: 'url',
+                    label: '地址',
+                    placeholder: '请输入地址',
+                    readonly: false,
+                    disabled: false,
+                    required: false,
+                    validation: {}
                 },
-                email: {
-                    type: 'string',
-                    format: 'email',
-                    title: 'E-mail',
-                    fieldType: 'horizontal',
-                    required: true
+                radio: {
+                    element: 'radio',
+                    label: '性别',
+                    children: [
+                        {
+                            label: '男',
+                            value: 0,
+                            required: true
+
+                        }, {
+                            label: '女',
+                            value: 1
+                        }
+                    ]
+                },
+                checkbox:{
+                    element:'checkbox',
+                    label:'兴趣爱好',
+                    children:[
+                        {
+                            label:'足球',
+                            value:0,
+                        },{
+                            label:'篮球',
+                            value:1,
+                        },{
+                            label:'羽毛球',
+                            value:2,
+                        },{
+                            label:'乒乓球',
+                            value:3,
+                        }
+                    ]
+                },
+                textarea:{
+                    element: 'textarea',
+                    label: '详细地址',
+                    placeholder: '请输入详细地址',
+                    readonly: false,
+                    disabled: false,
+                    required: true,
+                    validation: {}
                 }
             }
         };
-        homeCtl.submit = function () {
-            console.log(arguments);
+
+        homeCtl.submit = function (form) {
+            if (form.$valid) {
+                alert('ok');
+                return;
+            }
+            for (var key in form.$error) {
+                var error = form.$error[key];
+
+                //angular.element(error.$name).focus();
+            }
         }
-
-        homeCtl.formModel = {
-            firstName: 'John',
-            lastName: 'Doe',
-            email: 'john.doe@gmail.com'
-        };
-
     }
 });

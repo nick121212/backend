@@ -1,0 +1,7 @@
+<div class="checkbox-inline"
+     ng-repeat="child in field.children">
+    <label>
+        <input type="checkbox" name="{{ key }}" value="{{ child.value }}" ng-model="model[key][child.value]">
+        {{ child.label }}
+    </label>
+</div>

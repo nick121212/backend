@@ -1,0 +1,7 @@
+<div class="radio-inline"
+     ng-repeat="child in field.children">
+    <label>
+        <input type="radio" name="{{ key }}" ng-required="child.required" value="{{ child.value }}" ng-model="model[key]">
+        {{ child.label }}
+    </label>
+</div>

@@ -1,28 +1,25 @@
 <div ng-controller="Test2Controller as testCtl">
     <div class="page-header">
         <h1>
-            Tables
+            simpleForm
             <small>
                 <i class="ace-icon fa fa-angle-double-right"></i>
-                TEST2 Static &amp; Dynamic Tables
+                TEST2 simpleForm
             </small>
-            <span ng-bind="testCtl.now"></span>
         </h1>
     </div>
 
     <div class="row">
         <div class="col-xs-12">
             <div class="position-relative">
-                <h1>simpleForm</h1>
+                <h1>{{ testCtl.formData }}</h1>
 
-                <simple-form setting="testCtl.formSettings" ng-model="testCtl.formData"></simple-form>
-                <!--<dynamic-form schema="testCtl.formSchema"-->
-                              <!--ng-model="testCtl.formModel"-->
-                              <!--submit="testCtl.submit()"-->
-                              <!--class="form-horizontal">-->
-                    <!--<input type="submit" value="提交">-->
-                <!--</dynamic-form>-->
-
+                <simple-form setting="testCtl.formSettings"
+                             ng-model="testCtl.formData"
+                             submit="testCtl.submit"
+                             ng-cloak>
+                    <input type="submit" value="提交">
+                </simple-form>
             </div>
         </div>
     </div>

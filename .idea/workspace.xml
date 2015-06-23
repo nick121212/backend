@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9399724e-0f7b-4e68-b881-68a7dba0fcda" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/ace/ace.min.css" afterPath="$PROJECT_DIR$/content/ace/ace.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.js" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/home/index.html" afterPath="$PROJECT_DIR$/javascript/partials/home/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/pages/test2.html" afterPath="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,7 +31,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -40,45 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app_module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#83#0" expanded="false" />
-                <element signature="e#6913#7035#0" expanded="false" />
-                <element signature="e#7385#7510#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directive_module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/modules/directive_module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simpleform_directive.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="simpleform_directive.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.574074">
-              <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular-messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/libs/angular-messages/angular-messages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5555556">
-              <caret line="615" column="55" selection-start-line="615" selection-start-column="43" selection-end-line="615" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -87,8 +52,8 @@
       <file leaf-file-name="simpleform_editor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="63" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -97,8 +62,8 @@
       <file leaf-file-name="input.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <caret line="0" column="55" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -118,29 +83,57 @@
         <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+              <caret line="117" column="34" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toolbar_directive.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.ts">
+      <file leaf-file-name="textarea.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#100#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noneleave_animation.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/animations/noneleave_animation.ts">
+      <file leaf-file-name="radio.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/radio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="41" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkbox.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/checkbox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5735294">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpleform-horizontal.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.375">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -151,9 +144,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Html5" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -169,9 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javascript/partials/pages/test1.html" />
-        <option value="$PROJECT_DIR$/javascript/controllers/home/login_controller.ts" />
-        <option value="$PROJECT_DIR$/javascript/controllers/home/main_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/login.html" />
         <option value="$PROJECT_DIR$/javascript/animations/rotatein_animation.js" />
         <option value="$PROJECT_DIR$/javascript/modules/animation_module.ts" />
@@ -205,21 +195,24 @@
         <option value="$PROJECT_DIR$/javascript/directives/toolbar_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-dynamicform/ng-nynamicform.js" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/email.html" />
         <option value="$PROJECT_DIR$/javascript/directives/mutiemail.directive.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-messages/angular-messages.js" />
         <option value="$PROJECT_DIR$/javascript/main.ts" />
-        <option value="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
         <option value="$PROJECT_DIR$/javascript/partials/home/index.html" />
         <option value="$PROJECT_DIR$/content/ace/ace.min.css" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
         <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
         <option value="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
-        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
         <option value="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/radio.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/checkbox.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html" />
+        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
+        <option value="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
       </list>
     </option>
   </component>
@@ -374,7 +367,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -422,6 +415,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -561,46 +576,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-messages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -647,7 +622,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -683,11 +658,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform/views" />
       <recent name="$PROJECT_DIR$/javascript/directives" />
       <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform" />
       <recent name="$PROJECT_DIR$/content/fonts" />
       <recent name="$PROJECT_DIR$/content" />
-      <recent name="$PROJECT_DIR$/content/font-awesome/4.3.0" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform" />
@@ -914,7 +889,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434792365067</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="simpleForm添加了ngmessages">
+      <created>1434892472018</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1434892472018</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -979,7 +960,8 @@
     <MESSAGE value="自定义directive simpleForm 用来生成简单的form表单" />
     <MESSAGE value="New changelist" />
     <MESSAGE value="添加了ngmessages" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了ngmessages" />
+    <MESSAGE value="simpleForm添加了ngmessages" />
+    <option name="LAST_COMMIT_MESSAGE" value="simpleForm添加了ngmessages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -988,27 +970,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript/partials/home/home_content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/home/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1111112">
@@ -1177,13 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/ng-animate/ng-animation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1195,27 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="877" column="73" selection-start-line="877" selection-start-column="73" selection-end-line="877" selection-end-column="73" />
-          <folding>
-            <element signature="e#66#460#0" expanded="false" />
-            <element signature="e#490#4360#0" expanded="false" />
-            <element signature="e#2613#4098#0" expanded="false" />
-            <element signature="e#4383#6151#0" expanded="false" />
-            <element signature="e#6174#8220#0" expanded="false" />
-            <element signature="e#8243#9824#0" expanded="false" />
-            <element signature="e#9856#12420#0" expanded="false" />
-            <element signature="e#12443#13722#0" expanded="false" />
-            <element signature="e#13745#15024#0" expanded="false" />
-            <element signature="e#15047#19406#0" expanded="false" />
-            <element signature="e#19429#21830#0" expanded="false" />
-            <element signature="e#22748#23457#0" expanded="false" />
-            <element signature="e#23838#24389#0" expanded="false" />
-            <element signature="e#24875#25403#0" expanded="false" />
-            <element signature="e#25903#26252#0" expanded="false" />
-            <element signature="e#26291#26341#0" expanded="false" />
-            <element signature="e#26390#26482#0" expanded="false" />
-            <element signature="e#26647#31138#0" expanded="false" />
-            <element signature="e#31271#31672#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,7 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,15 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,7 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,7 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.291667">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1271,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.9166667">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21089" column="1" selection-start-line="21089" selection-start-column="1" selection-end-line="21089" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
           <caret line="7" column="31" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,23 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61647725">
           <caret line="59" column="48" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,36 +1242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#100#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/libs/angular-messages/angular-messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5555556">
+        <state vertical-scroll-proportion="0.0">
           <caret line="615" column="55" selection-start-line="615" selection-start-column="43" selection-end-line="615" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1385,10 +1258,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#100#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="55" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.574074">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/radio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/checkbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="34" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5735294">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
