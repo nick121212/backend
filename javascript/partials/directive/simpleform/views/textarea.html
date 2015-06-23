@@ -8,10 +8,13 @@
 
 </textarea>
 
-<span ng-if="$form[key].$valid" class="glyphicon glyphicon-ok form-control-feedback"></span>
-<span ng-if="$form[key].$invalid" class="glyphicon glyphicon-remove form-control-feedback"></span>
+<span ng-if="$form[key].$valid && (showError || $form[key].$dirty)"
+      class="glyphicon glyphicon-ok form-control-feedback"></span>
+<span ng-if="$form[key].$invalid && (showError || $form[key].$dirty)"
+      class="glyphicon glyphicon-remove form-control-feedback"></span>
 
-<div class="toggle none-leave" ng-messages="$form[key].$error" ng-messages-multiple>
+<div class="toggle none-leave" ng-messages="$form[key].$error" ng-show="(showError || $form[key].$dirty)"
+     ng-messages-multiple>
        <span class="help-block"
              ng-message-exp="key"
              ng-repeat="(key,value) in errMsgs">

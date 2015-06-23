@@ -1,16 +1,22 @@
-<input class="form-control"
-       ng-model="model[key]"
-       type="{{field.type}}"
-       placeholder="{{ field.placeholder }}"
-       name="{{ key }}"
-       ng-readonly="field.readonly"
-       ng-disabled="field.disabled"
-       ng-required="field.required">
 
-<span ng-if="$form[key].$valid" class="glyphicon glyphicon-ok form-control-feedback"></span>
-<span ng-if="$form[key].$invalid" class="glyphicon glyphicon-remove form-control-feedback"></span>
+<span class="block input-icon">
+    <input class="form-control"
+           ng-model="model[key]"
+           type="{{field.type}}"
+           placeholder="{{ field.placeholder }}"
+           name="{{ key }}"
+           ng-readonly="field.readonly"
+           ng-disabled="field.disabled"
+           ng-required="field.required">
+    <i class="ace-icon fa fa-user"></i>
+</span>
 
-<div class="toggle none-leave" ng-messages="$form[key].$error" ng-messages-multiple>
+
+
+<span ng-if="$form[key].$valid && (showError || $form[key].$dirty)" class="glyphicon glyphicon-ok form-control-feedback"></span>
+<span ng-if="$form[key].$invalid && (showError || $form[key].$dirty)" class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+<div class="toggle none-leave" ng-messages="$form[key].$error" ng-show="(showError || $form[key].$dirty)" ng-messages-multiple>
        <span class="help-block"
              ng-message-exp="key"
              ng-repeat="(key,value) in errMsgs">

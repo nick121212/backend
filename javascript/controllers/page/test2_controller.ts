@@ -22,8 +22,8 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
             email1: 'nora@126.com',
             phone: 13564548667,
             url: 'http://www.baidu.com',
-            radio:0,
-            checkbox:{}
+            radio: 0,
+            checkbox: {}
         };
 
         homeCtl.formSettings = {
@@ -31,6 +31,7 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
             type: 'form',
             description: '登录验证',
             format: 'horizontal',
+            showError: false,
             fields: {
                 email: {
                     element: 'input',
@@ -90,26 +91,26 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
                         }
                     ]
                 },
-                checkbox:{
-                    element:'checkbox',
-                    label:'兴趣爱好',
-                    children:[
+                checkbox: {
+                    element: 'checkbox',
+                    label: '兴趣爱好',
+                    children: [
                         {
-                            label:'足球',
-                            value:0,
-                        },{
-                            label:'篮球',
-                            value:1,
-                        },{
-                            label:'羽毛球',
-                            value:2,
-                        },{
-                            label:'乒乓球',
-                            value:3,
+                            label: '足球',
+                            value: 0,
+                        }, {
+                            label: '篮球',
+                            value: 1,
+                        }, {
+                            label: '羽毛球',
+                            value: 2,
+                        }, {
+                            label: '乒乓球',
+                            value: 3,
                         }
                     ]
                 },
-                textarea:{
+                textarea: {
                     element: 'textarea',
                     label: '详细地址',
                     placeholder: '请输入详细地址',
@@ -122,6 +123,8 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
         };
 
         homeCtl.submit = function (form) {
+            homeCtl.formSettings.showError=true;
+
             if (form.$valid) {
                 alert('ok');
                 return;

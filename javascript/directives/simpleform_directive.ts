@@ -21,7 +21,7 @@ define([
         'email': '邮箱格式不正确',
         'pattern': '格式不正确',
         'number': '必须是数字',
-        'url':'地址格式不正确'
+        'url': '地址格式不正确'
     };
 
     /*
@@ -61,7 +61,8 @@ define([
                 scope: {
                     field: '=',
                     key: '=',
-                    model: '=ngModel'
+                    model: '=ngModel',
+                    showError: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
                     $http.get(requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor.html')).success(function (tmp) {
@@ -87,7 +88,8 @@ define([
                     field: '=',
                     key: '=',
                     model: '=ngModel',
-                    $form: '='
+                    $form: '=',
+                    showError: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
                     $http.get(requirejs.toUrl('partials/directive/simpleform/views/' + $scope.field.element + '.html')).success(function (tmp) {
