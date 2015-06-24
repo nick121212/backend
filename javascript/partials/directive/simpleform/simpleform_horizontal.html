@@ -2,8 +2,9 @@
     <simple-form-editor ng-model="model"
                         field="field"
                         key="key"
+                        editor-type="setting.editorType"
                         show-error="setting.showError"
-                        ng-repeat="(key, field) in setting.fields"></simple-form-editor>
-
+                        ng-repeat="(key, field) in setting.fields">
+    </simple-form-editor>
     <ng-transclude></ng-transclude>
 </form>

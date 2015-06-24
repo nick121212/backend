@@ -8,6 +8,7 @@
 
 ///<reference path="../../typescripts/require.d.ts" />
 ///<reference path="../../typescripts/angular.d.ts" />
+///<reference path="../../models/passport_models.d.ts" />
 
 
 define([
@@ -19,26 +20,77 @@ define([
     appModule.controller("LoginController", LoginController);
 
     /*
-    * @param $scope
-    * @param $modal ui-bootstrap弹窗模块
-    * @param loginService 登录服务
-    * */
+     * @param $scope
+     * @param $modal ui-bootstrap弹窗模块
+     * @param loginService 登录服务
+     * */
     LoginController.$inject = ['$scope', '$modal', 'loginService'];
 
     function LoginController($scope, $modal, loginService) {
         var loginCtl = this;
 
-        loginCtl.doLogin = function () {
-            var model = new PasswordModels.Passport.LoginModel();
+        /*
+         * 表单中的数据
+         * */
+        loginCtl.formData = new PasswordModels.Passport.LoginModel();
+        /*
+         * 表单的设置项
+         * */
+        loginCtl.formSettings = {
+            name: 'loginForm',
+            type: 'form',
+            description: '登录验证',
+            format: '_horizontal',
+            showError: false,
+            editorType: '_no_label',
+            fields: {
+                username: {
+                    element: 'input',
+                    type: 'text',
+                    label: '用户名',
+                    placeholder: '用户名',
+                    readonly: false,
+                    disabled: false,
+                    required: true,
+                    showGlyphicon: false,
+                    icon: {
+                        cls: 'fa-user',
+                        isRight: true
+                    },
+                    validation: {
+                        'maxlength': 31,
+                        'minlength': 6
+                    }
+                },
+                password: {
+                    element: 'input',
+                    type: 'password',
+                    label: '密码',
+                    placeholder: '密码',
+                    readonly: false,
+                    disabled: false,
+                    required: true,
+                    showGlyphicon: false,
+                    icon: {
+                        cls: 'fa-lock',
+                        isRight: true
+                    },
+                    validation: {
+                        'maxlength': 31,
+                        'minlength': 6
+                    }
+                }
+            }
+        };
 
-            model.password = "123456";
-            model.username = "nick";
+        loginCtl.doLogin = function (form) {
+            if (form.$valid) {
+                loginService.loginCheck(loginCtl.formData).then(function () {
+                    console.log("success", arguments);
+                }, function () {
 
-            loginService.loginCheck(model).then(function () {
-                console.log("success", arguments);
-            }, function () {
-
-            });
+                });
+            }
         }
     }
 

@@ -1,4 +1,4 @@
-<div>
+<div class="block" ng-class="{'input-icon-right':field.icon.isRight,'input-icon':field.icon.cls}">
     <input class="form-control"
            data-attr="true"
            ng-model="model[key]"
@@ -8,10 +8,11 @@
            ng-readonly="field.readonly"
            ng-disabled="field.disabled"
            ng-required="field.required">
+    <i ng-if="field.icon.cls" class="ace-icon fa" ng-class="field.icon.cls"></i>
 
-    <span ng-if="$form[key].$valid && (showError || $form[key].$dirty)"
+    <span ng-if="field.showGlyphicon && $form[key].$valid && (showError || $form[key].$dirty)"
           class="glyphicon glyphicon-ok form-control-feedback"></span>
-    <span ng-if="$form[key].$invalid && (showError || $form[key].$dirty)"
+    <span ng-if="field.showGlyphicon && $form[key].$invalid && (showError || $form[key].$dirty)"
           class="glyphicon glyphicon-remove form-control-feedback"></span>
 
     <div class="toggle none-leave"

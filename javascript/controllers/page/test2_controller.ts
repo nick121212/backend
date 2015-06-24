@@ -14,9 +14,9 @@ define(["angular",
 
         appModule.controller("Test2Controller", HomeController);
 
-        HomeController.$inject = ['$scope','eventService'];
+        HomeController.$inject = ['$scope', 'eventService'];
 
-        function HomeController($scope,eventService) {
+        function HomeController($scope, eventService) {
             var homeCtl = this;
 
             /*
@@ -38,8 +38,9 @@ define(["angular",
                 name: 'loginForm',
                 type: 'form',
                 description: '登录验证',
-                format: 'horizontal',
+                format: '_horizontal',
                 showError: false,
+                editorType: '_no_label',
                 fields: {
                     email: {
                         element: 'input',
@@ -49,6 +50,11 @@ define(["angular",
                         readonly: false,
                         disabled: false,
                         required: true,
+                        showGlyphicon: false,
+                        icon: {
+                            cls: 'fa-user',
+                            isRight: true
+                        },
                         validation: {
                             'maxlength': 15,
                             'minlength': 8
@@ -62,6 +68,11 @@ define(["angular",
                         readonly: false,
                         disabled: false,
                         required: false,
+                        showGlyphicon: true,
+                        icon: {
+                            cls: '',
+                            isRight: false
+                        },
                         validation: {}
                     },
                     phone: {
@@ -72,6 +83,11 @@ define(["angular",
                         readonly: false,
                         disabled: false,
                         required: true,
+                        showGlyphicon: true,
+                        icon: {
+                            cls: '',
+                            isRight: false
+                        },
                         validation: {}
                     },
                     url: {
@@ -82,6 +98,11 @@ define(["angular",
                         readonly: false,
                         disabled: false,
                         required: false,
+                        showGlyphicon: true,
+                        icon: {
+                            cls: '',
+                            isRight: false
+                        },
                         validation: {}
                     },
                     datetime: {
@@ -112,7 +133,7 @@ define(["angular",
                             'datepicker-options': 'datas.dateOptions',
                             'datepicker-popup': 'yyyy/MM/dd',
                             'close-text': '{{datas.closeText}}',
-                            'show-button-bar':'false'
+                            'show-button-bar': 'false'
                         }
                     },
                     radio: {

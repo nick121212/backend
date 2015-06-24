@@ -5,59 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9399724e-0f7b-4e68-b881-68a7dba0fcda" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/datetime.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/jquery/jquery.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/content/bootstrap/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/content/bootstrap/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/bootstrap.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/bootstrap.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/controllers/home_controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/controllers/home_controller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/controllers/home_controller.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/controllers/list_controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/controllers/list_controller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/controllers/list_controller.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/angular-require/angular-require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/angular-ui-route/angular-ui-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/bootstrap/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/requirejs-domready/domready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/requirejs/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/libs/underscore/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/app_module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/app_module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/app_module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/directive_module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/directive_module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/directive_module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/filter_module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/filter_module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/filter_module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/service_module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/service_module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/modules/service_module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/partials/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/partials/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/partials/list_item.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/partials/partials.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/route.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/route.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/services/event_service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/services/event_service.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/services/event_service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/services/httpinterceptor_factory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/services/httpinterceptor_factory.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/services/httpinterceptor_factory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/typescripts/angular.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/typescripts/jquery.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/typescripts/require.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grunt/dest/javascript/typescripts/underscore.d.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_inline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/ng-vbutton/vbutton.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_horizontal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js" />
@@ -65,19 +17,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.js" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/gruntfile.js" afterPath="$PROJECT_DIR$/grunt/gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/filter_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/filter_module.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.js.map" afterPath="$PROJECT_DIR$/javascript/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.js" afterPath="$PROJECT_DIR$/javascript/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.ts" afterPath="$PROJECT_DIR$/javascript/main.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/animations/noneleave_animation.ts" afterPath="$PROJECT_DIR$/javascript/animations/noneleave_animation.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/login/login.html" afterPath="$PROJECT_DIR$/javascript/partials/login/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/login/login_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/login/login_controller.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/models/passport_models.d.ts" afterPath="$PROJECT_DIR$/javascript/models/passport_models.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/models/passport_models.ts" afterPath="$PROJECT_DIR$/javascript/models/passport_models.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/service_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/service_module.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/pages/test1.html" afterPath="$PROJECT_DIR$/javascript/partials/pages/test1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/pages/test2.html" afterPath="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/libs/angular-uibootstrap/uibootstrap.js" afterPath="$PROJECT_DIR$/javascript/libs/angular-uibootstrap/uibootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b1d4f0ee-7cee-4922-8c76-d9ade4a3bb3d" name="New changelist" comment="">
@@ -103,61 +55,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="input.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6366723">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="textarea.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html">
+      <file leaf-file-name="login_controller.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <folding>
+                <marker date="1435130714000" expanded="true" signature="401:2681" placeholder="{...}" />
+                <marker date="1435130714000" expanded="true" signature="703:2678" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#83#0" expanded="false" />
+                <element signature="e#6902#7024#0" expanded="false" />
+                <element signature="e#7374#7499#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-vbutton.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="3.5278277">
+              <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datetime.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/datetime.html">
+      <file leaf-file-name="service_module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/modules/service_module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="69" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="69" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ace.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/ace/ace.min.css">
+      <file leaf-file-name="filter_module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/modules/filter_module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21524" column="1" selection-start-line="21524" selection-start-column="1" selection-end-line="21524" selection-end-column="1" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="directive_module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/modules/directive_module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/partials/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passport_models.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/models/passport_models.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -167,37 +156,7 @@
         <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="109" column="53" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkbox.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/checkbox.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/services/event_service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="35" />
+              <caret line="193" column="34" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -226,21 +185,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javascript/partials/directive/subnavlist.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/home/home_content.html" />
-        <option value="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts" />
-        <option value="$PROJECT_DIR$/javascript/partials/home/welcome.html" />
-        <option value="$PROJECT_DIR$/javascript/models/test.ts" />
         <option value="$PROJECT_DIR$/javascript/models/login_model.js" />
         <option value="$PROJECT_DIR$/javascript/models/login_model.ts" />
-        <option value="$PROJECT_DIR$/javascript/models/passport_models.ts" />
-        <option value="$PROJECT_DIR$/javascript/models/passport_models.d.ts" />
         <option value="$PROJECT_DIR$/javascript/services/event_service.ts" />
         <option value="$PROJECT_DIR$/javascript/services/config_constant.ts" />
         <option value="$PROJECT_DIR$/javascript/services/login_service.ts" />
-        <option value="$PROJECT_DIR$/javascript/partials/login/login.html" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-alert/angular-alert.js" />
-        <option value="$PROJECT_DIR$/javascript/controllers/login/login_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/controllers/home/home_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/directives/simpleForm_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform.html" />
@@ -252,31 +202,40 @@
         <option value="$PROJECT_DIR$/javascript/directives/mutiemail.directive.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-messages/angular-messages.js" />
         <option value="$PROJECT_DIR$/javascript/partials/home/index.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/radio.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
         <option value="$PROJECT_DIR$/javascript/partials/home/home_footer.html" />
         <option value="$PROJECT_DIR$/javascript/directives/simpleform_directive.tpl.js" />
         <option value="$PROJECT_DIR$/grunt/gruntfile.js" />
         <option value="$PROJECT_DIR$/javascript/directives/attr_directive.ts" />
-        <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
-        <option value="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-uibootstrap/uibootstrap.js" />
-        <option value="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
-        <option value="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/main.ts" />
         <option value="$PROJECT_DIR$/javascript/libs/jquery/jquery.js" />
         <option value="$PROJECT_DIR$/javascript/animations/noneleave_animation.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/textarea.html" />
         <option value="$PROJECT_DIR$/javascript/partials/pages/test1.html" />
-        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/checkbox.html" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/datetime.html" />
         <option value="$PROJECT_DIR$/content/ace/ace.min.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_horizontal.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_inline.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html" />
+        <option value="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
+        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
+        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
+        <option value="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
+        <option value="$PROJECT_DIR$/javascript/models/passport_models.ts" />
+        <option value="$PROJECT_DIR$/javascript/models/passport_models.d.ts" />
+        <option value="$PROJECT_DIR$/javascript/controllers/login/login_controller.ts" />
+        <option value="$PROJECT_DIR$/javascript/modules/service_module.ts" />
+        <option value="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
+        <option value="$PROJECT_DIR$/javascript/partials/login/login.html" />
+        <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
+        <option value="$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js" />
       </list>
     </option>
   </component>
@@ -540,6 +499,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="directive" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -567,6 +548,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="simpleform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,18 +662,8 @@
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,11 +677,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
+              <option name="myItemId" value="javascript" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ace" />
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -698,11 +737,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform/views" />
-      <recent name="$PROJECT_DIR$/javascript/directives" />
-      <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform" />
-      <recent name="$PROJECT_DIR$/content/fonts" />
+      <recent name="$PROJECT_DIR$/content/ng-vbutton" />
       <recent name="$PROJECT_DIR$/content" />
+      <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform/views" />
+      <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform" />
+      <recent name="$PROJECT_DIR$/javascript/directives" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/javascript/partials/directive/simpleform" />
@@ -947,7 +986,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435038775121</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="simpleForm">
+      <created>1435124493357</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1435124493357</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -961,28 +1006,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19863014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33013698" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12431694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36849314" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32465753" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33013698" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36849314" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1023,73 +1068,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript/models/passport_models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/models/passport_models.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/services/login_service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/services/httpinterceptor_factory.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/services/config_constant.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/services/login_service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/controllers/login/home_controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1191,27 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="55" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/partials/home/home_footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
@@ -1230,6 +1191,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1237,6 +1199,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,13 +1207,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/directives/fxattr_directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,20 +1215,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.111111">
           <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/directive_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,6 +1223,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,6 +1231,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10351" column="0" selection-start-line="10351" selection-start-column="0" selection-end-line="10351" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,13 +1239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="53" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,14 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="53" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1374,18 +1306,161 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="12" selection-start-line="3" selection-start-column="4" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_horizontal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_inline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/directives/fxattr_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/models/passport_models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/models/passport_models.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="193" column="34" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <marker date="1435130714000" expanded="true" signature="401:2681" placeholder="{...}" />
+            <marker date="1435130714000" expanded="true" signature="703:2678" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/service_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/filter_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6366723">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/directive_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#83#0" expanded="false" />
+            <element signature="e#6902#7024#0" expanded="false" />
+            <element signature="e#7374#7499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5278277">
+          <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
           <folding />
         </state>
       </provider>

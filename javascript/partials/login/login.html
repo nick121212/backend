@@ -8,47 +8,35 @@
             </h4>
 
             <div class="space-6"></div>
-            <form>
 
-                <div class="form-group">
-                    <label class="sr-only" for="username">用户名</label>
-                    <span class="block input-icon input-icon-right">
-                        <input type="text" placeholder="用户名" name="username" class="form-control">
-                        <i class="ace-icon fa fa-user"></i>
-                    </span>
-                </div>
-
-                <div class="form-group">
-                    <label for="password" class="sr-only"></label>
-                    <span class="block input-icon input-icon-right">
-                        <input type="password" class="form-control" placeholder="密码">
-                        <i class="ace-icon fa fa-lock"></i>
-                    </span>
-                </div>
+            <!--登录-->
+            <simple-form setting="loginCtl.formSettings"
+                         ng-model="loginCtl.formData"
+                         submit="loginCtl.doLogin"
+                         format=""
+                         ng-cloak>
                 <div class="space"></div>
-
                 <div class="form-group">
                     <label class="inline">
                         <input type="checkbox" class="ace">
                         <span class="lbl">记住我</span>
                     </label>
-                    <button type="button"
-                            class="width-35 pull-right btn btn-sm btn-primary"
-                            ng-click="loginCtl.doLogin()">
+                    <button type="submit"
+                            value="登录"
+                            class="width-35 pull-right btn btn-sm btn-primary">
                         <i class="ace-icon fa fa-key"></i>
                         <span class="bigger-110">登录</span>
                     </button>
                 </div>
-
                 <div class="space-4"></div>
-            </form>
+            </simple-form>
 
             <div class="social-or-login center">
                 <span class="bigger-110">或者用以下方式登录</span>
             </div>
 
             <div class="space-6"></div>
-
+            <!--第三方登录-->
             <div class="social-login center">
                 <a class="btn btn-primary">
                     <i class="ace-icon fa fa-qq"></i>

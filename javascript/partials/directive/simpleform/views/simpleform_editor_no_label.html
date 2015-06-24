@@ -1,0 +1,17 @@
+<div class="form-group has-feedback"
+     ng-class="{'has-error':$form[key].$invalid && (showError || $form[key].$dirty)}">
+
+    <label class="sr-only">
+        <span ng-bind="field.label"></span>
+        <i ng-if="field.required"
+           class="glyphicon blue glyphicon-info-sign"
+           title="必填项"></i>
+    </label>
+
+    <simple-form-field key="key"
+                       show-error="showError"
+                       $form="$form"
+                       field="field"
+                       ng-model="model">
+    </simple-form-field>
+</div>

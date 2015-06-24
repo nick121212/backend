@@ -5,7 +5,6 @@
  */
 ///<reference path="../typescripts/require.d.ts" />
 ///<reference path="../typescripts/angular.d.ts" />
-//13162215783 曹
 define([
     'angular',
     'angular-ui-route',
@@ -26,7 +25,6 @@ define([
     'services/login_service',
     'services/config_constant',
     'animations/noneleave_animation',
-    'angular-dynamicform',
     'template'], function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
     var app = angular.module('appModule', [
         'ngAnimate',
@@ -37,7 +35,7 @@ define([
         'ui.bootstrap',
         'angular-loading-bar',
         'ngMessages',
-        'dynamic-forms',
+        'vButton',
         dirModule.name,
         srvModule.name,
         aniModule.name,

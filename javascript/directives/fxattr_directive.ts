@@ -35,7 +35,7 @@ define([
                             $element.attr(key, value);
                         });
                     },
-                    post: function (scope, iElem, iAttrs) {
+                    post: function ($scope, $element, $attrs) {
                         console.log(': post link');
                     }
                 };

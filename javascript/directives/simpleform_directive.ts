@@ -40,28 +40,30 @@ define([
      * 简单form
      * 验证，绑定model
      * */
-    dirModule.directive('simpleForm', [
-        function () {
-            return {
-                restrict: 'EA',
-                templateUrl: requirejs.toUrl('partials/directive/simpleform/simpleform-horizontal.html'),
-                replace: true,
-                require: '',
-                transclude: true,
-                scope: {
-                    setting: '=',
-                    model: '=ngModel',
-                    submit: '='
-                },
-                link: function ($scope, $element, $attrs) {
-                    //$scope.$ele = $element;
-
-                    $scope.prevSubmit = function () {
-                        $scope.submit($scope[$scope.setting.name]);
-                    }
+    dirModule.directive('simpleForm', ['$compile', '$templateCache', function ($compile, $templateCache) {
+        return {
+            restrict: 'EA',
+            //templateUrl: requirejs.toUrl('partials/directive/simpleform/simpleform_horizontal.html'),
+            replace: true,
+            require: '',
+            transclude: true,
+            scope: {
+                setting: '=',
+                model: '=ngModel',
+                submit: '='
+            },
+            template: function ($element, $attrs) {
+                var tmp = $templateCache.get('../' + requirejs.toUrl('partials/directive/simpleform/simpleform' + ($attrs.format || '') + '.html'));
+                return tmp;
+            },
+            link: function ($scope, $element, $attrs) {
+                $scope.prevSubmit = function () {
+                    $scope.setting.showError = true;
+                    angular.isFunction($scope.submit) && $scope.submit($scope[$scope.setting.name]);
                 }
-            };
-        }])
+            }
+        };
+    }])
         /*
          * bootstatp表单外壳
          * */
@@ -74,10 +76,11 @@ define([
                     field: '=',
                     key: '=',
                     model: '=ngModel',
-                    showError: '='
+                    showError: '=',
+                    editorType: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
-                    var tmp = $templateCache.get('../' + requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor.html'));
+                    var tmp = $templateCache.get('../' + requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor' + ($scope.editorType || '') + '.html'));
                     var fieldElement = angular.element(tmp);
 
                     $element.replaceWith(fieldElement);
@@ -88,7 +91,7 @@ define([
         }])
         /*
          * bootstrap元素
-         * input,textarea等
+         * input,textarea,datetime等
          * */
         .directive('simpleFormField', ['$compile', '$templateCache', '$interpolate', 'simpleForm', function ($compile, $templateCache, $interpolate, simpleFormProvider) {
             return {
@@ -111,8 +114,8 @@ define([
                     $scope.errMsgs = {};
 
                     //判断是否是required，如果是，则添加显示错误信息
-                    msg = simpleFormProvider.getMsg('required');
                     if ($scope.field.required) {
+                        msg = simpleFormProvider.getMsg('required');
                         $scope.errMsgs['required'] = $interpolate(msg)({label: $scope.field.label});
                     }
                     //判断元素的类型，如果存在，则添加显示错误信息

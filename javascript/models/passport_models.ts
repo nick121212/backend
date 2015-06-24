@@ -9,6 +9,7 @@ export module Passport {
     export class LoginModel {
         public username:string;
         public password:string;
+        public expire_in:number;
 
         constructor() {
 

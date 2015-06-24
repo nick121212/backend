@@ -1,8 +1,8 @@
-<form role="form" novalidate name="{{ setting.name }}" ng-submit="prevSubmit()">
+<form role="form" novalidate name="{{ setting.name }}" class="form-inline" ng-submit="prevSubmit()">
     <simple-form-editor ng-model="model"
                         field="field"
-                        editor-type="setting.editorType"
                         key="key"
+                        editor-type="setting.editorType"
                         show-error="setting.showError"
                         ng-repeat="(key, field) in setting.fields">
     </simple-form-editor>
