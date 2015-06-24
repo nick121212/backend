@@ -20,7 +20,7 @@ define([
     /*
      * @param $scope
      * @param $modal ui-bootstrap弹窗模块
-     * @param passportService 登录服务
+     * @param passportService 账号服务
      * */
     registerController.$inject = ['$scope', '$modal', 'passportService'];
 
