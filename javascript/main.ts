@@ -39,18 +39,21 @@
             'angular-uibootstrap': {
                 deps: ['angular', 'angular-uibootstrap-tpl']
             },
-            'angular-dynamicform':{
-                deps:['angular']
+            'angular-dynamicform': {
+                deps: ['angular']
             },
-            'angular-messages':{
-                deps:['angular']
+            'angular-messages': {
+                deps: ['angular']
             },
-            'simpleform_directive.tpl':{
-                deps:['angular']
+            'simpleform_directive.tpl': {
+                deps: ['angular']
+            },
+            'angular-vbutton': {
+                deps: ['angular']
             }
         },
         paths: {
-            'jquery':'./libs/jquery/jquery',
+            'jquery': './libs/jquery/jquery',
             'angular': './libs/angular/angular',
             'angular-ui-route': './libs/angular-ui-route/angular-ui-route',
             'domReady': './libs/requirejs-domready/domready',
@@ -62,9 +65,10 @@
             'angular-loadingbar': './libs/angular-loadingbar/angular-loadingbar',
             'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
             'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls',
-            'angular-dynamicform':'./libs/angular-dynamicform/ng-nynamicform',
-            'angular-messages':'./libs/angular-messages/angular-messages',
-            'simpleform_directive.tpl':'./directives/simpleform_directive.tpl'
+            'angular-dynamicform': './libs/angular-dynamicform/ng-nynamicform',
+            'angular-messages': './libs/angular-messages/angular-messages',
+            'simpleform_directive.tpl': './directives/simpleform_directive.tpl',
+            'angular-vbutton': './libs/angular-vbutton/angular-vbutton'
         },
         //使得程序可以加载不同版本的模块
         map: {
@@ -79,8 +83,13 @@
         //基于requirejs.config()的config配置项来实现。要获取这些信息的模块可以加载特殊的依赖“module”，并调用module.config()
         config: {
             'services/config_constant': {
-                //api接口地址
-                api_url: 'http://192.168.1.102:3001/api/v1'
+                //登录接口
+                api_url1: 'http://192.168.1.102:3001/api/v1',
+                api_url: 'http://staging.pt.p7game.com/api/v1',
+                //app_token
+                app_token: 'JVVVVW_3',
+                //记住我存储时间
+                expire_in: 86400
             }
         },
         package: {},

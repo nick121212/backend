@@ -15,13 +15,14 @@ define([
 ], function (angular, dirModule) {
     dirModule.provider("simpleForm", function () {
         var msgs = {
-            'minlength': '{{label}}的长度不能少于{{val}}',
-            'maxlength': '{{label}}的长度不能超过{{val}}',
+            'ng-minlength': '{{label}}的长度不能少于{{val}}',
+            'ng-maxlength': '{{label}}的长度不能超过{{val}}',
             'required': '{{label}}是必填项',
             'email': '邮箱格式不正确',
             'pattern': '格式不正确',
             'number': '必须是数字',
-            'url': '地址格式不正确'
+            'url': '地址格式不正确',
+            'pw-check': '两次密码不一致'
         };
 
         this.$get = [function () {
@@ -125,11 +126,18 @@ define([
                     }
                     //遍历验证列表，添加显示错误信息
                     angular.forEach($scope.field.validation, function (value, key) {
-                        fieldElement.find("[data-attr]").attr("ng-" + key, value);
+                        fieldElement.find("[data-attr]").attr(key, value);
 
                         msg = simpleFormProvider.getMsg(key);
 
-                        $scope.errMsgs[key] = $interpolate(msg)({label: $scope.field.label, val: value});
+                        if (key.search('ng-')>=0) {
+                            key = key.substring(key.indexOf('-') + 1);
+                        }
+
+                        $scope.errMsgs[key] = $interpolate(msg)({
+                            label: $scope.field.label,
+                            val: value
+                        });
                     });
 
                     angular.forEach($scope.field.attrs, function (value, key) {

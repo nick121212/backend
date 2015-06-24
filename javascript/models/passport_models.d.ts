@@ -10,6 +10,16 @@ declare module Passport {
     interface LoginModel {
         username:string;
         password:string;
-        expire_in:number;
+        expire_in:boolean;
+    }
+    interface RegisterModel {
+        username:string;
+        password:string;
+        password_again:string;
+    }
+    interface UserModel {
+        username:string;
+        nickname:string;
+        avatar_url:string;
     }
 }

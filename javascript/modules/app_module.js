@@ -16,13 +16,15 @@ define([
     'directives/toolbar_directive',
     'directives/simpleform_directive',
     'directives/fxattr_directive',
+    'directives/pwcheck_directive',
     'angular-animate',
     'angular-uibootstrap',
     'angular-growl',
     'angular-loadingbar',
     'angular-messages',
+    'angular-vbutton',
     'services/httpinterceptor_factory',
-    'services/login_service',
+    'services/passport_service',
     'services/config_constant',
     'animations/noneleave_animation',
     'template'], function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
@@ -196,7 +198,12 @@ define([
                 url: '/register',
                 views: {
                     'contentView': {
-                        templateUrl: requirejs.toUrl('partials/login/register.html')
+                        templateUrl: requirejs.toUrl('partials/login/register.html'),
+                        resolve: {
+                            deps: $requireProvider.requireJS([
+                                'controllers/login/register_controller'
+                            ])
+                        }
                     }
                 }
             })
