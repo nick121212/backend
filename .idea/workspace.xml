@@ -5,31 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9399724e-0f7b-4e68-b881-68a7dba0fcda" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_inline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/ng-vbutton/vbutton.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform-horizontal.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_horizontal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/app_module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.js" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/directive_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/filter_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/filter_module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/fxattr_directive.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/login/login.html" afterPath="$PROJECT_DIR$/javascript/partials/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/login/login_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/login/login_controller.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/models/passport_models.d.ts" afterPath="$PROJECT_DIR$/javascript/models/passport_models.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/models/passport_models.ts" afterPath="$PROJECT_DIR$/javascript/models/passport_models.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/service_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/service_module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/pages/test2.html" afterPath="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b1d4f0ee-7cee-4922-8c76-d9ade4a3bb3d" name="New changelist" comment="">
@@ -95,8 +70,8 @@
       <file leaf-file-name="angular-vbutton.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.5278277">
-              <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
+            <state vertical-scroll-proportion="-1.3464991">
+              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -992,7 +967,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435124493357</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="登录表单">
+      <created>1435135437145</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1435135437145</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1006,7 +987,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19863014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33013698" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1020,7 +1001,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32465753" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1059,7 +1040,8 @@
     <MESSAGE value="添加了ngmessages" />
     <MESSAGE value="simpleForm添加了ngmessages" />
     <MESSAGE value="simpleForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="simpleForm" />
+    <MESSAGE value="登录表单" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录表单" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1459,8 +1441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5278277">
-          <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
+        <state vertical-scroll-proportion="-1.3464991">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
           <folding />
         </state>
       </provider>
