@@ -70,8 +70,8 @@
       <file leaf-file-name="angular-vbutton.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3464991">
-              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.21543986">
+              <caret line="102" column="104" selection-start-line="102" selection-start-column="104" selection-end-line="102" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -973,7 +973,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435135437145</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="登录表单">
+      <created>1435136113078</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1435136113078</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1441,8 +1447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3464991">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.21543986">
+          <caret line="102" column="104" selection-start-line="102" selection-start-column="104" selection-end-line="102" selection-end-column="104" />
           <folding />
         </state>
       </provider>
