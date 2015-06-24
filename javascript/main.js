@@ -16,7 +16,7 @@
                 exports: '_'
             },
             'angular': {
-                deps: [],
+                deps: ['jquery'],
                 exports: 'angular'
             },
             'angular-ui-route': {
@@ -42,9 +42,13 @@
             },
             'angular-messages': {
                 deps: ['angular']
+            },
+            'simpleform_directive.tpl': {
+                deps: ['angular']
             }
         },
         paths: {
+            'jquery': './libs/jquery/jquery',
             'angular': './libs/angular/angular',
             'angular-ui-route': './libs/angular-ui-route/angular-ui-route',
             'domReady': './libs/requirejs-domready/domready',
@@ -57,7 +61,8 @@
             'angular-uibootstrap': './libs/angular-uibootstrap/uibootstrap',
             'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls',
             'angular-dynamicform': './libs/angular-dynamicform/ng-nynamicform',
-            'angular-messages': './libs/angular-messages/angular-messages'
+            'angular-messages': './libs/angular-messages/angular-messages',
+            'simpleform_directive.tpl': './directives/simpleform_directive.tpl'
         },
         //使得程序可以加载不同版本的模块
         map: {},

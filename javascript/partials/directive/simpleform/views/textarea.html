@@ -1,5 +1,7 @@
+<div>
 <textarea class="form-control"
           ng-model="model[key]"
+          data-attr="true"
           placeholder="{{ field.placeholder }}"
           name="{{ key }}"
           ng-readonly="field.readonly"
@@ -13,11 +15,12 @@
 <span ng-if="$form[key].$invalid && (showError || $form[key].$dirty)"
       class="glyphicon glyphicon-remove form-control-feedback"></span>
 
-<div class="toggle none-leave" ng-messages="$form[key].$error" ng-show="(showError || $form[key].$dirty)"
-     ng-messages-multiple>
+    <div class="toggle none-leave" ng-messages="$form[key].$error" ng-show="(showError || $form[key].$dirty)"
+         ng-messages-multiple>
        <span class="help-block"
              ng-message-exp="key"
              ng-repeat="(key,value) in errMsgs">
             {{ value }}
        </span>
+    </div>
 </div>

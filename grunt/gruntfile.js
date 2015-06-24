@@ -50,30 +50,36 @@ module.exports = function (grunt) {
             //
             //}
         },
+        watch: {
+            template: {
+                files: ['../javascript/partials/directive/simpleform/**/*.html'],
+                tasks: ['html2js:simpleForm'],
+                options: {
+                    debounceDelay: 250
+                }
+            }
+        },
         html2js: {
-            simple : {
-                options : {
-                    base : '',
-                    module : 'template.js'
+            simple: {
+                options: {
+                    base: '',
+                    module: 'template.js'
                 },
-                files : [{
-                    src  : ['dest/javascript/partials/*.html'],
-                    dest : 'dest/javascript/partials/partials.js'
+                files: [{
+                    src: ['dest/javascript/partials/**/*.html'],
+                    dest: 'dest/javascript/partials/partials.js'
                 }]
             },
-            //ng_html2js: {
-            //    options: {
-            //        moduleName: 'appModule',
-            //        moduleVar: 'appModule'
-            //    },
-            //    files: [{
-            //        //expand: true,
-            //        cwd: 'dest/javascript/partials',
-            //        src: ['*.html'],
-            //        dest: 'dest/javascript/partials/partials.js',
-            //        //ext: '.html.js'
-            //    }]
-            //}
+            simpleForm: {
+                options: {
+                    base: '',
+                    module: 'simpleform.js'
+                },
+                files: [{
+                    src: ['../javascript/partials/directive/simpleform/**/*.html'],
+                    dest: '../javascript/directives/simpleform_directive.tpl.js'
+                }]
+            }
         }
     });
 
@@ -82,9 +88,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-ng-html2js');
     grunt.loadNpmTasks('grunt-html2js');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.registerTask('w', ['watch']);
     // 自定义执行列表
-    grunt.registerTask('h', ['html2js']);
+    grunt.registerTask('h', ['clean', 'html2js:simpleForm']);
     // 默认被执行的任务列表。
     grunt.registerTask('default', ['clean', 'copy', 'html2js']);
 

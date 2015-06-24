@@ -16,6 +16,7 @@ define([
     'directives/sidebar_directive',
     'directives/toolbar_directive',
     'directives/simpleform_directive',
+    'directives/fxattr_directive',
     'angular-animate',
     'angular-uibootstrap',
     'angular-growl',

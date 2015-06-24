@@ -8,7 +8,13 @@
 define([
     'angular',
     'angular-messages',
+    'simpleform_directive.tpl',
+    'angular-uibootstrap',
 ], function (angular) {
-    return angular.module('directiveModule', ['ngMessages']);
+    return angular.module('directiveModule', [
+        'ngMessages',
+        'simpleform.js',
+        'ui.bootstrap.tpls',
+        'ui.bootstrap',]);
 });
 //# sourceMappingURL=directive_module.js.map

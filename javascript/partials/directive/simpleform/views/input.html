@@ -1,6 +1,6 @@
-
-<span class="block input-icon">
+<div>
     <input class="form-control"
+           data-attr="true"
            ng-model="model[key]"
            type="{{field.type}}"
            placeholder="{{ field.placeholder }}"
@@ -8,18 +8,20 @@
            ng-readonly="field.readonly"
            ng-disabled="field.disabled"
            ng-required="field.required">
-    <i class="ace-icon fa fa-user"></i>
-</span>
 
+    <span ng-if="$form[key].$valid && (showError || $form[key].$dirty)"
+          class="glyphicon glyphicon-ok form-control-feedback"></span>
+    <span ng-if="$form[key].$invalid && (showError || $form[key].$dirty)"
+          class="glyphicon glyphicon-remove form-control-feedback"></span>
 
-
-<span ng-if="$form[key].$valid && (showError || $form[key].$dirty)" class="glyphicon glyphicon-ok form-control-feedback"></span>
-<span ng-if="$form[key].$invalid && (showError || $form[key].$dirty)" class="glyphicon glyphicon-remove form-control-feedback"></span>
-
-<div class="toggle none-leave" ng-messages="$form[key].$error" ng-show="(showError || $form[key].$dirty)" ng-messages-multiple>
+    <div class="toggle none-leave"
+         ng-messages="$form[key].$error"
+         ng-show="(showError || $form[key].$dirty)"
+         ng-messages-multiple>
        <span class="help-block"
              ng-message-exp="key"
              ng-repeat="(key,value) in errMsgs">
             {{ value }}
        </span>
+    </div>
 </div>

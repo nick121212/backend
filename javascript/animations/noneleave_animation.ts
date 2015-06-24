@@ -17,7 +17,7 @@ define([
     animatonModule.animation('.none-leave', function () {
         return {
             leave: function (element, done) {
-                element.remove(done);
+                element.remove(null, done);
                 return function (isCancelled) {
 
                 }

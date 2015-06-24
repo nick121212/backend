@@ -13,16 +13,28 @@ define([
     'modules/directive_module',
     'modules/app_module'
 ], function (angular, dirModule) {
+    dirModule.provider("simpleForm", function () {
+        var msgs = {
+            'minlength': '{{label}}的长度不能少于{{val}}',
+            'maxlength': '{{label}}的长度不能超过{{val}}',
+            'required': '{{label}}是必填项',
+            'email': '邮箱格式不正确',
+            'pattern': '格式不正确',
+            'number': '必须是数字',
+            'url': '地址格式不正确'
+        };
 
-    var msgs = {
-        'minlength': '的长度不能少于',
-        'maxlength': '的长度不能超过',
-        'required': '是必填项',
-        'email': '邮箱格式不正确',
-        'pattern': '格式不正确',
-        'number': '必须是数字',
-        'url': '地址格式不正确'
-    };
+        this.$get = [function () {
+            return {
+                setMsg: function (type, msg) {
+                    msgs[type] = msg;
+                },
+                getMsg: function (type) {
+                    return msgs[type] || '';
+                }
+            };
+        }];
+    });
 
     /*
      * 简单form
@@ -53,7 +65,7 @@ define([
         /*
          * bootstatp表单外壳
          * */
-        .directive('simpleFormEditor', ['$q', '$compile', '$templateCache', '$http', function ($q, $compile, $templateCache, $http) {
+        .directive('simpleFormEditor', ['$q', '$compile', '$templateCache', function ($q, $compile, $templateCache) {
             return {
                 restrict: 'E',
                 replace: false,
@@ -65,13 +77,12 @@ define([
                     showError: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
-                    $http.get(requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor.html')).success(function (tmp) {
-                        var fieldElement = angular.element(tmp);
+                    var tmp = $templateCache.get('../' + requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor.html'));
+                    var fieldElement = angular.element(tmp);
 
-                        $element.replaceWith(fieldElement);
-                        $scope.$form = fieldElement.controller('form');
-                        $compile(fieldElement)($scope);
-                    });
+                    $element.replaceWith(fieldElement);
+                    $scope.$form = fieldElement.controller('form');
+                    $compile(fieldElement)($scope);
                 }
             };
         }])
@@ -79,7 +90,7 @@ define([
          * bootstrap元素
          * input,textarea等
          * */
-        .directive('simpleFormField', ['$compile', '$http', function ($compile, $http) {
+        .directive('simpleFormField', ['$compile', '$templateCache', '$interpolate', 'simpleForm', function ($compile, $templateCache, $interpolate, simpleFormProvider) {
             return {
                 restrict: 'E',
                 replace: true,
@@ -92,26 +103,38 @@ define([
                     showError: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
-                    $http.get(requirejs.toUrl('partials/directive/simpleform/views/' + $scope.field.element + '.html')).success(function (tmp) {
-                        var fieldElement = angular.element(tmp);
-                        $scope.errMsgs = {};
+                    var tmp = $templateCache.get('../' + requirejs.toUrl('partials/directive/simpleform/views/' + $scope.field.element + '.html'));
+                    var msg;
+                    var fieldElement = angular.element(tmp);
 
-                        if ($scope.field.required) {
-                            $scope.errMsgs['required'] = $scope.field.label + msgs['required'];
-                        }
-                        if ($scope.field.type && msgs[$scope.field.type]) {
-                            $scope.errMsgs[$scope.field.type] = msgs[$scope.field.type];
-                        }
+                    $scope.datas = $scope.field.datas;
+                    $scope.errMsgs = {};
 
-                        angular.forEach($scope.field.validation, function (value, key) {
-                            fieldElement.attr("ng-" + key, value);
+                    //判断是否是required，如果是，则添加显示错误信息
+                    msg = simpleFormProvider.getMsg('required');
+                    if ($scope.field.required) {
+                        $scope.errMsgs['required'] = $interpolate(msg)({label: $scope.field.label});
+                    }
+                    //判断元素的类型，如果存在，则添加显示错误信息
+                    msg = simpleFormProvider.getMsg($scope.field.type);
+                    if ($scope.field.type && msg) {
+                        $scope.errMsgs[$scope.field.type] = $interpolate(msg)({label: $scope.field.label});
+                    }
+                    //遍历验证列表，添加显示错误信息
+                    angular.forEach($scope.field.validation, function (value, key) {
+                        fieldElement.find("[data-attr]").attr("ng-" + key, value);
 
-                            $scope.errMsgs[key] = $scope.field.label + msgs[key] + value || key;
-                        });
+                        msg = simpleFormProvider.getMsg(key);
 
-                        $element.replaceWith(fieldElement);
-                        $compile(fieldElement)($scope);
+                        $scope.errMsgs[key] = $interpolate(msg)({label: $scope.field.label, val: value});
                     });
+
+                    angular.forEach($scope.field.attrs, function (value, key) {
+                        fieldElement.find("[data-attr]").attr(key, value);
+                    });
+
+                    $element.replaceWith(fieldElement);
+                    $compile(fieldElement)($scope);
                 }
             };
         }]);
