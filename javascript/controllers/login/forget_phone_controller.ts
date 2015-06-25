@@ -5,11 +5,9 @@
  * copyright NICK
  */
 
-
 ///<reference path="../../typescripts/require.d.ts" />
 ///<reference path="../../typescripts/angular.d.ts" />
 ///<reference path="../../models/passport_models.d.ts" />
-
 
 define([
     'angular',
@@ -19,9 +17,9 @@ define([
 
     appModule.controller("ForgetPhoneController", ForgetPhoneController);
 
-    ForgetPhoneController.$inject = ['$rootScope', '$scope', '$cookieStore', '$timeout', 'growl', 'passportService', 'eventService'];
+    ForgetPhoneController.$inject = ['$rootScope', '$scope', '$cookieStore', '$timeout', 'growl', 'passportService'];
 
-    function ForgetPhoneController($rootScope, $scope, $cookieStore, $timeout, growl, passportService, eventService) {
+    function ForgetPhoneController($rootScope, $scope, $cookieStore, $timeout, growl, passportService) {
         var forgetPhoneCtl = this;
 
         forgetPhoneCtl.isBusy = false;
@@ -112,10 +110,7 @@ define([
                     button: {
                         icon: '',
                         label: '发送验证码',
-                        isBusy: false,
-                        doClick: function ($event) {
-                            eventService.stopAll($event);
-                        }
+                        isBusy: false
                     },
                     icon: {
                         cls: 'fa-lock',
@@ -128,6 +123,10 @@ define([
                 }
             }
         };
+
+        /*
+         * 发送验证码
+         * */
         forgetPhoneCtl.doSendCode = function (form) {
             if (form.$valid) {
                 //发送验证码，成功后显示表单的其他成员
@@ -139,6 +138,9 @@ define([
                 });
             }
         };
+        /*
+         * 重置密码
+         * */
         forgetPhoneCtl.doSend = function (form) {
             if (form.$valid) {
                 passportService.resetPhonePassword(forgetPhoneCtl.formData).then(function () {
@@ -147,7 +149,9 @@ define([
                 });
             }
         };
-
+        /*
+         * 验证码冷却
+         * */
         forgetPhoneCtl.doStartSendLeft = function () {
             var leftTime;
 
