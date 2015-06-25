@@ -1,0 +1,47 @@
+<div id="forgot-box" class="forgot-box widget-box no-border visible" ng-controller="ForgetEmailController as forgetCtl">
+    <div class="widget-body">
+        <div class="widget-main">
+            <h4 class="header red lighter bigger">
+                <i class="ace-icon fa fa-key"></i>
+                找回密码
+            </h4>
+            <div class="space-6"></div>
+            <p>
+                请填入邮箱地址来找回密码
+            </p>
+
+            <simple-form setting="forgetCtl.formSettings"
+                         ng-model="forgetCtl.formData"
+                         submit="forgetCtl.doSend"
+                         format=""
+                         ng-cloak>
+                <div class="clearfix">
+                    <button type="submit"
+                            ng-disabled="forgetCtl.isBusy"
+                            v-busy="forgetCtl.isBusy"
+                            v-pressable
+                            class="width-35 pull-right btn btn-sm btn-danger">
+                        <i class="ace-icon fa fa-lightbulb-o"></i>
+                        <span class="bigger-110">发送</span>
+                    </button>
+                </div>
+            </simple-form>
+
+        </div>
+
+        <div class="toolbar clearfix">
+            <div class="pull-left">
+                <a ui-sref="login.forget_phone" class="back-to-login-link">
+                    <i class="ace-icon fa fa-arrow-left"></i>
+                    使用手机找回
+                </a>
+            </div>
+            <div class="pull-right">
+                <a ui-sref="login" class="back-to-login-link">
+                    返回登陆页
+                    <i class="ace-icon fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

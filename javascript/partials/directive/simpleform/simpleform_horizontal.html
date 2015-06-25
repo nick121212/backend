@@ -1,6 +1,8 @@
 <form role="form" novalidate name="{{ setting.name }}" class="form-horizontal" ng-submit="prevSubmit()">
     <simple-form-editor ng-model="model"
                         field="field"
+                        class="slide-right"
+                        ng-class="animation"
                         key="key"
                         editor-type="setting.editorType"
                         show-error="setting.showError"

@@ -1,9 +1,11 @@
-angular.module('simpleform.js', ['../javascript/partials/directive/simpleform/simpleform.html', '../javascript/partials/directive/simpleform/simpleform_horizontal.html', '../javascript/partials/directive/simpleform/simpleform_inline.html', '../javascript/partials/directive/simpleform/views/checkbox.html', '../javascript/partials/directive/simpleform/views/datetime.html', '../javascript/partials/directive/simpleform/views/input.html', '../javascript/partials/directive/simpleform/views/radio.html', '../javascript/partials/directive/simpleform/views/simpleform_editor.html', '../javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', '../javascript/partials/directive/simpleform/views/textarea.html']);
+angular.module('simpleform.js', ['../javascript/partials/directive/simpleform/simpleform.html', '../javascript/partials/directive/simpleform/simpleform_horizontal.html', '../javascript/partials/directive/simpleform/simpleform_inline.html', '../javascript/partials/directive/simpleform/views/checkbox.html', '../javascript/partials/directive/simpleform/views/datetime.html', '../javascript/partials/directive/simpleform/views/input.html', '../javascript/partials/directive/simpleform/views/input_button.html', '../javascript/partials/directive/simpleform/views/radio.html', '../javascript/partials/directive/simpleform/views/simpleform_editor.html', '../javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', '../javascript/partials/directive/simpleform/views/textarea.html']);
 
 angular.module("../javascript/partials/directive/simpleform/simpleform.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../javascript/partials/directive/simpleform/simpleform.html",
     "<form role=\"form\" novalidate name=\"{{ setting.name }}\" ng-submit=\"prevSubmit()\">\n" +
     "    <simple-form-editor ng-model=\"model\"\n" +
+    "                        class=\"slide-right\"\n" +
+    "                        ng-class=\"animation\"\n" +
     "                        field=\"field\"\n" +
     "                        editor-type=\"setting.editorType\"\n" +
     "                        key=\"key\"\n" +
@@ -19,6 +21,8 @@ angular.module("../javascript/partials/directive/simpleform/simpleform_horizonta
     "<form role=\"form\" novalidate name=\"{{ setting.name }}\" class=\"form-horizontal\" ng-submit=\"prevSubmit()\">\n" +
     "    <simple-form-editor ng-model=\"model\"\n" +
     "                        field=\"field\"\n" +
+    "                        class=\"slide-right\"\n" +
+    "                        ng-class=\"animation\"\n" +
     "                        key=\"key\"\n" +
     "                        editor-type=\"setting.editorType\"\n" +
     "                        show-error=\"setting.showError\"\n" +
@@ -32,6 +36,8 @@ angular.module("../javascript/partials/directive/simpleform/simpleform_inline.ht
   $templateCache.put("../javascript/partials/directive/simpleform/simpleform_inline.html",
     "<form role=\"form\" novalidate name=\"{{ setting.name }}\" class=\"form-inline\" ng-submit=\"prevSubmit()\">\n" +
     "    <simple-form-editor ng-model=\"model\"\n" +
+    "                        class=\"slide-right\"\n" +
+    "                        ng-class=\"animation\"\n" +
     "                        field=\"field\"\n" +
     "                        key=\"key\"\n" +
     "                        editor-type=\"setting.editorType\"\n" +
@@ -121,6 +127,42 @@ angular.module("../javascript/partials/directive/simpleform/views/input.html", [
     "            {{ value }}\n" +
     "       </span>\n" +
     "    </div>\n" +
+    "</div>");
+}]);
+
+angular.module("../javascript/partials/directive/simpleform/views/input_button.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../javascript/partials/directive/simpleform/views/input_button.html",
+    "<div class=\"input-group\">\n" +
+    "    <input class=\"form-control\"\n" +
+    "           data-attr=\"true\"\n" +
+    "           ng-model=\"model[key]\"\n" +
+    "           type=\"{{field.type}}\"\n" +
+    "           placeholder=\"{{ field.placeholder }}\"\n" +
+    "           name=\"{{ key }}\"\n" +
+    "           ng-readonly=\"field.readonly\"\n" +
+    "           ng-disabled=\"field.disabled\"\n" +
+    "           ng-required=\"field.required\">\n" +
+    "    <!--<i ng-if=\"field.icon.cls\" class=\"ace-icon fa\" ng-class=\"field.icon.cls\"></i>-->\n" +
+    "\n" +
+    "    <span class=\"input-group-btn\">\n" +
+    "        <button class=\"btn btn-danger btn-sm\"\n" +
+    "                type=\"submit\"\n" +
+    "                ng-disabled=\"field.button.isBusy\"\n" +
+    "                v-pressable>\n" +
+    "            <i class=\"glyphicon\" ng-class=\"field.button.icon\"></i>\n" +
+    "            <span ng-bind=\"field.button.label\"></span>\n" +
+    "        </button>\n" +
+    "    </span>\n" +
+    "</div>\n" +
+    "<div class=\"toggle none-leave\"\n" +
+    "     ng-messages=\"$form[key].$error\"\n" +
+    "     ng-show=\"(showError || $form[key].$dirty)\"\n" +
+    "     ng-messages-multiple>\n" +
+    "       <span class=\"help-block\"\n" +
+    "             ng-message-exp=\"key\"\n" +
+    "             ng-repeat=\"(key,value) in errMsgs\">\n" +
+    "            {{ value }}\n" +
+    "       </span>\n" +
     "</div>");
 }]);
 

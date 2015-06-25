@@ -55,12 +55,12 @@ define([
                 },
                 register: function (regModel:Passport.RegisterModel) {
                     /*
-                    * 注册账号
-                    * 参数：
-                    * username 用户名
-                    * password：密码
-                    * password_again 重复密码
-                    * */
+                     * 注册账号
+                     * 参数：
+                     * username 用户名
+                     * password：密码
+                     * password_again 重复密码
+                     * */
                     var promise = $http({
                         method: 'POST',
                         url: config.api_url + "/register?app_token=" + config.app_token,
@@ -68,6 +68,41 @@ define([
                             username: regModel.username,
                             password: regModel.password,
                             password_again: regModel.password_again
+                        }
+                    }).success(function (data) {
+
+                    });
+
+                    return promise;
+                },
+                sendPhoneCode: function (forgetModel:Passport.ForgetModel) {
+                    /*
+                     * 发送手机验证码
+                     * */
+                    var promise = $http({
+                        method: 'POST',
+                        url: config.api_url + '/gen_mobile_reset_password_token',
+                        data: {
+                            username: forgetModel.username
+                        }
+                    }).success(function (data) {
+
+                    });
+
+                    return promise;
+                },
+                resetPhonePassword: function (forgetModel:Passport.ForgetModel) {
+                    /*
+                     * 修改密码
+                     * */
+                    var promise = $http({
+                        method: 'POST',
+                        url: config.api_url + '/mobile_reset_password',
+                        data: {
+                            username: forgetModel.username,
+                            new_password: forgetModel.new_password,
+                            new_password_again: forgetModel.new_password_again,
+                            sms_token: forgetModel.sms_token
                         }
                     }).success(function (data) {
 

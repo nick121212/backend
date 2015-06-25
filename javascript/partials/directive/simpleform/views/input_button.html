@@ -1,0 +1,32 @@
+<div class="input-group">
+    <input class="form-control"
+           data-attr="true"
+           ng-model="model[key]"
+           type="{{field.type}}"
+           placeholder="{{ field.placeholder }}"
+           name="{{ key }}"
+           ng-readonly="field.readonly"
+           ng-disabled="field.disabled"
+           ng-required="field.required">
+    <!--<i ng-if="field.icon.cls" class="ace-icon fa" ng-class="field.icon.cls"></i>-->
+
+    <span class="input-group-btn">
+        <button class="btn btn-danger btn-sm"
+                type="submit"
+                ng-disabled="field.button.isBusy"
+                v-pressable>
+            <i class="glyphicon" ng-class="field.button.icon"></i>
+            <span ng-bind="field.button.label"></span>
+        </button>
+    </span>
+</div>
+<div class="toggle none-leave"
+     ng-messages="$form[key].$error"
+     ng-show="(showError || $form[key].$dirty)"
+     ng-messages-multiple>
+       <span class="help-block"
+             ng-message-exp="key"
+             ng-repeat="(key,value) in errMsgs">
+            {{ value }}
+       </span>
+</div>

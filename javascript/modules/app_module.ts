@@ -8,7 +8,6 @@
 ///<reference path="../typescripts/angular.d.ts" />
 
 
-
 define([
         'angular',
         'angular-ui-route',
@@ -27,6 +26,7 @@ define([
         'angular-loadingbar',
         'angular-messages',
         'angular-vbutton',
+        'angular-cookie',
         'services/httpinterceptor_factory',
         'services/passport_service',
         'services/config_constant',
@@ -44,6 +44,7 @@ define([
                 'angular-loading-bar',
                 'ngMessages',
                 'vButton',
+                'ngCookies',
                 dirModule.name,
                 srvModule.name,
                 aniModule.name,
@@ -220,13 +221,34 @@ define([
                             }
                         })
                         /*
-                         * 登陆页忘记密码页面
+                         * 登陆页忘记密码页面（邮箱）
                          * */
-                        .state('login.forget', {
-                            url: '/forget',
+                        .state('login.forget_email', {
+                            url: '/forget_email',
                             views: {
                                 'contentView': {
-                                    templateUrl: requirejs.toUrl('partials/login/forget.html')
+                                    templateUrl: requirejs.toUrl('partials/login/forget_email.html'),
+                                    resolve: {
+                                        deps: $requireProvider.requireJS([
+                                            'controllers/login/forget_email_controller'
+                                        ])
+                                    }
+                                }
+                            }
+                        })
+                        /*
+                         * 登陆页忘记密码页面（手机）
+                         * */
+                        .state('login.forget_phone', {
+                            url: '/forget_phone',
+                            views: {
+                                'contentView': {
+                                    templateUrl: requirejs.toUrl('partials/login/forget_phone.html'),
+                                    resolve: {
+                                        deps: $requireProvider.requireJS([
+                                            'controllers/login/forget_phone_controller'
+                                        ])
+                                    }
                                 }
                             }
                         })

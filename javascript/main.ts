@@ -50,6 +50,9 @@
             },
             'angular-vbutton': {
                 deps: ['angular']
+            },
+            'angular-cookie':{
+                deps:['angular']
             }
         },
         paths: {
@@ -68,7 +71,8 @@
             'angular-dynamicform': './libs/angular-dynamicform/ng-nynamicform',
             'angular-messages': './libs/angular-messages/angular-messages',
             'simpleform_directive.tpl': './directives/simpleform_directive.tpl',
-            'angular-vbutton': './libs/angular-vbutton/angular-vbutton'
+            'angular-vbutton': './libs/angular-vbutton/angular-vbutton',
+            'angular-cookie': './libs/angular-cookie/angular-cookie'
         },
         //使得程序可以加载不同版本的模块
         map: {

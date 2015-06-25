@@ -23,6 +23,7 @@ define([
     'angular-loadingbar',
     'angular-messages',
     'angular-vbutton',
+    'angular-cookie',
     'services/httpinterceptor_factory',
     'services/passport_service',
     'services/config_constant',
@@ -38,6 +39,7 @@ define([
         'angular-loading-bar',
         'ngMessages',
         'vButton',
+        'ngCookies',
         dirModule.name,
         srvModule.name,
         aniModule.name,
@@ -186,11 +188,29 @@ define([
                     }
                 }
             })
-                .state('login.forget', {
-                url: '/forget',
+                .state('login.forget_email', {
+                url: '/forget_email',
                 views: {
                     'contentView': {
-                        templateUrl: requirejs.toUrl('partials/login/forget.html')
+                        templateUrl: requirejs.toUrl('partials/login/forget_email.html'),
+                        resolve: {
+                            deps: $requireProvider.requireJS([
+                                'controllers/login/forget_email_controller'
+                            ])
+                        }
+                    }
+                }
+            })
+                .state('login.forget_phone', {
+                url: '/forget_phone',
+                views: {
+                    'contentView': {
+                        templateUrl: requirejs.toUrl('partials/login/forget_phone.html'),
+                        resolve: {
+                            deps: $requireProvider.requireJS([
+                                'controllers/login/forget_phone_controller'
+                            ])
+                        }
                     }
                 }
             })

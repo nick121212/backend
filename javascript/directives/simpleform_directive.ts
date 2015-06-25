@@ -84,6 +84,12 @@ define([
                     var tmp = $templateCache.get('../' + requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor' + ($scope.editorType || '') + '.html'));
                     var fieldElement = angular.element(tmp);
 
+                    $scope.datas = $scope.field.datas;
+
+                    angular.forEach($scope.field.fieldEditor, function (value, key) {
+                        fieldElement.attr(key, value);
+                    });
+
                     $element.replaceWith(fieldElement);
                     $scope.$form = fieldElement.controller('form');
                     $compile(fieldElement)($scope);
@@ -111,38 +117,44 @@ define([
                     var msg;
                     var fieldElement = angular.element(tmp);
 
-                    $scope.datas = $scope.field.datas;
-                    $scope.errMsgs = {};
+                    if ($scope.field.element == "div") {
+                        fieldElement = angular.element($scope.field.template);
+                    } else {
+                        fieldElement = angular.element(tmp);
 
-                    //判断是否是required，如果是，则添加显示错误信息
-                    if ($scope.field.required) {
-                        msg = simpleFormProvider.getMsg('required');
-                        $scope.errMsgs['required'] = $interpolate(msg)({label: $scope.field.label});
-                    }
-                    //判断元素的类型，如果存在，则添加显示错误信息
-                    msg = simpleFormProvider.getMsg($scope.field.type);
-                    if ($scope.field.type && msg) {
-                        $scope.errMsgs[$scope.field.type] = $interpolate(msg)({label: $scope.field.label});
-                    }
-                    //遍历验证列表，添加显示错误信息
-                    angular.forEach($scope.field.validation, function (value, key) {
-                        fieldElement.find("[data-attr]").attr(key, value);
+                        $scope.datas = $scope.field.datas;
+                        $scope.errMsgs = {};
 
-                        msg = simpleFormProvider.getMsg(key);
-
-                        if (key.search('ng-')>=0) {
-                            key = key.substring(key.indexOf('-') + 1);
+                        //判断是否是required，如果是，则添加显示错误信息
+                        if ($scope.field.required) {
+                            msg = simpleFormProvider.getMsg('required');
+                            $scope.errMsgs['required'] = $interpolate(msg)({label: $scope.field.label});
                         }
+                        //判断元素的类型，如果存在，则添加显示错误信息
+                        msg = simpleFormProvider.getMsg($scope.field.type);
+                        if ($scope.field.type && msg) {
+                            $scope.errMsgs[$scope.field.type] = $interpolate(msg)({label: $scope.field.label});
+                        }
+                        //遍历验证列表，添加显示错误信息
+                        angular.forEach($scope.field.validation, function (value, key) {
+                            fieldElement.find("[data-attr]").attr(key, value);
 
-                        $scope.errMsgs[key] = $interpolate(msg)({
-                            label: $scope.field.label,
-                            val: value
+                            msg = simpleFormProvider.getMsg(key);
+
+                            if (key.search('ng-') >= 0) {
+                                key = key.substring(key.indexOf('-') + 1);
+                            }
+
+                            $scope.errMsgs[key] = $interpolate(msg)({
+                                label: $scope.field.label,
+                                val: value
+                            });
                         });
-                    });
 
-                    angular.forEach($scope.field.attrs, function (value, key) {
-                        fieldElement.find("[data-attr]").attr(key, value);
-                    });
+                        angular.forEach($scope.field.attrs, function (value, key) {
+                            fieldElement.find("[data-attr]").attr(key, value);
+                        });
+                    }
 
                     $element.replaceWith(fieldElement);
                     $compile(fieldElement)($scope);

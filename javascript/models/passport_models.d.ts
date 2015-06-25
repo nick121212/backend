@@ -22,4 +22,11 @@ declare module Passport {
         nickname:string;
         avatar_url:string;
     }
+    interface ForgetModel {
+        username:string;
+        new_password:string;
+        new_password_again:string;
+        sms_token:string;
+        time_left:number;
+    }
 }

@@ -5,6 +5,9 @@
  * copyright NICK
  */
 export module Passport {
+    /*
+     * 登录模型
+     * */
     export class LoginModel {
         public username:string;
         public password:string;
@@ -17,6 +20,9 @@ export module Passport {
         }
     }
 
+    /*
+     * 注册模型
+     * */
     export class RegisterModel {
         public username:string;
         public password:string;
@@ -29,6 +35,9 @@ export module Passport {
         }
     }
 
+    /*
+     * 用户模型
+     * */
     export class UserModel {
         //用户名
         public username:string;
@@ -40,5 +49,16 @@ export module Passport {
         constructor() {
 
         }
+    }
+
+    /*
+     * 找回密码
+     * */
+    export class ForgetModel {
+        public username:string;
+        public new_password:string;
+        public new_password_again:string;
+        public sms_token:string;
+        public time_left:number;
     }
 }

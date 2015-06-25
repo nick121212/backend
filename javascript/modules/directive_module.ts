@@ -11,9 +11,11 @@
 define([
     'angular',
     'angular-messages',
+    'angular-animate',
     'simpleform_directive.tpl'
 ], function (angular) {
     return angular.module('directiveModule', [
         'ngMessages',
+        'ngAnimate',
         'simpleform.js']);
 });
