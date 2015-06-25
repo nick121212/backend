@@ -24,7 +24,13 @@ define([
 
         forgetPhoneCtl.isBusy = false;
         forgetPhoneCtl.showPsw = false;
+        /*
+        * 表单的数据
+        * */
         forgetPhoneCtl.formData = new PasswordModels.Passport.ForgetModel();
+        /*
+        * 表单的设置
+        * */
         forgetPhoneCtl.formPswSettings = {
             name: 'forgetPhoneForm',
             type: 'form',
@@ -123,7 +129,6 @@ define([
                 }
             }
         };
-
         /*
          * 发送验证码
          * */

@@ -100,6 +100,7 @@ define([
                 passportService.register(regCtl.formData).then(function () {
                     console.log("success", arguments);
                     regCtl.isBusy = false;
+
                 }, function () {
                     regCtl.isBusy = false;
                 });
