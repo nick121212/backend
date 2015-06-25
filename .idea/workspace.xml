@@ -772,7 +772,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435218284251</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="重置密码表单">
+      <created>1435218570369</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1435218570369</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
