@@ -28,7 +28,13 @@ define([
         var regCtl = this;
 
         regCtl.isBusy = false;
+        /*
+         * 表单数据源
+         * */
         regCtl.formData = new PasswordModels.Passport.RegisterModel();
+        /*
+         * 表单配置
+         * */
         regCtl.formSettings = {
             name: 'registerForm',
             type: 'form',
@@ -89,11 +95,14 @@ define([
                     validation: {
                         'ng-maxlength': 31,
                         'ng-minlength': 6,
-                        'pw-check':'password'
+                        'pw-check': 'password'
                     }
                 }
             }
         }
+        /*
+         * 表单提交注册
+         * */
         regCtl.doRegister = function (form) {
             if (form.$valid) {
                 regCtl.isBusy = true;

@@ -145,12 +145,16 @@ angular.module("../javascript/partials/directive/simpleform/views/input_button.h
     "    <!--<i ng-if=\"field.icon.cls\" class=\"ace-icon fa\" ng-class=\"field.icon.cls\"></i>-->\n" +
     "\n" +
     "    <span class=\"input-group-btn\">\n" +
+    "\n" +
     "        <button class=\"btn btn-danger btn-sm\"\n" +
     "                type=\"submit\"\n" +
     "                ng-disabled=\"field.button.isBusy\"\n" +
+    "                v-busy=\"field.button.isBusy\"\n" +
+    "                v-busy-label=\"1\"\n" +
     "                v-pressable>\n" +
     "            <i class=\"glyphicon\" ng-class=\"field.button.icon\"></i>\n" +
-    "            <span ng-bind=\"field.button.label\"></span>\n" +
+    "            <span class=\"sr-only\"></span>\n" +
+    "            {{ field.button.label }}\n" +
     "        </button>\n" +
     "    </span>\n" +
     "</div>\n" +

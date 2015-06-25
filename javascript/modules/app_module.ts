@@ -10,16 +10,13 @@
 
 define([
         'angular',
-        'angular-ui-route',
-        'angular-require',
+
         'modules/directive_module',
         'modules/service_module',
         'modules/animation_module',
-        'directives/sidebar_directive',
-        'directives/toolbar_directive',
-        'directives/simpleform_directive',
-        'directives/fxattr_directive',
-        'directives/pwcheck_directive',
+
+        'angular-ui-route',
+        'angular-require',
         'angular-animate',
         'angular-uibootstrap',
         'angular-growl',
@@ -27,12 +24,21 @@ define([
         'angular-messages',
         'angular-vbutton',
         'angular-cookie',
+
+        'directives/sidebar_directive',
+        'directives/toolbar_directive',
+        'directives/simpleform_directive',
+        'directives/fxattr_directive',
+        'directives/pwcheck_directive',
+
         'services/httpinterceptor_factory',
         'services/passport_service',
         'services/config_constant',
+        'services/modal_provider',
+
         'animations/noneleave_animation',
         'template'],
-    function (angular, uiRoute, ngRequire, dirModule, srvModule, aniModule) {
+    function (angular, dirModule, srvModule, aniModule) {
         var app = angular.module('appModule',
             [
                 'ngAnimate',

@@ -14,9 +14,9 @@ define(["angular",
 
         appModule.controller("Test2Controller", HomeController);
 
-        HomeController.$inject = ['$scope', 'eventService'];
+        HomeController.$inject = ['$scope', 'eventService', 'fxmodal'];
 
-        function HomeController($scope, eventService) {
+        function HomeController($scope, eventService, fxmodal) {
             var homeCtl = this;
 
             /*
@@ -200,6 +200,9 @@ define(["angular",
                     //angular.element(error.$name).focus();
                 }
             }
+
+            fxmodal.alert();
+
         }
     })
 ;

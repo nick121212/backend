@@ -11,12 +11,16 @@
     <!--<i ng-if="field.icon.cls" class="ace-icon fa" ng-class="field.icon.cls"></i>-->
 
     <span class="input-group-btn">
+
         <button class="btn btn-danger btn-sm"
                 type="submit"
                 ng-disabled="field.button.isBusy"
+                v-busy="field.button.isBusy"
+                v-busy-label="1"
                 v-pressable>
             <i class="glyphicon" ng-class="field.button.icon"></i>
-            <span ng-bind="field.button.label"></span>
+            <span class="sr-only"></span>
+            {{ field.button.label }}
         </button>
     </span>
 </div>

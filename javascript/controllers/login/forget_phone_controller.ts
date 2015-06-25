@@ -25,12 +25,12 @@ define([
         forgetPhoneCtl.isBusy = false;
         forgetPhoneCtl.showPsw = false;
         /*
-        * 表单的数据
-        * */
+         * 表单的数据
+         * */
         forgetPhoneCtl.formData = new PasswordModels.Passport.ForgetModel();
         /*
-        * 表单的设置
-        * */
+         * 表单的设置
+         * */
         forgetPhoneCtl.formPswSettings = {
             name: 'forgetPhoneForm',
             type: 'form',
@@ -107,8 +107,8 @@ define([
                 username: {
                     element: 'input_button',
                     type: 'text',
-                    label: '手机号码',
-                    placeholder: '手机号码',
+                    label: '用户名',
+                    placeholder: '用户名',
                     readonly: false,
                     disabled: false,
                     required: true,
@@ -134,12 +134,16 @@ define([
          * */
         forgetPhoneCtl.doSendCode = function (form) {
             if (form.$valid) {
+                forgetPhoneCtl.formSettings.fields.username.button.isBusy = true;
                 //发送验证码，成功后显示表单的其他成员
                 passportService.sendPhoneCode(forgetPhoneCtl.formData).then(function () {
                     forgetPhoneCtl.showPsw = true;
                     forgetPhoneCtl.formSettings.fields.username.disabled = true;
                     $cookieStore.put('sendLeft', 60);
                     forgetPhoneCtl.doStartSendLeft();
+                    forgetPhoneCtl.formSettings.fields.username.button.isBusy = false;
+                }, function () {
+                    forgetPhoneCtl.formSettings.fields.username.button.isBusy = false;
                 });
             }
         };

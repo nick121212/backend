@@ -6,9 +6,8 @@
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 
-(function(angular) {
+(function (angular) {
     'use strict';
-
 
 
 // Config
@@ -32,14 +31,12 @@
         ]);
 
 
-
-
 // vBusy directive
     angular.module('vButton.directives')
         .directive('vBusy', vBusyDirective);
 
 
-    function vBusyDirective ($document, buttonConfig) {
+    function vBusyDirective($document, buttonConfig) {
         return {
             restrict: 'A',
             scope: {
@@ -47,14 +44,14 @@
                 busyLabel: '@vBusyLabel'
             },
             compile: function (tElement) {
-                var labelElement = angular.element(tElement.find('span'));
+                var labelElement = angular.element(tElement.find('span:not(.ng-binding)'));
 
                 if (!labelElement[0]) {
-                    tElement.html( '<span>' + tElement.html() + '</span>' );
+                    tElement.html('<span>' + tElement.html() + '</span>');
                     labelElement = angular.element(tElement.find('span'));
                 }
 
-                return function postLink (scope, iElement) {
+                return function postLink(scope, iElement) {
                     var idleLabelHtml = labelElement.html(),
                         busyLabelHtml = scope.busyLabel || buttonConfig.busyLabel;
 
@@ -71,9 +68,8 @@
             }
         };
     }
+
     vBusyDirective.$inject = ['$document', 'buttonConfig'];
-
-
 
 
 // vPressable directive
@@ -81,7 +77,7 @@
         .directive('vPressable', vPressableDirective);
 
 
-    function vPressableDirective ($document, buttonConfig) {
+    function vPressableDirective($document, buttonConfig) {
         return {
             restrict: 'A',
             link: function (scope, iElement) {
@@ -91,7 +87,7 @@
 
                 var bodyElement = angular.element($document[0].body);
 
-                function makeRipple (posX, posY) {
+                function makeRipple(posX, posY) {
                     var rect = iElement[0].getBoundingClientRect(),
                         ripple = iElement[0].querySelector('v-ripple');
 
@@ -105,19 +101,19 @@
                     iElement.append(ripple);
 
                     left = posX - rect.left - ripple.offsetWidth / 2 - bodyElement[0].scrollLeft;
-                    top = posY - rect.top - ripple.offsetHeight / 2 -  bodyElement[0].scrollTop;
+                    top = posY - rect.top - ripple.offsetHeight / 2 - bodyElement[0].scrollTop;
                     ripple.style.left = left + 'px';
                     ripple.style.top = top + 'px';
                 }
 
-                function pressButton (event) {
+                function pressButton(event) {
                     makeRipple(event.pageX, event.pageY);
                     iElement.addClass(buttonConfig.states.pressed);
 
                     bodyElement.bind(releaseEvent, releaseButton);
                 }
 
-                function releaseButton (event) {
+                function releaseButton(event) {
                     iElement.removeClass(buttonConfig.states.pressed);
                     bodyElement.unbind(releaseEvent, releaseButton);
                 }
@@ -126,6 +122,7 @@
             }
         };
     }
+
     vPressableDirective.$inject = ['$document', 'buttonConfig'];
 
 

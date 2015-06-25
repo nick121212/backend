@@ -14,6 +14,7 @@ define([
     return angular.module('directiveModule', [
         'ngMessages',
         'ngAnimate',
+        'vButton',
         'simpleform.js']);
 });
 //# sourceMappingURL=directive_module.js.map
