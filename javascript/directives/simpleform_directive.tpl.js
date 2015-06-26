@@ -69,7 +69,7 @@ angular.module("../javascript/partials/directive/simpleform/views/datetime.html"
     "           type=\"text\"\n" +
     "           placeholder=\"{{ field.placeholder }}\"\n" +
     "           name=\"{{ key }}\"\n" +
-    "           ng-readonly=\"field.readonly\"\n" +
+    "           ng-readonly=\"true\"\n" +
     "           ng-disabled=\"field.disabled\"\n" +
     "           ng-required=\"field.required\">\n" +
     "\n" +

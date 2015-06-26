@@ -41,16 +41,15 @@ define([
     function (angular, dirModule, srvModule, aniModule) {
         var app = angular.module('appModule',
             [
-                'ngAnimate',
                 'ui.router',
                 'ngRequire',
                 'angular-growl',
-                'ui.bootstrap.tpls',
                 'ui.bootstrap',
                 'angular-loading-bar',
                 'ngMessages',
                 'vButton',
                 'ngCookies',
+                'ngAnimate',
                 dirModule.name,
                 srvModule.name,
                 aniModule.name,

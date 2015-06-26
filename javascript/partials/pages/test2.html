@@ -13,17 +13,20 @@
         <div class="col-xs-12">
             <div class="position-relative">
                 <h1></h1>
-                <simple-form setting="testCtl.formSettings"
-                             ng-model="testCtl.formData"
-                             submit="testCtl.submit"
-                             format=""
-                             ng-cloak>
-                    <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2 col-lg-offset-2">
-                            <input class="btn btn-success btn-sm" type="submit" value="提交表单">
-                        </div>
-                    </div>
-                </simple-form>
+                <button class="btn btn-sm btn-primary" ng-click="testCtl.showAlert()">show alert</button>
+                <button class="btn btn-sm btn-warning" ng-click="testCtl.showConfirm()">show confirm</button>
+                <button class="btn btn-sm btn-warning" ng-click="testCtl.showForm()">show confirm</button>
+                <!--<simple-form setting="testCtl.formSettings"-->
+                             <!--ng-model="testCtl.formData"-->
+                             <!--submit="testCtl.submit"-->
+                             <!--format="_horizontal"-->
+                             <!--ng-cloak>-->
+                    <!--<div class="form-group">-->
+                        <!--<div class="col-sm-12 col-sm-offset-2">-->
+                            <!--<input class="btn btn-success btn-sm" type="submit" value="提交表单">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</simple-form>-->
             </div>
         </div>
     </div>

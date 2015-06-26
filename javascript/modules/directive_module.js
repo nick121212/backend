@@ -13,7 +13,6 @@ define([
 ], function (angular) {
     return angular.module('directiveModule', [
         'ngMessages',
-        'ngAnimate',
         'vButton',
         'simpleform.js']);
 });

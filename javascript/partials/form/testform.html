@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <a class="btn btn-link btn-sm no-margin pull-right" ng-click="close()">
+        <icon class="ace-icon fa fa-times"></icon>
+    </a>
+    <h3 class="smaller lighter no-margin">{{formCtl.formSettings.description}}</h3>
+</div>
+<div class="modal-body">
+    <simple-form setting="formCtl.formSettings"
+                 ng-model="formCtl.formData"
+                 submit="formCtl.submit"
+                 format="_horizontal">
+        <div class="form-group">
+            <div class="col-sm-12 col-sm-offset-2">
+                <input class="btn btn-success btn-sm" type="submit" value="提交表单">
+            </div>
+        </div>
+    </simple-form>
+</div>

@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <!--<a class="btn btn-link btn-sm no-margin pull-right" ng-click="close()">-->
+    <!--<icon class="ace-icon fa fa-times"></icon>-->
+    <!--</a>-->
+    <h3 class="smaller lighter no-margin">{{title}}</h3>
+</div>
+
+<div class="modal-body">
+    <i class="ace-icon fa fa-2x" ng-class="icon"></i>
+    {{content}}
+</div>
+
+<div class="modal-footer">
+    <a class="btn btn-white btn-inverse btn-sm"
+       ng-click="btn.click()"
+       ng-repeat="btn in buttons">
+        {{btn.label}}
+    </a>
+</div>
