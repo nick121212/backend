@@ -52,32 +52,22 @@ module.exports = function (grunt) {
         },
         watch: {
             template: {
-                files: ['../javascript/partials/directive/simpleform/**/*.html'],
-                tasks: ['html2js:simpleForm'],
+                files: ['../javascript/partials/**/*.html'],
+                tasks: ['html2js:template'],
                 options: {
                     debounceDelay: 250
                 }
             }
         },
         html2js: {
-            simple: {
+            template: {
                 options: {
                     base: '',
                     module: 'template.js'
                 },
                 files: [{
-                    src: ['dest/javascript/partials/**/*.html'],
-                    dest: 'dest/javascript/partials/partials.js'
-                }]
-            },
-            simpleForm: {
-                options: {
-                    base: '',
-                    module: 'simpleform.js'
-                },
-                files: [{
-                    src: ['../javascript/partials/directive/simpleform/**/*.html'],
-                    dest: '../javascript/directives/simpleform_directive.tpl.js'
+                    src: ['../javascript/partials/**/*.html'],
+                    dest: '../javascript/partials/partials.js'
                 }]
             }
         }

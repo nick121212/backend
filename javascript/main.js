@@ -43,9 +43,9 @@
             'angular-messages': {
                 deps: ['angular']
             },
-            'simpleform_directive.tpl': {
-                deps: ['angular']
-            },
+            //'simpleform_directive.tpl': {
+            //    deps: ['angular']
+            //},
             'angular-vbutton': {
                 deps: ['angular']
             },
@@ -68,7 +68,7 @@
             //'angular-uibootstrap-tpl': './libs/angular-uibootstrap/uibootstrap.tpls',
             'angular-dynamicform': './libs/angular-dynamicform/ng-nynamicform',
             'angular-messages': './libs/angular-messages/angular-messages',
-            'simpleform_directive.tpl': './directives/simpleform_directive.tpl',
+            //'simpleform_directive.tpl': './directives/simpleform_directive.tpl',
             'angular-vbutton': './libs/angular-vbutton/angular-vbutton',
             'angular-cookie': './libs/angular-cookie/angular-cookie'
         },

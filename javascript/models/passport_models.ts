@@ -46,8 +46,10 @@ export module Passport {
         //头像
         public avatar_url:string;
 
-        constructor() {
-
+        constructor(username?:string, nickname?:string, avatar_url?:string) {
+            this.username = username || '';
+            this.nickname = nickname || '';
+            this.avatar_url = avatar_url || '';
         }
     }
 
