@@ -40,7 +40,7 @@ define(["angular",
                         label: 'option1',
                         icon: '',
                         click: function () {
-                            alert(1);
+                            homeCtl.showAlert();
                         }
                     }, {
                         label: 'option2',

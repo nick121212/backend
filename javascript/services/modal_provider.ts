@@ -92,7 +92,8 @@ define([
                         animation: true,
                         templateUrl: url,
                         controller: controller,
-                        controllerAs: 'formCtl'
+                        controllerAs: 'formCtl',
+                        backdrop: 'static'
                     });
 
                     return modal;
