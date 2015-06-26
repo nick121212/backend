@@ -28,7 +28,6 @@ define([
         'directives/sidebar_directive',
         'directives/toolbar_directive',
         'directives/simpleform_directive',
-        'directives/fxattr_directive',
         'directives/pwcheck_directive',
 
         'services/httpinterceptor_factory',

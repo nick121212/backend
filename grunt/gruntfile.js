@@ -53,7 +53,7 @@ module.exports = function (grunt) {
         watch: {
             template: {
                 files: ['../javascript/partials/**/*.html'],
-                tasks: ['html2js:template'],
+                tasks: ['html2js:template', 'replace:partials'],
                 options: {
                     debounceDelay: 250
                 }
@@ -70,9 +70,20 @@ module.exports = function (grunt) {
                     dest: '../javascript/partials/partials.js'
                 }]
             }
+        },
+        replace: {
+            partials: {
+                src: ['../javascript/partials/partials.js'],
+                overwrite: true,
+                replacements: [{
+                    from: '../javascript',
+                    to: 'javascript'
+                }]
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-text-replace');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -80,9 +91,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-html2js');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.registerTask('r', ['replace']);
+
     grunt.registerTask('w', ['watch']);
-    // 自定义执行列表
-    grunt.registerTask('h', ['clean', 'html2js:simpleForm']);
     // 默认被执行的任务列表。
     grunt.registerTask('default', ['clean', 'copy', 'html2js']);
 

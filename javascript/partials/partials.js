@@ -1,7 +1,7 @@
-angular.module('template.js', ['../javascript/partials/directive/nav/navlist.html', '../javascript/partials/directive/nav/subnavlist.html', '../javascript/partials/directive/simpleform/simpleform.html', '../javascript/partials/directive/simpleform/simpleform_horizontal.html', '../javascript/partials/directive/simpleform/simpleform_inline.html', '../javascript/partials/directive/simpleform/views/checkbox.html', '../javascript/partials/directive/simpleform/views/datetime.html', '../javascript/partials/directive/simpleform/views/input.html', '../javascript/partials/directive/simpleform/views/input_button.html', '../javascript/partials/directive/simpleform/views/radio.html', '../javascript/partials/directive/simpleform/views/simpleform_editor.html', '../javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', '../javascript/partials/directive/simpleform/views/textarea.html', '../javascript/partials/directive/toolbar/toolbar.html', '../javascript/partials/form/testform.html', '../javascript/partials/home/home_content.html', '../javascript/partials/home/home_footer.html', '../javascript/partials/home/home_sidebar.html', '../javascript/partials/home/index.html', '../javascript/partials/home/welcome.html', '../javascript/partials/login/forget_email.html', '../javascript/partials/login/forget_phone.html', '../javascript/partials/login/index.html', '../javascript/partials/login/login.html', '../javascript/partials/login/register.html', '../javascript/partials/modal/alert.html', '../javascript/partials/modal/confirm.html', '../javascript/partials/pages/test1.html', '../javascript/partials/pages/test2.html']);
+angular.module('template.js', ['javascript/partials/directive/nav/navlist.html', 'javascript/partials/directive/nav/subnavlist.html', 'javascript/partials/directive/simpleform/simpleform.html', 'javascript/partials/directive/simpleform/simpleform_horizontal.html', 'javascript/partials/directive/simpleform/simpleform_inline.html', 'javascript/partials/directive/simpleform/views/checkbox.html', 'javascript/partials/directive/simpleform/views/datetime.html', 'javascript/partials/directive/simpleform/views/input.html', 'javascript/partials/directive/simpleform/views/input_button.html', 'javascript/partials/directive/simpleform/views/radio.html', 'javascript/partials/directive/simpleform/views/simpleform_editor.html', 'javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', 'javascript/partials/directive/simpleform/views/textarea.html', 'javascript/partials/directive/toolbar/toolbar.html', 'javascript/partials/form/testform.html', 'javascript/partials/home/home_content.html', 'javascript/partials/home/home_footer.html', 'javascript/partials/home/home_sidebar.html', 'javascript/partials/home/index.html', 'javascript/partials/home/welcome.html', 'javascript/partials/login/forget_email.html', 'javascript/partials/login/forget_phone.html', 'javascript/partials/login/index.html', 'javascript/partials/login/login.html', 'javascript/partials/login/register.html', 'javascript/partials/modal/alert.html', 'javascript/partials/modal/confirm.html', 'javascript/partials/pages/test1.html', 'javascript/partials/pages/test2.html']);
 
-angular.module("../javascript/partials/directive/nav/navlist.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/nav/navlist.html",
+angular.module("javascript/partials/directive/nav/navlist.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/nav/navlist.html",
     "<ul ng-class=\"{'submenu':isSubmenu,'nav nav-list':!isSubmenu}\"\n" +
     "    ng-show=\"display=='block'\"\n" +
     "    class=\"slide-right\">\n" +
@@ -12,8 +12,8 @@ angular.module("../javascript/partials/directive/nav/navlist.html", []).run(["$t
     "");
 }]);
 
-angular.module("../javascript/partials/directive/nav/subnavlist.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/nav/subnavlist.html",
+angular.module("javascript/partials/directive/nav/subnavlist.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/nav/subnavlist.html",
     "<li ng-class=\"{'active':menu.isActive,'open':menu.isOpen}\"\n" +
     "    ng-click=\"doClickMenu($event)\">\n" +
     "    <a href=\"javascript:;\">\n" +
@@ -25,8 +25,8 @@ angular.module("../javascript/partials/directive/nav/subnavlist.html", []).run([
     "</li>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/simpleform.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/simpleform.html",
+angular.module("javascript/partials/directive/simpleform/simpleform.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/simpleform.html",
     "<form role=\"form\" novalidate name=\"{{ setting.name }}\" ng-submit=\"prevSubmit()\">\n" +
     "    <simple-form-editor ng-model=\"model\"\n" +
     "                        class=\"slide-right\"\n" +
@@ -41,8 +41,8 @@ angular.module("../javascript/partials/directive/simpleform/simpleform.html", []
     "</form>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/simpleform_horizontal.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/simpleform_horizontal.html",
+angular.module("javascript/partials/directive/simpleform/simpleform_horizontal.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/simpleform_horizontal.html",
     "<form role=\"form\" novalidate name=\"{{ setting.name }}\" class=\"form-horizontal\" ng-submit=\"prevSubmit()\">\n" +
     "    <simple-form-editor ng-model=\"model\"\n" +
     "                        field=\"field\"\n" +
@@ -57,8 +57,8 @@ angular.module("../javascript/partials/directive/simpleform/simpleform_horizonta
     "</form>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/simpleform_inline.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/simpleform_inline.html",
+angular.module("javascript/partials/directive/simpleform/simpleform_inline.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/simpleform_inline.html",
     "<form role=\"form\" novalidate name=\"{{ setting.name }}\" class=\"form-inline\" ng-submit=\"prevSubmit()\">\n" +
     "    <simple-form-editor ng-model=\"model\"\n" +
     "                        class=\"slide-right\"\n" +
@@ -73,8 +73,8 @@ angular.module("../javascript/partials/directive/simpleform/simpleform_inline.ht
     "</form>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/checkbox.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/checkbox.html",
+angular.module("javascript/partials/directive/simpleform/views/checkbox.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/checkbox.html",
     "<div class=\"checkbox-inline\"\n" +
     "     ng-repeat=\"child in field.children\">\n" +
     "    <label>\n" +
@@ -85,8 +85,8 @@ angular.module("../javascript/partials/directive/simpleform/views/checkbox.html"
     "");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/datetime.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/datetime.html",
+angular.module("javascript/partials/directive/simpleform/views/datetime.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/datetime.html",
     "<div class=\"input-group\">\n" +
     "    <input class=\"form-control\"\n" +
     "           ng-model=\"model[key]\"\n" +
@@ -123,8 +123,8 @@ angular.module("../javascript/partials/directive/simpleform/views/datetime.html"
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/input.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/input.html",
+angular.module("javascript/partials/directive/simpleform/views/input.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/input.html",
     "<div class=\"block\" ng-class=\"{'input-icon-right':field.icon.isRight,'input-icon':field.icon.cls}\">\n" +
     "    <input class=\"form-control\"\n" +
     "           data-attr=\"true\"\n" +
@@ -155,8 +155,8 @@ angular.module("../javascript/partials/directive/simpleform/views/input.html", [
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/input_button.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/input_button.html",
+angular.module("javascript/partials/directive/simpleform/views/input_button.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/input_button.html",
     "<div class=\"input-group\">\n" +
     "    <input class=\"form-control\"\n" +
     "           data-attr=\"true\"\n" +
@@ -195,8 +195,8 @@ angular.module("../javascript/partials/directive/simpleform/views/input_button.h
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/radio.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/radio.html",
+angular.module("javascript/partials/directive/simpleform/views/radio.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/radio.html",
     "<div class=\"radio-inline\"\n" +
     "     ng-repeat=\"child in field.children\">\n" +
     "    <label>\n" +
@@ -206,19 +206,19 @@ angular.module("../javascript/partials/directive/simpleform/views/radio.html", [
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/simpleform_editor.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/simpleform_editor.html",
+angular.module("javascript/partials/directive/simpleform/views/simpleform_editor.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/simpleform_editor.html",
     "<div class=\"form-group has-feedback\"\n" +
     "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty)}\">\n" +
     "\n" +
-    "    <label class=\"control-label col-sm-2 hidden-xs\">\n" +
+    "    <label class=\"control-label col-sm-3 col-lg-3 col-md-3 hidden-xs\">\n" +
     "        <span ng-bind=\"field.label\"></span>\n" +
     "        <i ng-if=\"field.required\"\n" +
     "           class=\"glyphicon blue glyphicon-info-sign\"\n" +
     "           title=\"必填项\"></i>\n" +
     "    </label>\n" +
     "\n" +
-    "    <div class=\"col-sm-10\">\n" +
+    "    <div class=\"col-sm-9 col-lg-9 col-md-9\">\n" +
     "        <simple-form-field key=\"key\"\n" +
     "                           show-error=\"showError\"\n" +
     "                           $form=\"$form\"\n" +
@@ -229,8 +229,8 @@ angular.module("../javascript/partials/directive/simpleform/views/simpleform_edi
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html",
+angular.module("javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html",
     "<div class=\"form-group has-feedback\"\n" +
     "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty)}\">\n" +
     "\n" +
@@ -250,8 +250,8 @@ angular.module("../javascript/partials/directive/simpleform/views/simpleform_edi
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/simpleform/views/textarea.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/simpleform/views/textarea.html",
+angular.module("javascript/partials/directive/simpleform/views/textarea.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/textarea.html",
     "<div>\n" +
     "<textarea class=\"form-control\"\n" +
     "          ng-model=\"model[key]\"\n" +
@@ -280,8 +280,8 @@ angular.module("../javascript/partials/directive/simpleform/views/textarea.html"
     "</div>");
 }]);
 
-angular.module("../javascript/partials/directive/toolbar/toolbar.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/directive/toolbar/toolbar.html",
+angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/toolbar/toolbar.html",
     "<!--扑通状态的按钮-->\n" +
     "<a class=\"btn\"\n" +
     "   ng-if=\"!showmini\"\n" +
@@ -321,8 +321,8 @@ angular.module("../javascript/partials/directive/toolbar/toolbar.html", []).run(
     "</div>");
 }]);
 
-angular.module("../javascript/partials/form/testform.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/form/testform.html",
+angular.module("javascript/partials/form/testform.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/form/testform.html",
     "<div class=\"modal-header\">\n" +
     "    <a class=\"btn btn-link btn-sm no-margin pull-right\" ng-click=\"formCtl.close()\">\n" +
     "        <icon class=\"ace-icon fa fa-times\"></icon>\n" +
@@ -334,11 +334,11 @@ angular.module("../javascript/partials/form/testform.html", []).run(["$templateC
     "                 ng-model=\"formCtl.formData\"\n" +
     "                 submit=\"formCtl.submit\"\n" +
     "                 format=\"_horizontal\">\n" +
-    "        <div class=\"form-group\">\n" +
-    "            <div class=\"col-sm-12\">\n" +
-    "                {{ formCtl.formData }}\n" +
-    "            </div>\n" +
-    "        </div>\n" +
+    "        <!--<div class=\"form-group\">-->\n" +
+    "            <!--<div class=\"col-sm-12\">-->\n" +
+    "                <!--{{ formCtl.formData }}-->\n" +
+    "            <!--</div>-->\n" +
+    "        <!--</div>-->\n" +
     "        <div class=\"form-group\">\n" +
     "            <div class=\"col-sm-12\">\n" +
     "                <input class=\"btn btn-block btn-success btn-sm\" type=\"submit\" value=\"提交表单\">\n" +
@@ -348,8 +348,8 @@ angular.module("../javascript/partials/form/testform.html", []).run(["$templateC
     "</div>");
 }]);
 
-angular.module("../javascript/partials/home/home_content.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/home/home_content.html",
+angular.module("javascript/partials/home/home_content.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/home_content.html",
     "<!--主内容-->\n" +
     "<div class=\"main-content-inner\">\n" +
     "\n" +
@@ -362,8 +362,8 @@ angular.module("../javascript/partials/home/home_content.html", []).run(["$templ
     "");
 }]);
 
-angular.module("../javascript/partials/home/home_footer.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/home/home_footer.html",
+angular.module("javascript/partials/home/home_footer.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/home_footer.html",
     "<!--底部-->\n" +
     "<div class=\"footer-inner\">\n" +
     "    <div class=\"footer-content\">\n" +
@@ -376,8 +376,8 @@ angular.module("../javascript/partials/home/home_footer.html", []).run(["$templa
     "");
 }]);
 
-angular.module("../javascript/partials/home/home_sidebar.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/home/home_sidebar.html",
+angular.module("javascript/partials/home/home_sidebar.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/home_sidebar.html",
     "<!--侧边栏-->\n" +
     "<!--<div class=\"sidebar sidebar-fixed responsive sidebar-scroll\">-->\n" +
     "<div class=\"nav-wrap-up pos-rel\">\n" +
@@ -426,8 +426,8 @@ angular.module("../javascript/partials/home/home_sidebar.html", []).run(["$templ
     "<!--</div>-->");
 }]);
 
-angular.module("../javascript/partials/home/index.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/home/index.html",
+angular.module("javascript/partials/home/index.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/index.html",
     "<div class=\"no-skin mob-safari\" ng-controller=\"HomeController as homeCtl\">\n" +
     "    <!--navbar-->\n" +
     "    <div class=\"navbar navbar-default navbar-fixed-top\">\n" +
@@ -441,7 +441,7 @@ angular.module("../javascript/partials/home/index.html", []).run(["$templateCach
     "            </button>\n" +
     "            <!--页面logo-->\n" +
     "            <div class=\"navbar-header pull-left\">\n" +
-    "                <a href=\"/\" class=\"navbar-brand\">\n" +
+    "                <a ui-sref=\"home.index\" class=\"navbar-brand\">\n" +
     "                    <small>\n" +
     "                        <i class=\"fa fa-leaf\"></i>\n" +
     "                        后台管理\n" +
@@ -508,8 +508,8 @@ angular.module("../javascript/partials/home/index.html", []).run(["$templateCach
     "</div>");
 }]);
 
-angular.module("../javascript/partials/home/welcome.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/home/welcome.html",
+angular.module("javascript/partials/home/welcome.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/welcome.html",
     "<div>\n" +
     "    <div class=\"starter-template\">\n" +
     "        <h1>后台管理欢迎页面</h1>\n" +
@@ -518,8 +518,8 @@ angular.module("../javascript/partials/home/welcome.html", []).run(["$templateCa
     "</div>");
 }]);
 
-angular.module("../javascript/partials/login/forget_email.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/login/forget_email.html",
+angular.module("javascript/partials/login/forget_email.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/login/forget_email.html",
     "<div id=\"forgot-box\" class=\"forgot-box widget-box no-border visible\" ng-controller=\"ForgetEmailController as forgetCtl\">\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
@@ -569,8 +569,8 @@ angular.module("../javascript/partials/login/forget_email.html", []).run(["$temp
     "</div>");
 }]);
 
-angular.module("../javascript/partials/login/forget_phone.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/login/forget_phone.html",
+angular.module("javascript/partials/login/forget_phone.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/login/forget_phone.html",
     "<div id=\"forgot-box\" class=\"forgot-box widget-box no-border visible\" ng-controller=\"ForgetPhoneController as forgetCtl\">\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
@@ -623,8 +623,8 @@ angular.module("../javascript/partials/login/forget_phone.html", []).run(["$temp
     "</div>");
 }]);
 
-angular.module("../javascript/partials/login/index.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/login/index.html",
+angular.module("javascript/partials/login/index.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/login/index.html",
     "<div class=\"main-container\" ng-controller=\"LoginHomeController as loginHomeCtl\">\n" +
     "    <div class=\"main-content\">\n" +
     "        <div class=\"row\">\n" +
@@ -654,8 +654,8 @@ angular.module("../javascript/partials/login/index.html", []).run(["$templateCac
     "");
 }]);
 
-angular.module("../javascript/partials/login/login.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/login/login.html",
+angular.module("javascript/partials/login/login.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/login/login.html",
     "<div class=\"login-box visible widget-box no-border navbar-fixed-top\"\n" +
     "     ng-controller=\"LoginController as loginCtl\">\n" +
     "    <div class=\"widget-body\">\n" +
@@ -734,8 +734,8 @@ angular.module("../javascript/partials/login/login.html", []).run(["$templateCac
     "</div>");
 }]);
 
-angular.module("../javascript/partials/login/register.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/login/register.html",
+angular.module("javascript/partials/login/register.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/login/register.html",
     "<div id=\"signup-box\" class=\"signup-box widget-box no-border visible\" ng-controller=\"RegisterController as regCtl\">\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
@@ -787,8 +787,8 @@ angular.module("../javascript/partials/login/register.html", []).run(["$template
     "</div>");
 }]);
 
-angular.module("../javascript/partials/modal/alert.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/modal/alert.html",
+angular.module("javascript/partials/modal/alert.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/modal/alert.html",
     "<div class=\"modal-header\">\n" +
     "    <!--<a class=\"btn btn-link btn-sm no-margin pull-right\" ng-click=\"close()\">-->\n" +
     "        <!--<icon class=\"ace-icon fa fa-times\"></icon>-->\n" +
@@ -808,8 +808,8 @@ angular.module("../javascript/partials/modal/alert.html", []).run(["$templateCac
     "</div>");
 }]);
 
-angular.module("../javascript/partials/modal/confirm.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/modal/confirm.html",
+angular.module("javascript/partials/modal/confirm.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/modal/confirm.html",
     "<div class=\"modal-header\">\n" +
     "    <a class=\"btn btn-link btn-sm no-margin pull-right\" ng-click=\"close()\">\n" +
     "        <icon class=\"ace-icon fa fa-times\"></icon>\n" +
@@ -831,8 +831,8 @@ angular.module("../javascript/partials/modal/confirm.html", []).run(["$templateC
     "</div>");
 }]);
 
-angular.module("../javascript/partials/pages/test1.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/pages/test1.html",
+angular.module("javascript/partials/pages/test1.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/pages/test1.html",
     "<div ng-controller=\"Test1Controller as testCtl\">\n" +
     "    <div class=\"page-header\">\n" +
     "        <h1>\n" +
@@ -1222,8 +1222,8 @@ angular.module("../javascript/partials/pages/test1.html", []).run(["$templateCac
     "");
 }]);
 
-angular.module("../javascript/partials/pages/test2.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../javascript/partials/pages/test2.html",
+angular.module("javascript/partials/pages/test2.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/pages/test2.html",
     "<div ng-controller=\"Test2Controller as testCtl\">\n" +
     "    <div class=\"page-header\">\n" +
     "        <h1>\n" +
