@@ -12,25 +12,28 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="position-relative">
-                <h1></h1>
-                <button class="btn btn-sm btn-primary" ng-click="testCtl.showAlert()">show alert</button>
-                <button class="btn btn-sm btn-warning" ng-click="testCtl.showConfirm()">show confirm</button>
-                <button class="btn btn-sm btn-danger" ng-click="testCtl.showForm()">show form</button>
-                <!--<simple-form setting="testCtl.formSettings"-->
-                             <!--ng-model="testCtl.formData"-->
-                             <!--submit="testCtl.submit"-->
-                             <!--format="_horizontal"-->
-                             <!--ng-cloak>-->
-                    <!--<div class="form-group">-->
-                        <!--<div class="col-sm-12 col-sm-offset-2">-->
-                            <!--<input class="btn btn-success btn-sm" type="submit" value="提交表单">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</simple-form>-->
+                <div toolbar showmini="false" showtitle="true" tools="testCtl.tools"
+                     class="btn-group hidden-sm hidden-xs"></div>
             </div>
+            <div class="space-2"></div>
         </div>
         <div class="col-xs-12">
-            <div id="grid1" ui-grid="testCtl.gridOptions" ui-grid-edit class="grid"></div>
+
+            <div ui-grid="testCtl.gridOptions" ui-grid-pagination ui-grid-edit class="grid"></div>
+
+            <pagination total-items="testCtl.pagination.totalCount"
+                        items-per-page="1"
+                        ng-model="testCtl.pagination.currentPage"
+                        max-size="testCtl.pagination.maxSize"
+                        ng-change="testCtl.pagination.changeNum()"
+                        rotate="false"
+                        previous-text="&lsaquo;"
+                        next-text="&rsaquo;"
+                        first-text="&laquo;"
+                        last-text="&raquo;"
+                        class="pagination-sm pull-right"
+                        boundary-links="true">
+            </pagination>
         </div>
     </div>
 </div>

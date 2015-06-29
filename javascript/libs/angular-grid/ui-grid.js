@@ -1337,19 +1337,19 @@ function ($timeout, gridUtil, uiGridConstants, uiGridColumnMenuService) {
             $scope.colContainer = containerCtrl.colContainer;
 
             updateHeaderReferences();
-            
+
             var headerTemplate;
             if (!$scope.grid.options.showHeader) {
               headerTemplate = emptyTemplate;
             }
             else {
-              headerTemplate = ($scope.grid.options.headerTemplate) ? $scope.grid.options.headerTemplate : defaultTemplate;            
+              headerTemplate = ($scope.grid.options.headerTemplate) ? $scope.grid.options.headerTemplate : defaultTemplate;
             }
 
             gridUtil.getTemplate(headerTemplate)
               .then(function (contents) {
                 var template = angular.element(contents);
-                
+
                 var newElm = $compile(template)($scope);
                 $elm.replaceWith(newElm);
 
@@ -1414,14 +1414,14 @@ function ($timeout, gridUtil, uiGridConstants, uiGridColumnMenuService) {
             var grid = uiGridCtrl.grid;
 
             // Don't animate header cells
-            gridUtil.disableAnimations($elm);
+            //gridUtil.disableAnimations($elm);
 
             function updateColumnWidths() {
               // this styleBuilder always runs after the renderContainer, so we can rely on the column widths
               // already being populated correctly
 
               var columnCache = containerCtrl.colContainer.visibleColumnCache;
-              
+
               // Build the CSS
               // uiGridCtrl.grid.columns.forEach(function (column) {
               var ret = '';
@@ -1432,13 +1432,13 @@ function ($timeout, gridUtil, uiGridConstants, uiGridColumnMenuService) {
               });
 
               containerCtrl.colContainer.canvasWidth = canvasWidth;
-              
+
               // Return the styles back to buildStyles which pops them into the `customStyles` scope variable
               return ret;
             }
-            
+
             containerCtrl.header = $elm;
-            
+
             var headerViewport = $elm[0].getElementsByClassName('ui-grid-header-viewport')[0];
             if (headerViewport) {
               containerCtrl.headerViewport = headerViewport;
@@ -25455,7 +25455,7 @@ angular.module('ui.grid').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('ui-grid/uiGridMenu',
-    "<div class=\"ui-grid-menu\" ng-if=\"shown\"><div class=\"ui-grid-menu-mid\" ng-show=\"shownMid\"><div class=\"ui-grid-menu-inner\"><ul class=\"ui-grid-menu-items\"><li ng-repeat=\"item in menuItems\" ui-grid-menu-item action=\"item.action\" name=\"item.title\" active=\"item.active\" icon=\"item.icon\" shown=\"item.shown\" context=\"item.context\" template-url=\"item.templateUrl\" leave-open=\"item.leaveOpen\"></li></ul></div></div></div>"
+    "<div class=\"ui-grid-menu toggle\" ng-if=\"shown\"><div class=\"ui-grid-menu-mid\" ng-show=\"shownMid\"><div class=\"ui-grid-menu-inner\"><ul class=\"ui-grid-menu-items\"><li ng-repeat=\"item in menuItems\" ui-grid-menu-item action=\"item.action\" name=\"item.title\" active=\"item.active\" icon=\"item.icon\" shown=\"item.shown\" context=\"item.context\" template-url=\"item.templateUrl\" leave-open=\"item.leaveOpen\"></li></ul></div></div></div>"
   );
 
 

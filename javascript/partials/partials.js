@@ -1,4 +1,14 @@
-angular.module('template.js', ['javascript/partials/directive/nav/navlist.html', 'javascript/partials/directive/nav/subnavlist.html', 'javascript/partials/directive/simpleform/simpleform.html', 'javascript/partials/directive/simpleform/simpleform_horizontal.html', 'javascript/partials/directive/simpleform/simpleform_inline.html', 'javascript/partials/directive/simpleform/views/checkbox.html', 'javascript/partials/directive/simpleform/views/datetime.html', 'javascript/partials/directive/simpleform/views/input.html', 'javascript/partials/directive/simpleform/views/input_button.html', 'javascript/partials/directive/simpleform/views/radio.html', 'javascript/partials/directive/simpleform/views/simpleform_editor.html', 'javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', 'javascript/partials/directive/simpleform/views/textarea.html', 'javascript/partials/directive/toolbar/toolbar.html', 'javascript/partials/form/testform.html', 'javascript/partials/home/home_content.html', 'javascript/partials/home/home_footer.html', 'javascript/partials/home/home_sidebar.html', 'javascript/partials/home/index.html', 'javascript/partials/home/welcome.html', 'javascript/partials/login/forget_email.html', 'javascript/partials/login/forget_phone.html', 'javascript/partials/login/index.html', 'javascript/partials/login/login.html', 'javascript/partials/login/register.html', 'javascript/partials/modal/alert.html', 'javascript/partials/modal/confirm.html', 'javascript/partials/pages/test1.html', 'javascript/partials/pages/test2.html']);
+angular.module('template.js', ['javascript/partials/common/grid_toolbar.html', 'javascript/partials/directive/nav/navlist.html', 'javascript/partials/directive/nav/subnavlist.html', 'javascript/partials/directive/simpleform/simpleform.html', 'javascript/partials/directive/simpleform/simpleform_horizontal.html', 'javascript/partials/directive/simpleform/simpleform_inline.html', 'javascript/partials/directive/simpleform/views/checkbox.html', 'javascript/partials/directive/simpleform/views/datetime.html', 'javascript/partials/directive/simpleform/views/input.html', 'javascript/partials/directive/simpleform/views/input_button.html', 'javascript/partials/directive/simpleform/views/radio.html', 'javascript/partials/directive/simpleform/views/simpleform_editor.html', 'javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', 'javascript/partials/directive/simpleform/views/textarea.html', 'javascript/partials/directive/toolbar/toolbar.html', 'javascript/partials/form/testform.html', 'javascript/partials/home/home_content.html', 'javascript/partials/home/home_footer.html', 'javascript/partials/home/home_sidebar.html', 'javascript/partials/home/index.html', 'javascript/partials/home/welcome.html', 'javascript/partials/login/forget_email.html', 'javascript/partials/login/forget_phone.html', 'javascript/partials/login/index.html', 'javascript/partials/login/login.html', 'javascript/partials/login/register.html', 'javascript/partials/modal/alert.html', 'javascript/partials/modal/confirm.html', 'javascript/partials/pages/test1.html', 'javascript/partials/pages/test2.html']);
+
+angular.module("javascript/partials/common/grid_toolbar.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/common/grid_toolbar.html",
+    "<div class=\"text-center\">\n" +
+    "    <div toolbar showmini=\"false\" showtitle=\"false\" tools=\"COL_FIELD CUSTOM_FILTERS\"\n" +
+    "         class=\"hidden-sm hidden-xs btn-group\"></div>\n" +
+    "    <div class=\"hidden-md hidden-lg\" toolbar showmini=\"true\" showtitle=\"false\"\n" +
+    "         tools=\"COL_FIELD CUSTOM_FILTERS\"></div>\n" +
+    "</div>");
+}]);
 
 angular.module("javascript/partials/directive/nav/navlist.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/directive/nav/navlist.html",
@@ -282,14 +292,16 @@ angular.module("javascript/partials/directive/simpleform/views/textarea.html", [
 
 angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/directive/toolbar/toolbar.html",
-    "<!--扑通状态的按钮-->\n" +
+    "<!--普通状态的按钮-->\n" +
     "<a class=\"btn\"\n" +
     "   ng-if=\"!showmini\"\n" +
     "   ng-repeat=\"tool in tools\"\n" +
     "   ng-class=\"tool.level\"\n" +
     "   ng-click=\"tool.click()\"\n" +
-    "   popover=\"{{ tool.title }}\"\n" +
-    "   popover-trigger=\"mouseenter\">\n" +
+    "   tooltip=\"{{ tool.title }}\"\n" +
+    "   tooltip-trigger=\"mouseenter\"\n" +
+    "   tooltip-placement=\"top\"\n" +
+    "   tooltip-append-to-body=\"true\">\n" +
     "    <i class=\"ace-icon fa\"\n" +
     "       ng-if=\"tool.iconCls\"\n" +
     "       ng-class=\"tool.iconCls\"></i>\n" +
@@ -312,7 +324,7 @@ angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$
     "        <li ng-repeat=\"tool in tools\">\n" +
     "            <a class=\"tooltip-info\"\n" +
     "               ng-click=\"tool.click()\">\n" +
-    "                <span class=\"blue\">\n" +
+    "                <span ng-class=\"tool.color\">\n" +
     "                    <i class=\"ace-icon fa\" ng-class=\"tool.iconCls\"></i>\n" +
     "                </span>\n" +
     "            </a>\n" +
@@ -1238,27 +1250,29 @@ angular.module("javascript/partials/pages/test2.html", []).run(["$templateCache"
     "    <div class=\"row\">\n" +
     "        <div class=\"col-xs-12\">\n" +
     "            <div class=\"position-relative\">\n" +
-    "                <h1></h1>\n" +
-    "                <button class=\"btn btn-sm btn-primary\" ng-click=\"testCtl.showAlert()\">show alert</button>\n" +
-    "                <button class=\"btn btn-sm btn-warning\" ng-click=\"testCtl.showConfirm()\">show confirm</button>\n" +
-    "                <button class=\"btn btn-sm btn-danger\" ng-click=\"testCtl.showForm()\">show form</button>\n" +
-    "                <!--<simple-form setting=\"testCtl.formSettings\"-->\n" +
-    "                             <!--ng-model=\"testCtl.formData\"-->\n" +
-    "                             <!--submit=\"testCtl.submit\"-->\n" +
-    "                             <!--format=\"_horizontal\"-->\n" +
-    "                             <!--ng-cloak>-->\n" +
-    "                    <!--<div class=\"form-group\">-->\n" +
-    "                        <!--<div class=\"col-sm-12 col-sm-offset-2\">-->\n" +
-    "                            <!--<input class=\"btn btn-success btn-sm\" type=\"submit\" value=\"提交表单\">-->\n" +
-    "                        <!--</div>-->\n" +
-    "                    <!--</div>-->\n" +
-    "                <!--</simple-form>-->\n" +
+    "                <div toolbar showmini=\"false\" showtitle=\"true\" tools=\"testCtl.tools\"\n" +
+    "                     class=\"btn-group hidden-sm hidden-xs\"></div>\n" +
     "            </div>\n" +
+    "            <div class=\"space-2\"></div>\n" +
     "        </div>\n" +
     "        <div class=\"col-xs-12\">\n" +
-    "            <div id=\"grid1\" ui-grid=\"testCtl.gridOptions\" ui-grid-edit class=\"grid\"></div>\n" +
+    "\n" +
+    "            <div ui-grid=\"testCtl.gridOptions\" ui-grid-pagination ui-grid-edit class=\"grid\"></div>\n" +
+    "\n" +
+    "            <pagination total-items=\"testCtl.pagination.totalCount\"\n" +
+    "                        items-per-page=\"1\"\n" +
+    "                        ng-model=\"testCtl.pagination.currentPage\"\n" +
+    "                        max-size=\"testCtl.pagination.maxSize\"\n" +
+    "                        ng-change=\"testCtl.pagination.changeNum()\"\n" +
+    "                        rotate=\"false\"\n" +
+    "                        previous-text=\"&lsaquo;\"\n" +
+    "                        next-text=\"&rsaquo;\"\n" +
+    "                        first-text=\"&laquo;\"\n" +
+    "                        last-text=\"&raquo;\"\n" +
+    "                        class=\"pagination-sm pull-right\"\n" +
+    "                        boundary-links=\"true\">\n" +
+    "            </pagination>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>\n" +
-    "");
+    "</div>");
 }]);

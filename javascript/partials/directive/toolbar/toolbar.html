@@ -1,11 +1,13 @@
-<!--扑通状态的按钮-->
+<!--普通状态的按钮-->
 <a class="btn"
    ng-if="!showmini"
    ng-repeat="tool in tools"
    ng-class="tool.level"
    ng-click="tool.click()"
-   popover="{{ tool.title }}"
-   popover-trigger="mouseenter">
+   tooltip="{{ tool.title }}"
+   tooltip-trigger="mouseenter"
+   tooltip-placement="top"
+   tooltip-append-to-body="true">
     <i class="ace-icon fa"
        ng-if="tool.iconCls"
        ng-class="tool.iconCls"></i>
@@ -28,7 +30,7 @@
         <li ng-repeat="tool in tools">
             <a class="tooltip-info"
                ng-click="tool.click()">
-                <span class="blue">
+                <span ng-class="tool.color">
                     <i class="ace-icon fa" ng-class="tool.iconCls"></i>
                 </span>
             </a>

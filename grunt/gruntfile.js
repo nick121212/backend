@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                 files: ['../javascript/partials/**/*.html'],
                 tasks: ['html2js:template', 'replace:partials'],
                 options: {
-                    debounceDelay: 250
+                    debounceDelay: 10
                 }
             }
         },

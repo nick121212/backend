@@ -6,7 +6,7 @@
  */
 ///<reference path="../typescripts/require.d.ts" />
 define([
-    'angular',
+    'angular'
 ], function (angular) {
     return angular.module('directiveModule', []);
 });
