@@ -51,6 +51,12 @@
             },
             'angular-cookie': {
                 deps: ['angular']
+            },
+            'angular-touch': {
+                deps: ['angular']
+            },
+            'ui-grid': {
+                deps: ['angular']
             }
         },
         paths: {
@@ -70,7 +76,9 @@
             'angular-messages': './libs/angular-messages/angular-messages',
             //'simpleform_directive.tpl': './directives/simpleform_directive.tpl',
             'angular-vbutton': './libs/angular-vbutton/angular-vbutton',
-            'angular-cookie': './libs/angular-cookie/angular-cookie'
+            'angular-cookie': './libs/angular-cookie/angular-cookie',
+            'angular-touch': './libs/angular-touch/angular-touch',
+            'ui-grid': './libs/angular-grid/ui-grid'
         },
         //使得程序可以加载不同版本的模块
         map: {},

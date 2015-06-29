@@ -793,17 +793,17 @@ angular.module("javascript/partials/modal/alert.html", []).run(["$templateCache"
     "    <!--<a class=\"btn btn-link btn-sm no-margin pull-right\" ng-click=\"close()\">-->\n" +
     "        <!--<icon class=\"ace-icon fa fa-times\"></icon>-->\n" +
     "    <!--</a>-->\n" +
-    "    <h3 class=\"smaller lighter no-margin\">{{title}}</h3>\n" +
+    "    <h3 class=\"smaller lighter no-margin\">{{alertCtl.title}}</h3>\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"modal-body\">\n" +
-    "    <i class=\"ace-icon fa fa-2x\" ng-class=\"icon\"></i>\n" +
-    "    {{content}}\n" +
+    "    <i class=\"ace-icon fa fa-2x\" ng-class=\"alertCtl.icon\"></i>\n" +
+    "    {{alertCtl.content}}\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"modal-footer\">\n" +
-    "    <a class=\"btn btn-white btn-inverse btn-sm\" ng-click=\"close()\">\n" +
-    "        {{btnText}}\n" +
+    "    <a class=\"btn btn-white btn-inverse btn-sm\" ng-click=\"alertCtl.close()\">\n" +
+    "        {{alertCtl.btnText}}\n" +
     "    </a>\n" +
     "</div>");
 }]);
@@ -811,21 +811,21 @@ angular.module("javascript/partials/modal/alert.html", []).run(["$templateCache"
 angular.module("javascript/partials/modal/confirm.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/modal/confirm.html",
     "<div class=\"modal-header\">\n" +
-    "    <a class=\"btn btn-link btn-sm no-margin pull-right\" ng-click=\"close()\">\n" +
+    "    <a class=\"btn btn-link btn-sm no-margin pull-right\" ng-click=\"confirmCtl.close()\">\n" +
     "        <icon class=\"ace-icon fa fa-times\"></icon>\n" +
     "    </a>\n" +
-    "    <h3 class=\"smaller lighter no-margin\">{{title}}</h3>\n" +
+    "    <h3 class=\"smaller lighter no-margin\">{{confirmCtl.title}}</h3>\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"modal-body\">\n" +
-    "    <i class=\"ace-icon fa fa-2x\" ng-class=\"icon\"></i>\n" +
-    "    {{content}}\n" +
+    "    <i class=\"ace-icon fa fa-2x\" ng-class=\"confirmCtl.icon\"></i>\n" +
+    "    {{confirmCtl.content}}\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"modal-footer\">\n" +
     "    <a class=\"btn btn-white btn-inverse btn-sm\"\n" +
-    "       ng-click=\"btn.click()\"\n" +
-    "       ng-repeat=\"btn in buttons\">\n" +
+    "       ng-click=\"confirmCtl.doSelect(btn.click)\"\n" +
+    "       ng-repeat=\"btn in confirmCtl.buttons\">\n" +
     "        {{btn.label}}\n" +
     "    </a>\n" +
     "</div>");
@@ -1254,6 +1254,9 @@ angular.module("javascript/partials/pages/test2.html", []).run(["$templateCache"
     "                    <!--</div>-->\n" +
     "                <!--</simple-form>-->\n" +
     "            </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-xs-12\">\n" +
+    "            <div id=\"grid1\" ui-grid=\"testCtl.gridOptions\" ui-grid-edit class=\"grid\"></div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "</div>\n" +

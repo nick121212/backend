@@ -13,27 +13,37 @@ define([
     'modules/service_module'
 ], function (angular, svrModule) {
 
-    svrModule.controller('ModalAlertCtrl', function ($scope, $modalInstance, options) {
-        $scope.title = options.title;
-        $scope.btnText = options.btnText;
-        $scope.content = options.content || "";
-        $scope.icon = options.icon || "";
-        $scope.close = function () {
+    svrModule.controller('ModalAlertCtrl', ['$scope', '$modalInstance', 'options', function ($scope, $modalInstance, options) {
+        var alertCtl = this;
+
+        alertCtl.title = options.title;
+        alertCtl.btnText = options.btnText;
+        alertCtl.content = options.content || "";
+        alertCtl.icon = options.icon || "";
+        alertCtl.close = function () {
             $modalInstance.close();
         };
-    });
+    }]);
 
-    svrModule.controller('ModalConfirmCtrl', function ($scope, $modalInstance, options) {
-        $scope.title = options.title;
-        $scope.btnText = options.btnText;
-        $scope.content = options.content || "";
-        $scope.icon = options.icon || "";
-        $scope.buttons = options.buttons;
+    svrModule.controller('ModalConfirmCtrl', ['$scope', '$modalInstance', 'options', function ($scope, $modalInstance, options) {
+        var confirmCtl = this;
 
-        $scope.close = function () {
+        confirmCtl.title = options.title;
+        confirmCtl.btnText = options.btnText;
+        confirmCtl.content = options.content || "";
+        confirmCtl.icon = options.icon || "";
+        confirmCtl.buttons = options.buttons;
+
+        confirmCtl.close = function () {
             $modalInstance.close();
         };
-    });
+        confirmCtl.doSelect = function (callback) {
+            if (angular.isFunction(callback)) {
+                callback.call();
+            }
+            $modalInstance.close();
+        }
+    }]);
 
     svrModule.provider('fxmodal', [function () {
         var _alertBtnText = "确定";
@@ -84,11 +94,8 @@ define([
 
                     return modal;
                 },
-                form: function (url, controllerName, controller) {
-                    var modal;
-
-                    //svrModule.controller(controllerName, controller);
-                    modal = $modal.open({
+                form: function (url, controller) {
+                    var modal = $modal.open({
                         animation: true,
                         templateUrl: url,
                         controller: controller,

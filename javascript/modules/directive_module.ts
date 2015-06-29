@@ -10,10 +10,7 @@
 
 define([
     'angular',
-    'angular-messages',
-    'angular-animate'
 ], function (angular) {
     return angular.module('directiveModule', [
-        'ngMessages',
-        'vButton']);
+        ]);
 });

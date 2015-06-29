@@ -7,11 +7,7 @@
 ///<reference path="../typescripts/require.d.ts" />
 define([
     'angular',
-    'angular-messages',
-    'angular-animate'
 ], function (angular) {
-    return angular.module('directiveModule', [
-        'ngMessages',
-        'vButton']);
+    return angular.module('directiveModule', []);
 });
 //# sourceMappingURL=directive_module.js.map

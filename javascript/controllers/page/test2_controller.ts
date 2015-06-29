@@ -19,6 +19,24 @@ define(["angular",
         function HomeController($scope, eventService, fxmodal) {
             var homeCtl = this;
 
+            homeCtl.gridOptions = {
+                enableSorting: true,
+                columnDefs: [
+                    {name: 'firstName', field: 'first-name'},
+                    {name: '1stFriend', field: 'friends[0]'},
+                    {name: 'city', field: 'address.city'},
+                    {name: 'getZip', field: 'getZip()', enableCellEdit: false}
+                ],
+                data: [{
+                    "first-name": "Cox",
+                    "friends": ["friend0"],
+                    "address": {street: "301 Dove Ave", city: "Laurel", zip: "39565"},
+                    "getZip": function () {
+                        return this.address.zip;
+                    }
+                }]
+            };
+
             /*
              * 表单中的数据
              * */
@@ -46,7 +64,7 @@ define(["angular",
                         label: 'option2',
                         icon: '',
                         click: function () {
-                            alert(2);
+                            homeCtl.showForm();
                         }
                     }, {
                         label: 'option3',
@@ -211,25 +229,18 @@ define(["angular",
                             }
                         }
                     };
-                    con.close=function(){
+                    con.close = function () {
                         $modalInstance.dismiss('close');
                     }
                     con.submit = function (form) {
-                        var key;
-                        var error;
-
                         con.formSettings.showError = true;
                         if (form.$valid) {
                             $modalInstance.close();
-                            return;
                         }
-                        for (key in form.$error) {
-                            error = form.$error[key];
-                            //angular.element(error.$name).focus();
-                        }
-                    };;
+                    };
+                    ;
                 }];
-                fxmodal.form(requirejs.toUrl('partials/form/testform.html'), 'testFormController', controller);
+                fxmodal.form(requirejs.toUrl('partials/form/testform.html'), controller);
             }
         }
     })

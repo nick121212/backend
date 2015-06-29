@@ -2,16 +2,16 @@
     <!--<a class="btn btn-link btn-sm no-margin pull-right" ng-click="close()">-->
         <!--<icon class="ace-icon fa fa-times"></icon>-->
     <!--</a>-->
-    <h3 class="smaller lighter no-margin">{{title}}</h3>
+    <h3 class="smaller lighter no-margin">{{alertCtl.title}}</h3>
 </div>
 
 <div class="modal-body">
-    <i class="ace-icon fa fa-2x" ng-class="icon"></i>
-    {{content}}
+    <i class="ace-icon fa fa-2x" ng-class="alertCtl.icon"></i>
+    {{alertCtl.content}}
 </div>
 
 <div class="modal-footer">
-    <a class="btn btn-white btn-inverse btn-sm" ng-click="close()">
-        {{btnText}}
+    <a class="btn btn-white btn-inverse btn-sm" ng-click="alertCtl.close()">
+        {{alertCtl.btnText}}
     </a>
 </div>

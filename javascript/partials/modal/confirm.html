@@ -1,19 +1,19 @@
 <div class="modal-header">
-    <a class="btn btn-link btn-sm no-margin pull-right" ng-click="close()">
+    <a class="btn btn-link btn-sm no-margin pull-right" ng-click="confirmCtl.close()">
         <icon class="ace-icon fa fa-times"></icon>
     </a>
-    <h3 class="smaller lighter no-margin">{{title}}</h3>
+    <h3 class="smaller lighter no-margin">{{confirmCtl.title}}</h3>
 </div>
 
 <div class="modal-body">
-    <i class="ace-icon fa fa-2x" ng-class="icon"></i>
-    {{content}}
+    <i class="ace-icon fa fa-2x" ng-class="confirmCtl.icon"></i>
+    {{confirmCtl.content}}
 </div>
 
 <div class="modal-footer">
     <a class="btn btn-white btn-inverse btn-sm"
-       ng-click="btn.click()"
-       ng-repeat="btn in buttons">
+       ng-click="confirmCtl.doSelect(btn.click)"
+       ng-repeat="btn in confirmCtl.buttons">
         {{btn.label}}
     </a>
 </div>
