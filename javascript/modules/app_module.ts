@@ -25,12 +25,16 @@ define([
         'angular-vbutton',
         'angular-cookie',
         'angular-touch',
+        //'angular-nicescroll',
         'ui-grid',
+
+        'controllers/controllers',
 
         'directives/sidebar_directive',
         'directives/toolbar_directive',
         'directives/simpleform_directive',
         'directives/pwcheck_directive',
+        'directives/passport_directive',
 
         'services/httpinterceptor_factory',
         'services/passport_service',
@@ -52,9 +56,11 @@ define([
                 'ngCookies',
                 'ngAnimate',
                 'ngTouch',
+                //'angular-nicescroll',
                 'ui.grid',
                 'ui.grid.edit',
                 'ui.grid.pagination',
+                'ui.grid.selection',
                 dirModule.name,
                 srvModule.name,
                 aniModule.name,
@@ -180,22 +186,27 @@ define([
                         .state('home', {
                             url: '/',
                             abstract: true,
+                            access: {isFree: true},
                             views: {
                                 '': {
                                     templateUrl: requirejs.toUrl('partials/home/index.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/home/home_controller'
-                                        ])
-                                    }
+                                    controller: 'HomeController',
+                                    controllerAs: 'homeCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/home/home_controller'
+                                    //    ])
+                                    //}
                                 },
                                 'sidebarView@home': {
                                     templateUrl: requirejs.toUrl('partials/home/home_sidebar.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/home/sidebar_controller'
-                                        ])
-                                    }
+                                    controller: 'SidebarController',
+                                    controllerAs: 'sidebarCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/home/sidebar_controller'
+                                    //    ])
+                                    //}
                                 },
                                 'contentView@home': {
                                     templateUrl: requirejs.toUrl('partials/home/home_content.html')
@@ -211,6 +222,7 @@ define([
                          * */
                         .state('login', {
                             url: '/login',
+                            access: {isFree: true},
                             views: {
                                 '': {
                                     templateUrl: requirejs.toUrl('partials/login/index.html'),
@@ -235,6 +247,7 @@ define([
                          * */
                         .state('login.forget_email', {
                             url: '/forget_email',
+                            access: {isFree: true},
                             views: {
                                 'contentView': {
                                     templateUrl: requirejs.toUrl('partials/login/forget_email.html'),
@@ -251,6 +264,7 @@ define([
                          * */
                         .state('login.forget_phone', {
                             url: '/forget_phone',
+                            access: {isFree: true},
                             views: {
                                 'contentView': {
                                     templateUrl: requirejs.toUrl('partials/login/forget_phone.html'),
@@ -267,6 +281,7 @@ define([
                          * */
                         .state('login.register', {
                             url: '/register',
+                            access: {isFree: true},
                             views: {
                                 'contentView': {
                                     templateUrl: requirejs.toUrl('partials/login/register.html'),
@@ -284,6 +299,7 @@ define([
                          * */
                         .state('home.index', {
                             url: 'index',
+                            access: {isFree: true},
                             views: {
                                 'pageContentView': {
                                     templateUrl: requirejs.toUrl('partials/home/welcome.html')
@@ -296,6 +312,7 @@ define([
                          * */
                         .state('home.page', {
                             url: 'page/:page',
+                            access: {isFree: false},
                             views: {
                                 'pageContentView': {
                                     templateUrl: function ($stateParams) {

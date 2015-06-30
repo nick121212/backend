@@ -33,8 +33,10 @@
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/forget_phone_controller.js" />
         <item url="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/page/test1_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/register_controller.js" />
         <item url="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/home/main_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/directives/fxattr_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/modules/service_module.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/directives/toolbar_directive.js" />
@@ -57,6 +59,8 @@
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/main.js" />
         <item url="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/animations/noneleave_animation.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/controllers.js" />
+        <item url="file://$PROJECT_DIR$/javascript/directives/passport_directive.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -96,8 +100,10 @@
       <root url="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/forget_phone_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/page/test1_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/register_controller.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/home/main_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/directives/fxattr_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/modules/service_module.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/directives/toolbar_directive.js" />
@@ -120,6 +126,8 @@
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/main.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/animations/noneleave_animation.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/controllers.js" />
+      <root url="file://$PROJECT_DIR$/javascript/directives/passport_directive.js" />
     </CLASSES>
     <SOURCES />
   </library>

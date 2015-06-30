@@ -19,10 +19,25 @@
         </div>
         <div class="col-xs-12">
 
-            <div ui-grid="testCtl.gridOptions" ui-grid-pagination ui-grid-edit class="grid"></div>
+            <div ui-grid="testCtl.gridOptions"
+                 ui-grid-pagination
+                 ui-grid-edit
+                 ui-grid-selection
+                 ui-grid-cellNav
+                 class="grid"></div>
 
+        </div>
+        <div class="col-xs-12">
+            <div data-toggle="buttons" class="btn-group btn-group-sm pagination">
+                <label class="btn btn-white btn-primary"
+                       ng-class="{'active':page==testCtl.pagination.pageSize}"
+                       ng-repeat="page in testCtl.pagination.perPageOptions">
+                    <input type="radio" value="{{page}}" ng-model="testCtl.pagination.pageSize">
+                    {{page}}
+                </label>
+            </div>
             <pagination total-items="testCtl.pagination.totalCount"
-                        items-per-page="1"
+                        items-per-page="testCtl.pagination.pageSize"
                         ng-model="testCtl.pagination.currentPage"
                         max-size="testCtl.pagination.maxSize"
                         ng-change="testCtl.pagination.changeNum()"

@@ -59,6 +59,12 @@
             },
             'ui-grid': {
                 deps: ['angular']
+            },
+            'jquery-nicescroll': {
+                deps: ['jquery']
+            },
+            'angular-nicescroll': {
+                deps: ['angular', 'jquery-nicescroll']
             }
         },
         paths: {
@@ -80,7 +86,9 @@
             'angular-vbutton': './libs/angular-vbutton/angular-vbutton',
             'angular-cookie': './libs/angular-cookie/angular-cookie',
             'angular-touch': './libs/angular-touch/angular-touch',
-            'ui-grid': './libs/angular-grid/ui-grid'
+            'ui-grid': './libs/angular-grid/ui-grid',
+            'angular-nicescroll': './libs/angular-nicescroll/angular-nicescroll',
+            'jquery-nicescroll': './libs/angular-nicescroll/jquery-nicescroll'
         },
         //使得程序可以加载不同版本的模块
         map: {

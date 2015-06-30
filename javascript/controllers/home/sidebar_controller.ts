@@ -15,11 +15,10 @@ define([
 ], function (_, angular, appModule) {
     appModule.controller('SidebarController', SidebarController);
 
-
     SidebarController.$inject = ['$scope', 'navlist'];
     /*
-    * @param $scope 数据源
-    * @param navlistProvider 保存菜单中的数据服务
+     * @param $scope 数据源
+     * @param navlistProvider 保存菜单中的数据服务
      * */
     function SidebarController($scope, navlistProvider) {
         var sidebarCtrl = this;
@@ -59,7 +58,7 @@ define([
                         href: "#/index",
                         icon: "fa-tachometer",
                         isActive: false,
-                    },{
+                    }, {
                         title: "测试1",
                         href: "#/page/test1",
                         icon: "fa-tachometer",

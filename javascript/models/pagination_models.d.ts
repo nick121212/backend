@@ -11,6 +11,7 @@ declare module Pagination {
         pageSize:number;
         maxSize:number;
         currentPage:number;
+        perPageOptions:number[];
         onChangeNum:(num:number)=>void;
     }
 }

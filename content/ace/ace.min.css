@@ -5135,7 +5135,7 @@ body.mob-safari .sidebar.sidebar-fixed {
 .modal.aside-vc .modal-dialog {
     margin: inherit;
     overflow: inherit;
-    width: 250px;
+    /*width: 250px;*/
     max-width: 66%;
     height: inherit;
     position: inherit;
@@ -5307,13 +5307,13 @@ body.mob-safari .sidebar.sidebar-fixed {
 
 .modal.aside-hz .modal-content {
     width: 100%;
-    overflow: hidden
+    overflow: auto;
 }
 
 .modal.in.aside-hz .modal-dialog {
     transform: none;
     -webkit-transform: none;
-    height: auto
+    height: auto;
 }
 
 .modal.aside-hz .aside-trigger {
@@ -5325,33 +5325,33 @@ body.mob-safari .sidebar.sidebar-fixed {
     z-index: auto;
     outline: 0;
     margin-left: -15px;
-    left: 50%
+    left: 50%;
 }
 
 .modal.aside-hz .aside-trigger.ace-settings-btn {
-    margin-left: -20px
+    margin-left: -20px;
 }
 
 .modal.in.aside-hz .aside-trigger {
-    z-index: -1
+    z-index: -1;
 }
 
 .modal.aside-top {
-    top: 0
+    top: 0;
 }
 
 .modal.aside-top .modal-dialog {
     transform: translateY(-100%);
-    -webkit-transform: translateY(-100%)
+    -webkit-transform: translateY(-100%);
 }
 
 .modal.aside-top .modal-content {
     border-width: 0;
-    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, .15)
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, .15);
 }
 
 .modal.aside-bottom {
-    bottom: 0
+    bottom: 0;
 }
 
 .modal.aside-bottom .modal-dialog {

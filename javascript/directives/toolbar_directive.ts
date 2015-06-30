@@ -27,15 +27,20 @@ define([
                     scope: {
                         tools: '=',
                         showtitle: '=',
-                        showmini: '='
+                        showmini: '=',
+                        datas: '=datas',
+                        onClick: '=onClick'
                     },
                     link: function ($scope, $element, $attr, $controller) {
                         $scope.showtitle == undefined && ($scope.showtitle = true);
+                        $scope.onPreClick = function (tool) {
+                            angular.isFunction(tool.click) && tool.click($scope.datas);
+                        };
                         $scope.doShowMenu = function () {
                             $scope.isOpen = !$scope.isOpen;
                         }
-                        $scope.doBlur=function(){
-                            $scope.isOpen=false;
+                        $scope.doBlur = function () {
+                            $scope.isOpen = false;
                         }
                     }
                 };

@@ -14,8 +14,8 @@ define([
     appModule.controller('SidebarController', SidebarController);
     SidebarController.$inject = ['$scope', 'navlist'];
     /*
-    * @param $scope 数据源
-    * @param navlistProvider 保存菜单中的数据服务
+     * @param $scope 数据源
+     * @param navlistProvider 保存菜单中的数据服务
      * */
     function SidebarController($scope, navlistProvider) {
         var sidebarCtrl = this;
@@ -31,22 +31,19 @@ define([
                         href: "#/login",
                         icon: "fa-tachometer",
                         isActive: false
-                    },
-                    {
+                    }, {
                         title: "注册",
                         href: "#/login/register",
                         icon: "fa-tachometer",
                         isActive: false
-                    },
-                    {
+                    }, {
                         title: "忘记密码",
                         href: "#/login/forget",
                         icon: "fa-tachometer",
                         isActive: false
                     }
                 ]
-            },
-            {
+            }, {
                 title: '测试',
                 href: "#",
                 icon: "fa-desktop",
@@ -57,36 +54,31 @@ define([
                         href: "#/index",
                         icon: "fa-tachometer",
                         isActive: false
-                    },
-                    {
+                    }, {
                         title: "测试1",
                         href: "#/page/test1",
                         icon: "fa-tachometer",
                         isActive: false
-                    },
-                    {
+                    }, {
                         title: "测试2",
                         href: "#/page/test2",
                         icon: "fa-tachometer",
                         isActive: false
                     }
                 ]
-            },
-            {
+            }, {
                 title: 'Tables',
                 href: "#",
                 icon: "fa-list",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Forms',
                 href: "#",
                 icon: "fa-pencil-square-o",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Widgets',
                 href: "#",
                 icon: "fa-list-alt",
@@ -97,37 +89,32 @@ define([
                         href: "#",
                         icon: "fa-tachometer",
                         isActive: false
-                    },
-                    {
+                    }, {
                         title: "slider",
                         href: "#",
                         icon: "fa-tachometer",
                         isActive: false
                     }
                 ]
-            },
-            {
+            }, {
                 title: 'Calendar',
                 href: "#",
                 icon: "fa-calendar",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Gallery',
                 href: "#",
                 icon: "fa-picture-o",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'More Pages',
                 href: "#",
                 icon: "fa-tag",
                 isActive: false,
                 children: []
-            },
-            {
+            }, {
                 title: 'Other Pages',
                 href: "#",
                 icon: "fa-file-o",

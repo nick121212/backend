@@ -1,6 +1,14 @@
 <div class="text-center">
-    <div toolbar showmini="false" showtitle="false" tools="COL_FIELD CUSTOM_FILTERS"
+    <div toolbar
+         showmini="false"
+         showtitle="false"
+         tools="grid.appScope.tools"
+         datas="this"
          class="hidden-sm hidden-xs btn-group"></div>
-    <div class="hidden-md hidden-lg" toolbar showmini="true" showtitle="false"
+    <div class="hidden-md hidden-lg"
+         toolbar
+         showmini="true"
+         showtitle="false"
+         ng-model="$data"
          tools="COL_FIELD CUSTOM_FILTERS"></div>
 </div>

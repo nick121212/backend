@@ -9,17 +9,16 @@
 ///<reference path="../../typescripts/angular.d.ts" />
 
 define([
-    'underscore',
     'angular',
     'modules/app_module'
-], function (_, angular, appModule) {
+], function (angular, appModule) {
     appModule.controller('MainController', MainController);
 
-    MainController.$inject = ['$scope','$rootScope'];
+    MainController.$inject = ['$scope', '$rootScope'];
 
-    function MainController($scope,$rootScope) {
+    function MainController($scope, $rootScope) {
         var mainCtrl = this;
 
-        $rootScope.bodyCls="";
+        $rootScope.bodyCls = "";
     }
 });

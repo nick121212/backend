@@ -3,7 +3,7 @@
    ng-if="!showmini"
    ng-repeat="tool in tools"
    ng-class="tool.level"
-   ng-click="tool.click()"
+   ng-click="onPreClick(tool)"
    tooltip="{{ tool.title }}"
    tooltip-trigger="mouseenter"
    tooltip-placement="top"
@@ -29,7 +29,7 @@
         ng-show="isOpen">
         <li ng-repeat="tool in tools">
             <a class="tooltip-info"
-               ng-click="tool.click()">
+               ng-click="onPreClick(tool)">
                 <span ng-class="tool.color">
                     <i class="ace-icon fa" ng-class="tool.iconCls"></i>
                 </span>

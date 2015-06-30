@@ -57,6 +57,13 @@ module.exports = function (grunt) {
                 options: {
                     debounceDelay: 10
                 }
+            },
+            controllers: {
+                files: ['../javascript/controllers/*/*.js'],
+                tasks: ['concat:controllers'],
+                options: {
+                    debounceDelay: 10
+                }
             }
         },
         html2js: {
@@ -80,6 +87,21 @@ module.exports = function (grunt) {
                     to: 'javascript'
                 }]
             }
+        },
+        concat: {
+            controllers: {
+                src: ['../javascript/controllers/*/*.js'],
+                dest: '../javascript/controllers/controllers.js'
+            }
+        },
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: "../javascript",
+                    mainConfigFile: "../javascript/main.js",
+                    out: "../javascript/optimized.js"
+                }
+            }
         }
     });
 
@@ -90,6 +112,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-ng-html2js');
     grunt.loadNpmTasks('grunt-html2js');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    //grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-requirejs');
+
+
+    grunt.registerTask('rjs', ['requirejs']);
+
+    grunt.registerTask('c', ['concat']);
 
     grunt.registerTask('r', ['replace']);
 

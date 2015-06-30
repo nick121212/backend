@@ -54,12 +54,13 @@ define([
 
         this.$get = ['$q', '$modal', function ($q, $modal) {
             return {
-                alert: function (title, content) {
+                alert: function (title, content, windowCls) {
                     var modal = $modal.open({
                         animation: true,
                         templateUrl: requirejs.toUrl('partials/modal/alert.html'),
                         controller: 'ModalAlertCtrl',
                         controllerAs: 'alertCtl',
+                        windowClass: windowCls || '',
                         resolve: {
                             options: function () {
                                 return {
@@ -74,12 +75,13 @@ define([
 
                     return modal;
                 },
-                confirm: function (title, content, buttons) {
+                confirm: function (title, content, buttons, windowCls) {
                     var modal = $modal.open({
                         animation: true,
                         templateUrl: requirejs.toUrl('partials/modal/confirm.html'),
                         controller: 'ModalConfirmCtrl',
                         controllerAs: 'confirmCtl',
+                        windowClass: windowCls || '',
                         resolve: {
                             options: function () {
                                 return {
@@ -94,12 +96,13 @@ define([
 
                     return modal;
                 },
-                form: function (url, controller) {
+                form: function (url, controller, windowCls) {
                     var modal = $modal.open({
                         animation: true,
                         templateUrl: url,
                         controller: controller,
                         controllerAs: 'formCtl',
+                        windowClass: windowCls || '',
                         backdrop: 'static'
                     });
 

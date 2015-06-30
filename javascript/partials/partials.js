@@ -3,9 +3,17 @@ angular.module('template.js', ['javascript/partials/common/grid_toolbar.html', '
 angular.module("javascript/partials/common/grid_toolbar.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/common/grid_toolbar.html",
     "<div class=\"text-center\">\n" +
-    "    <div toolbar showmini=\"false\" showtitle=\"false\" tools=\"COL_FIELD CUSTOM_FILTERS\"\n" +
+    "    <div toolbar\n" +
+    "         showmini=\"false\"\n" +
+    "         showtitle=\"false\"\n" +
+    "         tools=\"grid.appScope.tools\"\n" +
+    "         datas=\"this\"\n" +
     "         class=\"hidden-sm hidden-xs btn-group\"></div>\n" +
-    "    <div class=\"hidden-md hidden-lg\" toolbar showmini=\"true\" showtitle=\"false\"\n" +
+    "    <div class=\"hidden-md hidden-lg\"\n" +
+    "         toolbar\n" +
+    "         showmini=\"true\"\n" +
+    "         showtitle=\"false\"\n" +
+    "         ng-model=\"$data\"\n" +
     "         tools=\"COL_FIELD CUSTOM_FILTERS\"></div>\n" +
     "</div>");
 }]);
@@ -297,7 +305,7 @@ angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$
     "   ng-if=\"!showmini\"\n" +
     "   ng-repeat=\"tool in tools\"\n" +
     "   ng-class=\"tool.level\"\n" +
-    "   ng-click=\"tool.click()\"\n" +
+    "   ng-click=\"onPreClick(tool)\"\n" +
     "   tooltip=\"{{ tool.title }}\"\n" +
     "   tooltip-trigger=\"mouseenter\"\n" +
     "   tooltip-placement=\"top\"\n" +
@@ -323,14 +331,15 @@ angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$
     "        ng-show=\"isOpen\">\n" +
     "        <li ng-repeat=\"tool in tools\">\n" +
     "            <a class=\"tooltip-info\"\n" +
-    "               ng-click=\"tool.click()\">\n" +
+    "               ng-click=\"onPreClick(tool)\">\n" +
     "                <span ng-class=\"tool.color\">\n" +
     "                    <i class=\"ace-icon fa\" ng-class=\"tool.iconCls\"></i>\n" +
     "                </span>\n" +
     "            </a>\n" +
     "        </li>\n" +
     "    </ul>\n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("javascript/partials/form/testform.html", []).run(["$templateCache", function($templateCache) {
@@ -346,11 +355,6 @@ angular.module("javascript/partials/form/testform.html", []).run(["$templateCach
     "                 ng-model=\"formCtl.formData\"\n" +
     "                 submit=\"formCtl.submit\"\n" +
     "                 format=\"_horizontal\">\n" +
-    "        <!--<div class=\"form-group\">-->\n" +
-    "            <!--<div class=\"col-sm-12\">-->\n" +
-    "                <!--{{ formCtl.formData }}-->\n" +
-    "            <!--</div>-->\n" +
-    "        <!--</div>-->\n" +
     "        <div class=\"form-group\">\n" +
     "            <div class=\"col-sm-12\">\n" +
     "                <input class=\"btn btn-block btn-success btn-sm\" type=\"submit\" value=\"提交表单\">\n" +
@@ -369,6 +373,125 @@ angular.module("javascript/partials/home/home_content.html", []).run(["$template
     "    <!--<div ui-view=\"breadcrumbsView\" class=\"breadcrumbs breadcrumbs-fixed slide-top\"></div>-->\n" +
     "    <!--页面内容-->\n" +
     "    <div ui-view=\"pageContentView\" class=\"page-content bouncy-scale-in none-leave\"></div>\n" +
+    "\n" +
+    "    <!--<div class=\"modal aside aside-right aside-vc aside-fixed navbar-offset no-backdrop in\"-->\n" +
+    "         <!--style=\"display: block; position: fixed; padding-right: 0px;\">-->\n" +
+    "        <!--<div class=\"modal-dialog\">-->\n" +
+    "            <!--<div class=\"modal-content\" style=\"overflow: auto;\">-->\n" +
+    "                <!--<div class=\"modal-header sidebar-fixed fixed no-padding\">-->\n" +
+    "                    <!--<div class=\"table-header\">-->\n" +
+    "                        <!--<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">-->\n" +
+    "                            <!--<span class=\"white\">×</span>-->\n" +
+    "                        <!--</button>-->\n" +
+    "                        <!--Based on Modal boxes-->\n" +
+    "                    <!--</div>-->\n" +
+    "                <!--</div>-->\n" +
+    "\n" +
+    "                <!--<div class=\"modal-body\">-->\n" +
+    "                    <!--<h3 class=\"lighter\">Custom Elements and Content</h3>-->\n" +
+    "\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--With no modal backdrop-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--1-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--2-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--<br>-->\n" +
+    "                    <!--3-->\n" +
+    "                <!--</div>-->\n" +
+    "            <!--</div>-->\n" +
+    "        <!--</div>-->\n" +
+    "\n" +
+    "        <!--<button class=\"aside-trigger btn btn-info btn-app btn-xs ace-settings-btn open\" type=\"button\">-->\n" +
+    "            <!--<i data-icon1=\"fa-plus\" data-icon2=\"fa-minus\" class=\"ace-icon fa bigger-110 icon-only fa-minus\"></i>-->\n" +
+    "        <!--</button>-->\n" +
+    "    <!--</div>-->\n" +
+    "    <!--<div class=\"modal aside aside-bottom aside-hz aside-fixed aside-dark no-backdrop in\">-->\n" +
+    "        <!--<div class=\"modal-dialog\">-->\n" +
+    "            <!--<div class=\"modal-content\">-->\n" +
+    "                <!--<div class=\"scroll-content\">-->\n" +
+    "                    <!--<div class=\"modal-body container\">-->\n" +
+    "                        <!--<div class=\"row\">-->\n" +
+    "                            <!--<div class=\"col-sm-5 col-sm-offset-1 white\">-->\n" +
+    "                                <!--<h3 class=\"lighter\">Bootstrap Grid &amp; Elements</h3>-->\n" +
+    "                                <!--With dark modal backdrop-->\n" +
+    "                            <!--</div>-->\n" +
+    "                        <!--</div>-->\n" +
+    "                    <!--</div>-->\n" +
+    "                <!--</div>-->\n" +
+    "            <!--</div>-->\n" +
+    "            <!--<button class=\"btn btn-yellow btn-sm btn-app btn-xs ace-settings-btn aside-trigger\" data-target=\"#bottom-menu\"-->\n" +
+    "                    <!--data-toggle=\"modal\" type=\"button\">-->\n" +
+    "                <!--<i data-icon2=\"fa-chevron-down\" data-icon1=\"fa-chevron-up\"-->\n" +
+    "                   <!--class=\"ace-icon fa bigger-110 icon-only fa-chevron-up\"></i>-->\n" +
+    "            <!--</button>-->\n" +
+    "        <!--</div>-->\n" +
+    "    <!--</div>-->\n" +
+    "    <!--<div class=\"modal aside aside-top aside-hz aside-fixed aside-dark no-backdrop in\">-->\n" +
+    "        <!--<div class=\"modal-dialog\">-->\n" +
+    "            <!--<div class=\"modal-content\">-->\n" +
+    "                <!--<div class=\"scroll-content\">-->\n" +
+    "                    <!--<div class=\"modal-body container\">-->\n" +
+    "                        <!--<div class=\"row\">-->\n" +
+    "                            <!--<div class=\"col-sm-5 col-sm-offset-1 white\">-->\n" +
+    "                                <!--<h3 class=\"lighter\">Bootstrap Grid &amp; Elements</h3>-->\n" +
+    "                                <!--With dark modal backdrop-->\n" +
+    "                            <!--</div>-->\n" +
+    "                        <!--</div>-->\n" +
+    "                    <!--</div>-->\n" +
+    "                <!--</div>-->\n" +
+    "            <!--</div>-->\n" +
+    "            <!--<button class=\"btn btn-yellow btn-sm btn-app btn-xs ace-settings-btn aside-trigger\" data-target=\"#bottom-menu\"-->\n" +
+    "                    <!--data-toggle=\"modal\" type=\"button\">-->\n" +
+    "                <!--<i data-icon2=\"fa-chevron-down\" data-icon1=\"fa-chevron-up\"-->\n" +
+    "                   <!--class=\"ace-icon fa bigger-110 icon-only fa-chevron-up\"></i>-->\n" +
+    "            <!--</button>-->\n" +
+    "        <!--</div>-->\n" +
+    "    <!--</div>-->\n" +
     "\n" +
     "</div>\n" +
     "");
@@ -1257,10 +1380,25 @@ angular.module("javascript/partials/pages/test2.html", []).run(["$templateCache"
     "        </div>\n" +
     "        <div class=\"col-xs-12\">\n" +
     "\n" +
-    "            <div ui-grid=\"testCtl.gridOptions\" ui-grid-pagination ui-grid-edit class=\"grid\"></div>\n" +
+    "            <div ui-grid=\"testCtl.gridOptions\"\n" +
+    "                 ui-grid-pagination\n" +
+    "                 ui-grid-edit\n" +
+    "                 ui-grid-selection\n" +
+    "                 ui-grid-cellNav\n" +
+    "                 class=\"grid\"></div>\n" +
     "\n" +
+    "        </div>\n" +
+    "        <div class=\"col-xs-12\">\n" +
+    "            <div data-toggle=\"buttons\" class=\"btn-group btn-group-sm pagination\">\n" +
+    "                <label class=\"btn btn-white btn-primary\"\n" +
+    "                       ng-class=\"{'active':page==testCtl.pagination.pageSize}\"\n" +
+    "                       ng-repeat=\"page in testCtl.pagination.perPageOptions\">\n" +
+    "                    <input type=\"radio\" value=\"{{page}}\" ng-model=\"testCtl.pagination.pageSize\">\n" +
+    "                    {{page}}\n" +
+    "                </label>\n" +
+    "            </div>\n" +
     "            <pagination total-items=\"testCtl.pagination.totalCount\"\n" +
-    "                        items-per-page=\"1\"\n" +
+    "                        items-per-page=\"testCtl.pagination.pageSize\"\n" +
     "                        ng-model=\"testCtl.pagination.currentPage\"\n" +
     "                        max-size=\"testCtl.pagination.maxSize\"\n" +
     "                        ng-change=\"testCtl.pagination.changeNum()\"\n" +

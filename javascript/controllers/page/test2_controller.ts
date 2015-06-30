@@ -34,7 +34,9 @@ define([
             checkbox: {},
             datetime: new Date()
         };
-        homeCtl.showAlert = function () {
+        homeCtl.showAlert = function (dd) {
+            console.log(dd);
+            homeCtl.gridApi.selection.selectRow(homeCtl.gridOptions.data[0]);
             fxmodal.alert('测试title', '测试内容');
         };
         homeCtl.showConfirm = function () {
@@ -228,6 +230,22 @@ define([
             fxmodal.form(requirejs.toUrl('partials/form/testform.html'), controller);
         }
 
+        homeCtl.getData = function () {
+            var datas = [];
+
+            for (var i = 0; i < homeCtl.pagination.pageSize; i++) {
+                datas.push({
+                    "id": (i + 1) * homeCtl.pagination.currentPage,
+                    "first-name": "Nick" + (i + 1) * homeCtl.pagination.currentPage,
+                    "friends": ["friend0", "friend1"],
+                });
+            }
+
+            homeCtl.gridApi.selection.clearSelectedRows();
+            homeCtl.gridOptions.data = datas;
+            //homeCtl.pagination.totalCount = 50;
+        };
+        homeCtl.gridApi = null;
         homeCtl.tools = [
             {
                 iconCls: "fa-pencil bigger-110",
@@ -254,29 +272,35 @@ define([
         homeCtl.pagination = new PaginationModels.Pagination.Pagination({
             totalCount: 100,
             currentPage: 1,
-            pageSize: 1,
-            onChangeNum: function (num) {
-                homeCtl.gridOptions.data = [{
-                    "first-name": "Nick" + num,
-                    "friends": ["friend0", "friend1"],
-                    "address": {street: "301 Dove Ave", city: "Laurel", zip: "39565"},
-                    "getZip": function () {
-                        return this.address.zip;
-                    }
-                }];
+            pageSize: 40,
+            onChangeNum: function () {
+                homeCtl.getData();
             }
+        });
+        $scope.$watch('testCtl.pagination.pageSize', function () {
+            homeCtl.gridOptions.paginationPageSize = homeCtl.pagination.pageSize;
+            homeCtl.getData();
         });
         homeCtl.gridOptions = {
             enableSorting: true,
             enablePaginationControls: false,
             paginationPageSize: homeCtl.pagination.pageSize,
+            multiSelect: false,
+            noUnselect: false,
+            enableRowSelection: true,
+            enableRowHeaderSelection: false,
+            modifierKeysToMultiSelect: false,
+            showGridFooter: false,
+            rowHeight: 35,
+            appScopeProvider: {
+                tools: homeCtl.tools
+            },
             columnDefs: [
                 {name: 'firstName', field: 'first-name', width: '*'},
                 {name: '1stFriend', field: 'friends[0]', width: '*'},
-                {name: 'city', field: 'address.city', width: '*'},
                 {
                     name: '',
-                    field: 'getTools()',
+                    field: 'id',
                     enableCellEdit: false,
                     enableSorting: false,
                     enableColumnMenu: false,
@@ -284,15 +308,9 @@ define([
                     width: '80'
                 }
             ],
-            data: [{
-                "first-name": "Cox",
-                "friends": ["friend0"],
-                "address": {street: "301 Dove Ave", city: "Laurel", zip: "39565"},
-                'getTools': function () {
-                    return homeCtl.tools;
-                }
-            }]
+            onRegisterApi: function (gridApi) {
+                homeCtl.gridApi = gridApi;
+            }
         };
     }
-})
-;
+});
