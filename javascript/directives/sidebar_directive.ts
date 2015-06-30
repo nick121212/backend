@@ -68,7 +68,7 @@ define([
         }).directive("navlist", function () {
             return {
                 restrict: 'EA',
-                templateUrl: requirejs.toUrl('partials/directive/nav/navlist.html'),
+                templateUrl: 'javascript/partials/directive/nav/navlist.html',
                 transclude: true,
                 replace: true,
                 scope: {
@@ -87,7 +87,7 @@ define([
             '$compile', '$state', 'eventService', 'navlist', function ($compile, $state, eventService, navlistProvider) {
                 return {
                     restrict: 'E',
-                    templateUrl: requirejs.toUrl('partials/directive/nav/subnavlist.html'),
+                    templateUrl: 'javascript/partials/directive/nav/subnavlist.html',
                     replace: true,
                     //transclude: true,
                     require: '^?navlist',

@@ -33,34 +33,10 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-            },
-            my_target: {
-                files: [{
-                    expand: true,
-                    cwd: 'dest/javascript',
-                    src: '**/*.js',
-                    dest: 'dest/javascript'
-                }]
-            },
-            //build: {
-            //    src: 'dest',
-            //
-            //}
-        },
         watch: {
             template: {
                 files: ['../javascript/partials/**/*.html'],
                 tasks: ['html2js:template', 'replace:partials'],
-                options: {
-                    debounceDelay: 10
-                }
-            },
-            controllers: {
-                files: ['../javascript/controllers/*/*.js'],
-                tasks: ['concat:controllers'],
                 options: {
                     debounceDelay: 10
                 }
@@ -89,17 +65,22 @@ module.exports = function (grunt) {
             }
         },
         concat: {
-            controllers: {
-                src: ['../javascript/controllers/*/*.js'],
-                dest: '../javascript/controllers/controllers.js'
-            }
+
         },
         requirejs: {
+            controller: {
+                options: {}
+            },
             compile: {
                 options: {
                     baseUrl: "../javascript",
                     mainConfigFile: "../javascript/main.js",
-                    out: "../javascript/optimized.js"
+                    out: "../javascript/optimized.js",
+                    almond: false,
+                    paths: {
+                        main: '../javascript/main'
+                    },
+                    include: ['main']
                 }
             }
         }

@@ -7,10 +7,9 @@
 ///<reference path="../../typescripts/require.d.ts" />
 ///<reference path="../../typescripts/angular.d.ts" />
 define([
-    'underscore',
     'angular',
     'modules/app_module'
-], function (_, angular, appModule) {
+], function (angular, appModule) {
     appModule.controller('SidebarController', SidebarController);
     SidebarController.$inject = ['$scope', 'navlist'];
     /*

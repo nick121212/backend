@@ -22,7 +22,7 @@ define([
             function ($compile, $templateCache, eventService) {
                 return {
                     restrict: 'A',
-                    templateUrl: requirejs.toUrl('partials/directive/toolbar/toolbar.html'),
+                    templateUrl: 'javascript/partials/directive/toolbar/toolbar.html',
                     replace: false,
                     scope: {
                         tools: '=',

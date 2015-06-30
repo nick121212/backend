@@ -227,7 +227,7 @@ define([
                 };
                 ;
             }];
-            fxmodal.form(requirejs.toUrl('partials/form/testform.html'), controller);
+            fxmodal.form('javascript/partials/form/testform.html', controller);
         }
 
         homeCtl.getData = function () {
@@ -241,7 +241,7 @@ define([
                 });
             }
 
-            homeCtl.gridApi.selection.clearSelectedRows();
+            homeCtl.gridApi && homeCtl.gridApi.selection.clearSelectedRows();
             homeCtl.gridOptions.data = datas;
             //homeCtl.pagination.totalCount = 50;
         };
@@ -304,7 +304,7 @@ define([
                     enableCellEdit: false,
                     enableSorting: false,
                     enableColumnMenu: false,
-                    cellTemplate: requirejs.toUrl('partials/common/grid_toolbar.html'),
+                    cellTemplate: 'javascript/partials/common/grid_toolbar.html',
                     width: '80'
                 }
             ],

@@ -44,7 +44,6 @@ define([
     dirModule.directive('simpleForm', ['$compile', '$templateCache', function ($compile, $templateCache) {
         return {
             restrict: 'EA',
-            //templateUrl: requirejs.toUrl('partials/directive/simpleform/simpleform_horizontal.html'),
             replace: true,
             require: '',
             transclude: true,
@@ -54,7 +53,7 @@ define([
                 submit: '='
             },
             template: function ($element, $attrs) {
-                var tmp = $templateCache.get(requirejs.toUrl('partials/directive/simpleform/simpleform' + ($attrs.format || '') + '.html'));
+                var tmp = $templateCache.get('javascript/partials/directive/simpleform/simpleform' + ($attrs.format || '') + '.html');
                 return tmp;
             },
             link: function ($scope, $element, $attrs) {
@@ -81,7 +80,7 @@ define([
                     editorType: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
-                    var tmp = $templateCache.get(requirejs.toUrl('partials/directive/simpleform/views/simpleform_editor' + ($scope.editorType || '') + '.html'));
+                    var tmp = $templateCache.get('javascript/partials/directive/simpleform/views/simpleform_editor' + ($scope.editorType || '') + '.html');
                     var fieldElement = angular.element(tmp);
 
                     $scope.datas = $scope.field.datas;
@@ -113,7 +112,7 @@ define([
                     showError: '='
                 },
                 link: function ($scope, $element, $attrs, simpleFormCtl) {
-                    var tmp = $templateCache.get(requirejs.toUrl('partials/directive/simpleform/views/' + $scope.field.element + '.html'));
+                    var tmp = $templateCache.get('javascript/partials/directive/simpleform/views/' + $scope.field.element + '.html');
                     var msg;
                     var fieldElement = angular.element(tmp);
 

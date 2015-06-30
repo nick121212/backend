@@ -118,7 +118,8 @@
         ]
     });
 
-    require(['bootstrap'], function () {
+    //载入angular的初始化文件
+    require(['bootstrap', 'controllers/controllers'], function () {
     });
 
 })();

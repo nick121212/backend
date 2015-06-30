@@ -16,7 +16,7 @@
     <link href="content/ng-grid/ui-grid.css" rel="stylesheet">
 
 </head>
-<body ng-class="$root.bodyCls" authorize>
+<body ng-class="$root.bodyCls" >
 
 <!--主容器-->
 <div ui-view class="slide-left none-leave"></div>
@@ -24,6 +24,7 @@
 <div growl></div>
 <!--js加载-->
 <script src="javascript/libs/requirejs/require.js" data-main="javascript/main.js"></script>
+<!--<script src="javascript/libs/requirejs/require.js" data-main="javascript/optimized.js"></script>-->
 
 </body>
 </html>

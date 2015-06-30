@@ -57,7 +57,7 @@ define([
                 alert: function (title, content, windowCls) {
                     var modal = $modal.open({
                         animation: true,
-                        templateUrl: requirejs.toUrl('partials/modal/alert.html'),
+                        templateUrl: 'javascript/partials/modal/alert.html',
                         controller: 'ModalAlertCtrl',
                         controllerAs: 'alertCtl',
                         windowClass: windowCls || '',
@@ -78,7 +78,7 @@ define([
                 confirm: function (title, content, buttons, windowCls) {
                     var modal = $modal.open({
                         animation: true,
-                        templateUrl: requirejs.toUrl('partials/modal/confirm.html'),
+                        templateUrl: 'javascript/partials/modal/confirm.html',
                         controller: 'ModalConfirmCtrl',
                         controllerAs: 'confirmCtl',
                         windowClass: windowCls || '',

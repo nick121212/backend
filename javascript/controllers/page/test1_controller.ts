@@ -23,7 +23,7 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
         };
         homeCtl.doAdd= function () {
             growl.addSuccessMessage("ADD");
-        }
+        };
         homeCtl.tools = [
             {
                 iconCls: "fa-pencil bigger-110",

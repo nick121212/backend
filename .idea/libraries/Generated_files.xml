@@ -18,6 +18,7 @@
         <item url="file://$PROJECT_DIR$/javascript/models/pagination_models.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/login_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/home_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/controllers.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/modules/filter_module.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/modules/animation_module.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/modules/app_module.js" />
@@ -27,6 +28,7 @@
         <item url="file://$PROJECT_DIR$/javascript/services/time_service.js" />
         <item url="file://$PROJECT_DIR$/javascript/services/modal_provider.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/home/sidebar_controller.js" />
+        <item url="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/home/main_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/forget_email_controller.js" />
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/home/home_controller.js" />
@@ -59,7 +61,6 @@
         <item url="file://$PROJECT_DIR$/grunt/dest/javascript/main.js" />
         <item url="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
         <item url="file://$PROJECT_DIR$/javascript/animations/noneleave_animation.js" />
-        <item url="file://$PROJECT_DIR$/javascript/controllers/controllers.js" />
         <item url="file://$PROJECT_DIR$/javascript/directives/passport_directive.js" />
       </sourceFilesUrls>
     </properties>
@@ -85,6 +86,7 @@
       <root url="file://$PROJECT_DIR$/javascript/models/pagination_models.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/login_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/home_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/controllers.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/modules/filter_module.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/modules/animation_module.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/modules/app_module.js" />
@@ -95,6 +97,7 @@
       <root url="file://$PROJECT_DIR$/javascript/services/modal_provider.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/home/sidebar_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/home/main_controller.js" />
+      <root url="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/login/forget_email_controller.js" />
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/controllers/home/home_controller.js" />
       <root url="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js" />
@@ -126,7 +129,6 @@
       <root url="file://$PROJECT_DIR$/grunt/dest/javascript/main.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
       <root url="file://$PROJECT_DIR$/javascript/animations/noneleave_animation.js" />
-      <root url="file://$PROJECT_DIR$/javascript/controllers/controllers.js" />
       <root url="file://$PROJECT_DIR$/javascript/directives/passport_directive.js" />
     </CLASSES>
     <SOURCES />

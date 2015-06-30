@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9399724e-0f7b-4e68-b881-68a7dba0fcda" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/angular-nicescroll/angular-nicescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/libs/angular-nicescroll/jquery-nicescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/directives/passport_directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/controllers/controllers.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/html-minifier/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/html-minifier/node_modules/uglify-js/node_modules/uglify-to-browserify/.npmignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/character-parser/.npmignore" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/character-parser/.npmignore" />
@@ -34,17 +32,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/uglify-js/node_modules/uglify-to-browserify/README.md" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/uglify-js/node_modules/uglify-to-browserify/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/uglify-js/node_modules/yargs/node_modules/window-size/README.md" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/uglify-js/node_modules/yargs/node_modules/window-size/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/node_modules/promise/Readme.md" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/node_modules/promise/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/ace/ace.min.css" afterPath="$PROJECT_DIR$/content/ace/ace.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js.map" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.js" afterPath="$PROJECT_DIR$/javascript/modules/app_module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/modules/app_module.ts" afterPath="$PROJECT_DIR$/javascript/modules/app_module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-ng-html2js/appveyor.yml" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-ng-html2js/appveyor.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt/node_modules/iconv-lite/test/big5File.txt" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt/node_modules/iconv-lite/test/big5File.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt/node_modules/iconv-lite/test/gbkFile.txt" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt/node_modules/iconv-lite/test/gbkFile.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/common/grid_toolbar.html" afterPath="$PROJECT_DIR$/javascript/partials/common/grid_toolbar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/gruntfile.js" afterPath="$PROJECT_DIR$/grunt/gruntfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/history.md" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/history.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/home/home_content.html" afterPath="$PROJECT_DIR$/javascript/partials/home/home_content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/uglify-to-browserify/index.js" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/uglify-to-browserify/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.js" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.js" />
@@ -63,25 +58,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.js.map" afterPath="$PROJECT_DIR$/javascript/main.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.js" afterPath="$PROJECT_DIR$/javascript/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/main.ts" afterPath="$PROJECT_DIR$/javascript/main.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/home/main_controller.js.map" afterPath="$PROJECT_DIR$/javascript/controllers/home/main_controller.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/home/main_controller.js" afterPath="$PROJECT_DIR$/javascript/controllers/home/main_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/home/main_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/home/main_controller.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/services/modal_provider.ts" afterPath="$PROJECT_DIR$/javascript/services/modal_provider.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/models/pagination_models.d.ts" afterPath="$PROJECT_DIR$/javascript/models/pagination_models.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/models/pagination_models.ts" afterPath="$PROJECT_DIR$/javascript/models/pagination_models.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/partials.js" afterPath="$PROJECT_DIR$/javascript/partials/partials.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/readme.md" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/lib/shared.js" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/lib/shared.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.js.map" afterPath="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.js" afterPath="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/pages/test2.html" afterPath="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js.map" afterPath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js" afterPath="$PROJECT_DIR$/javascript/directives/sidebar_directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" afterPath="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/form/testform.html" afterPath="$PROJECT_DIR$/javascript/partials/form/testform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/partials/directive/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/javascript/partials/directive/toolbar/toolbar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/directives/toolbar_directive.ts" afterPath="$PROJECT_DIR$/javascript/directives/toolbar_directive.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/lib/transformers.js" afterPath="$PROJECT_DIR$/grunt/node_modules/grunt-html2js/node_modules/jade/node_modules/transformers/lib/transformers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/ng-grid/ui-grid.css" afterPath="$PROJECT_DIR$/content/ng-grid/ui-grid.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b1d4f0ee-7cee-4922-8c76-d9ade4a3bb3d" name="New changelist" comment="" />
@@ -109,25 +99,84 @@
         <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="299" column="45" selection-start-line="299" selection-start-column="45" selection-end-line="299" selection-end-column="45" />
+              <caret line="212" column="60" selection-start-line="212" selection-start-column="60" selection-end-line="212" selection-end-column="60" />
               <folding>
                 <element signature="e#0#83#0" expanded="false" />
-                <element signature="e#3809#5987#0" expanded="false" />
-                <element signature="e#8925#10033#0" expanded="false" />
-                <element signature="e#10186#10858#0" expanded="false" />
-                <element signature="e#11011#11683#0" expanded="false" />
-                <element signature="e#11826#12486#0" expanded="false" />
-                <element signature="e#13234#14721#0" expanded="false" />
+                <element signature="e#3773#5951#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/controllers/home/home_controller.ts">
+      <file leaf-file-name="test2_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="40" />
+              <caret line="294" column="31" selection-start-line="294" selection-start-column="31" selection-end-line="294" selection-end-column="31" />
+              <folding>
+                <marker date="1435655487000" expanded="true" signature="402:9312" placeholder="{...}" />
+                <marker date="1435655487000" expanded="true" signature="592:9312" placeholder="{...}" />
+                <marker date="1435655487000" expanded="true" signature="1891:9312" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal_provider.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/services/modal_provider.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="77" selection-start-line="80" selection-start-column="77" selection-end-line="80" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toolbar_directive.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2_controller.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7349823">
+              <caret line="229" column="78" selection-start-line="229" selection-start-column="78" selection-end-line="229" selection-end-column="78" />
+              <folding>
+                <element signature="e#698#934#0" expanded="false" />
+                <element signature="e#978#1142#0" expanded="false" />
+                <element signature="e#1186#1856#0" expanded="false" />
+                <element signature="e#2171#8285#0" expanded="false" />
+                <element signature="e#8793#9347#0" expanded="false" />
+                <element signature="e#9405#10109#0" expanded="false" />
+                <element signature="e#10183#10365#0" expanded="false" />
+                <element signature="e#10590#11707#0" expanded="false" />
+                <element signature="e#11639#11697#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar_directive.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="89" column="84" selection-start-line="89" selection-start-column="84" selection-end-line="89" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpleform_directive.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,92 +186,30 @@
         <entry file="file://$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="33" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
-                <element signature="e#648#3917#0" expanded="false" />
+                <element signature="e#627#3896#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passport_directive.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/directives/passport_directive.ts">
+      <file leaf-file-name="controllers.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/controllers/controllers.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/controllers/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forget_email_controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/controllers/login/forget_email_controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/controllers/home/main_controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gruntfile.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gruntfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grunt/gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64220184">
-              <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test1_controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="54" />
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test2_controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="293" column="26" selection-start-line="293" selection-start-column="26" selection-end-line="293" selection-end-column="26" />
-              <folding>
-                <element signature="e#698#934#0" expanded="false" />
-                <element signature="e#978#1142#0" expanded="false" />
-                <element signature="e#1186#1856#0" expanded="false" />
-                <element signature="e#1897#8759#0" expanded="false" />
-                <element signature="e#2171#8285#0" expanded="false" />
-                <element signature="e#8799#9334#0" expanded="false" />
-                <element signature="e#9392#10096#0" expanded="false" />
-                <element signature="e#10170#10352#0" expanded="false" />
-                <element signature="e#10420#10544#0" expanded="false" />
-                <element signature="e#11080#11584#0" expanded="false" />
-                <element signature="e#11632#11690#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -232,8 +219,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Html5" />
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -253,13 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_inline.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform_horizontal.html" />
-        <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/simpleform.html" />
-        <option value="$PROJECT_DIR$/javascript/models/passport_models.d.ts" />
-        <option value="$PROJECT_DIR$/javascript/services/time_service.ts" />
-        <option value="$PROJECT_DIR$/javascript/libs/angular-cookie/angular-cookie.js" />
-        <option value="$PROJECT_DIR$/javascript/services/passport_service.ts" />
         <option value="$PROJECT_DIR$/javascript/controllers/login/register_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/login/forget_phone.html" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-vbutton/angular-vbutton.js" />
@@ -271,8 +251,6 @@
         <option value="$PROJECT_DIR$/javascript/libs/angular-animate/ng-animate.js" />
         <option value="$PROJECT_DIR$/javascript/partials/modal/form.html" />
         <option value="$PROJECT_DIR$/javascript/models/passport_models.ts" />
-        <option value="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
-        <option value="$PROJECT_DIR$/javascript/partials/pages/test1.html" />
         <option value="$PROJECT_DIR$/javascript/partials/partials.js" />
         <option value="$PROJECT_DIR$/javascript/grunt/gruntfile.js" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html" />
@@ -282,28 +260,37 @@
         <option value="$PROJECT_DIR$/javascript/modules/directive_module.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/login/login.html" />
         <option value="$PROJECT_DIR$/javascript/partials/directive/toolbar/toolbar.html" />
-        <option value="$PROJECT_DIR$/javascript/directives/toolbar_directive.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/common/grid_toolbar.html" />
         <option value="$PROJECT_DIR$/javascript/models/pagination_models.d.ts" />
         <option value="$PROJECT_DIR$/javascript/models/pagination_models.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/pages/test2.html" />
         <option value="$PROJECT_DIR$/javascript/partials/home/home_content.html" />
-        <option value="$PROJECT_DIR$/javascript/main.ts" />
         <option value="$PROJECT_DIR$/javascript/partials/form/testform.html" />
         <option value="$PROJECT_DIR$/content/ace/ace.min.css" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-uibootstrap/uibootstrap.js" />
-        <option value="$PROJECT_DIR$/javascript/services/modal_provider.ts" />
-        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
         <option value="$PROJECT_DIR$/content/ng-grid/ui-grid.css" />
         <option value="$PROJECT_DIR$/javascript/libs/angular-grid/ui-grid.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascript/directives/passport_directive.ts" />
-        <option value="$PROJECT_DIR$/javascript/controllers/controllers.ts" />
-        <option value="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts" />
-        <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
         <option value="$PROJECT_DIR$/javascript/controllers/home/main_controller.ts" />
         <option value="$PROJECT_DIR$/javascript/controllers/controllers.js" />
+        <option value="$PROJECT_DIR$/javascript/config.js" />
+        <option value="$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/javascript/controllers/controllers.ts" />
+        <option value="$PROJECT_DIR$/javascript/main.ts" />
+        <option value="$PROJECT_DIR$/javascript/partials/pages/test1.html" />
+        <option value="$PROJECT_DIR$/grunt/dest/javascript/directives/sidebar_directive.js" />
+        <option value="$PROJECT_DIR$/grunt/dest/javascript/directives/sidebar_directive.ts" />
+        <option value="$PROJECT_DIR$/grunt/dest/javascript/directives/simpleform_directive.js" />
+        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.js" />
+        <option value="$PROJECT_DIR$/javascript/directives/sidebar_directive.ts" />
+        <option value="$PROJECT_DIR$/javascript/directives/toolbar_directive.ts" />
+        <option value="$PROJECT_DIR$/javascript/services/modal_provider.ts" />
+        <option value="$PROJECT_DIR$/javascript/directives/simpleform_directive.ts" />
+        <option value="$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts" />
         <option value="$PROJECT_DIR$/grunt/gruntfile.js" />
+        <option value="$PROJECT_DIR$/javascript/modules/app_module.ts" />
+        <option value="$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts" />
       </list>
     </option>
   </component>
@@ -508,6 +495,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -527,6 +554,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -951,7 +1044,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435571553170</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="ui.grid表格控件&#10;">
+      <created>1435650097383</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1435650097383</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -967,25 +1066,25 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18630137" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33013698" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19863014" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21721311" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36849314" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.215847" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19863014" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33013698" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36849314" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1033,83 +1132,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/services/passport_service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grunt/dest/content/ace/ace.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74585634">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/directive/simpleform/views/simpleform_editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/login/forget_phone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="29" selection-start-line="22" selection-start-column="19" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/modal/alert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/modal/confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/filter_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/service_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/modules/animation_module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1145,13 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6097561">
-          <caret line="65" column="0" selection-start-line="60" selection-start-column="23" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/models/passport_models.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16574585">
@@ -1163,13 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="38" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1250,14 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/partials/form/testform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
@@ -1301,14 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/services/modal_provider.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/ng-grid/ui-grid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.037037">
@@ -1335,14 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/services/httpinterceptor_factory.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1351,46 +1335,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="293" column="26" selection-start-line="293" selection-start-column="26" selection-end-line="293" selection-end-column="26" />
-          <folding>
-            <element signature="e#698#934#0" expanded="false" />
-            <element signature="e#978#1142#0" expanded="false" />
-            <element signature="e#1186#1856#0" expanded="false" />
-            <element signature="e#1897#8759#0" expanded="false" />
-            <element signature="e#2171#8285#0" expanded="false" />
-            <element signature="e#8799#9334#0" expanded="false" />
-            <element signature="e#9392#10096#0" expanded="false" />
-            <element signature="e#10170#10352#0" expanded="false" />
-            <element signature="e#10420#10544#0" expanded="false" />
-            <element signature="e#11080#11584#0" expanded="false" />
-            <element signature="e#11632#11690#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/directives/passport_directive.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1403,32 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="e#648#3917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="299" column="45" selection-start-line="299" selection-start-column="45" selection-end-line="299" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#83#0" expanded="false" />
-            <element signature="e#3809#5987#0" expanded="false" />
-            <element signature="e#8925#10033#0" expanded="false" />
-            <element signature="e#10186#10858#0" expanded="false" />
-            <element signature="e#11011#11683#0" expanded="false" />
-            <element signature="e#11826#12486#0" expanded="false" />
-            <element signature="e#13234#14721#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/controllers/home/main_controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1437,15 +1359,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/login/forget_email_controller.ts">
+    <entry file="file://$PROJECT_DIR$/javascript/optimized.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+          <caret line="220" column="36" selection-start-line="220" selection-start-column="36" selection-end-line="220" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/controllers/controllers.js">
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test1_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="e#717#1112#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+          <folding>
+            <element signature="e#340#1835#0" expanded="false" />
+            <element signature="e#1852#3320#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/login/home_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="78" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/login/login_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/login/forget_email_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/login/forget_email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1453,11 +1428,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/login/forget_phone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="29" column="29" selection-start-line="22" selection-start-column="19" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/partials/pages/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="47" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/dest/javascript/directives/sidebar_directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding>
+            <marker date="1435654786000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435654786000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435654786000" expanded="true" signature="-1:-1" placeholder="{&quot;restrict&quot;: 'EA'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/dest/javascript/directives/sidebar_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="84" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/dest/javascript/directives/simpleform_directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="294" column="31" selection-start-line="294" selection-start-column="31" selection-end-line="294" selection-end-column="31" />
+          <folding>
+            <marker date="1435655487000" expanded="true" signature="402:9312" placeholder="{...}" />
+            <marker date="1435655487000" expanded="true" signature="592:9312" placeholder="{...}" />
+            <marker date="1435655487000" expanded="true" signature="1891:9312" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/directives/sidebar_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="84" selection-start-line="89" selection-start-column="84" selection-end-line="89" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/directives/toolbar_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/services/modal_provider.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="77" selection-start-line="80" selection-start-column="77" selection-end-line="80" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/directives/simpleform_directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/home/sidebar_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#627#3896#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grunt/gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64220184">
-          <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/controllers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/modules/app_module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="212" column="60" selection-start-line="212" selection-start-column="60" selection-end-line="212" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#83#0" expanded="false" />
+            <element signature="e#3773#5951#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/controllers/page/test2_controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7349823">
+          <caret line="229" column="78" selection-start-line="229" selection-start-column="78" selection-end-line="229" selection-end-column="78" />
+          <folding>
+            <element signature="e#698#934#0" expanded="false" />
+            <element signature="e#978#1142#0" expanded="false" />
+            <element signature="e#1186#1856#0" expanded="false" />
+            <element signature="e#2171#8285#0" expanded="false" />
+            <element signature="e#8793#9347#0" expanded="false" />
+            <element signature="e#9405#10109#0" expanded="false" />
+            <element signature="e#10183#10365#0" expanded="false" />
+            <element signature="e#10590#11707#0" expanded="false" />
+            <element signature="e#11639#11697#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

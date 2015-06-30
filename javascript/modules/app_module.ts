@@ -28,8 +28,6 @@ define([
         //'angular-nicescroll',
         'ui-grid',
 
-        'controllers/controllers',
-
         'directives/sidebar_directive',
         'directives/toolbar_directive',
         'directives/simpleform_directive',
@@ -189,7 +187,7 @@ define([
                             access: {isFree: true},
                             views: {
                                 '': {
-                                    templateUrl: requirejs.toUrl('partials/home/index.html'),
+                                    templateUrl: 'javascript/partials/home/index.html',
                                     controller: 'HomeController',
                                     controllerAs: 'homeCtl',
                                     //resolve: {
@@ -199,7 +197,7 @@ define([
                                     //}
                                 },
                                 'sidebarView@home': {
-                                    templateUrl: requirejs.toUrl('partials/home/home_sidebar.html'),
+                                    templateUrl: 'javascript/partials/home/home_sidebar.html',
                                     controller: 'SidebarController',
                                     controllerAs: 'sidebarCtl',
                                     //resolve: {
@@ -209,10 +207,10 @@ define([
                                     //}
                                 },
                                 'contentView@home': {
-                                    templateUrl: requirejs.toUrl('partials/home/home_content.html')
+                                    templateUrl: 'javascript/partials/home/home_content.html'
                                 },
                                 'footerView@home': {
-                                    templateUrl: requirejs.toUrl('partials/home/home_footer.html'),
+                                    templateUrl: 'javascript/partials/home/home_footer.html',
                                 }
                             }
                         })
@@ -225,20 +223,24 @@ define([
                             access: {isFree: true},
                             views: {
                                 '': {
-                                    templateUrl: requirejs.toUrl('partials/login/index.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/login/home_controller'
-                                        ])
-                                    }
+                                    templateUrl: 'javascript/partials/login/index.html',
+                                    controller: 'LoginHomeController',
+                                    controllerAs: 'loginHomeCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/login/home_controller'
+                                    //    ])
+                                    //}
                                 },
                                 'contentView@login': {
-                                    templateUrl: requirejs.toUrl('partials/login/login.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/login/login_controller'
-                                        ])
-                                    }
+                                    templateUrl: 'javascript/partials/login/login.html',
+                                    controller: 'LoginController',
+                                    controllerAs: 'loginCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/login/login_controller'
+                                    //    ])
+                                    //}
                                 }
                             }
                         })
@@ -250,12 +252,14 @@ define([
                             access: {isFree: true},
                             views: {
                                 'contentView': {
-                                    templateUrl: requirejs.toUrl('partials/login/forget_email.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/login/forget_email_controller'
-                                        ])
-                                    }
+                                    templateUrl: 'javascript/partials/login/forget_email.html',
+                                    controller: 'ForgetEmailController',
+                                    controllerAs: 'forgetCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/login/forget_email_controller'
+                                    //    ])
+                                    //}
                                 }
                             }
                         })
@@ -267,12 +271,14 @@ define([
                             access: {isFree: true},
                             views: {
                                 'contentView': {
-                                    templateUrl: requirejs.toUrl('partials/login/forget_phone.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/login/forget_phone_controller'
-                                        ])
-                                    }
+                                    templateUrl: 'javascript/partials/login/forget_phone.html',
+                                    controller: 'ForgetPhoneController',
+                                    controllerAs: 'forgetCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/login/forget_phone_controller'
+                                    //    ])
+                                    //}
                                 }
                             }
                         })
@@ -284,12 +290,14 @@ define([
                             access: {isFree: true},
                             views: {
                                 'contentView': {
-                                    templateUrl: requirejs.toUrl('partials/login/register.html'),
-                                    resolve: {
-                                        deps: $requireProvider.requireJS([
-                                            'controllers/login/register_controller'
-                                        ])
-                                    }
+                                    templateUrl: 'javascript/partials/login/register.html',
+                                    controller: 'RegisterController',
+                                    controllerAs: 'registerCtl',
+                                    //resolve: {
+                                    //    deps: $requireProvider.requireJS([
+                                    //        'controllers/login/register_controller'
+                                    //    ])
+                                    //}
                                 }
                             }
                         })
@@ -302,7 +310,7 @@ define([
                             access: {isFree: true},
                             views: {
                                 'pageContentView': {
-                                    templateUrl: requirejs.toUrl('partials/home/welcome.html')
+                                    templateUrl: 'javascript/partials/home/welcome.html'
                                 }
                             }
                         })
@@ -316,23 +324,31 @@ define([
                             views: {
                                 'pageContentView': {
                                     templateUrl: function ($stateParams) {
-                                        return requirejs.toUrl('partials/pages/' + $stateParams.page + '.html');
+                                        return 'javascript/partials/pages/' + $stateParams.page + '.html';
                                     },
-                                    resolve: {
-                                        load: [
-                                            '$q',
-                                            '$stateParams',
-                                            '$rootScope',
-                                            function ($q, $stateParams, $rootScope) {
-                                                var deferred = $q.defer();
-                                                require(['controllers/page/' + $stateParams.page + '_controller'], function () {
-                                                    $rootScope.$apply(function () {
-                                                        deferred.resolve();
-                                                    });
-                                                });
-                                                return deferred.promise;
-                                            }]
+                                    controllerProvider: function ($stateParams) {
+                                        var page = $stateParams.page.split('');
+
+                                        if (page.length) {
+                                            page[0] = page[0].toUpperCase();
+                                        }
+                                        return page.join('') + 'Controller';
                                     }
+                                    //resolve: {
+                                    //    load: [
+                                    //        '$q',
+                                    //        '$stateParams',
+                                    //        '$rootScope',
+                                    //        function ($q, $stateParams, $rootScope) {
+                                    //            var deferred = $q.defer();
+                                    //            require(['controllers/page/' + $stateParams.page + '_controller'], function () {
+                                    //                $rootScope.$apply(function () {
+                                    //                    deferred.resolve();
+                                    //                });
+                                    //            });
+                                    //            return deferred.promise;
+                                    //        }]
+                                    //}
                                 }
                             }
                         });
