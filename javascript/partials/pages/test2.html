@@ -1,54 +1,52 @@
-<div ng-controller="Test2Controller as testCtl">
-    <div class="page-header">
-        <h1>
-            simpleForm
-            <small>
-                <i class="ace-icon fa fa-angle-double-right"></i>
-                TEST2 simpleForm
-            </small>
-        </h1>
+<div class="page-header">
+    <h1>
+        simpleForm
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            TEST2 simpleForm
+        </small>
+    </h1>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="position-relative">
+            <div toolbar showmini="false" showtitle="true" tools="testCtl.tools"
+                 class="btn-group hidden-sm hidden-xs"></div>
+        </div>
+        <div class="space-2"></div>
     </div>
+    <div class="col-xs-12">
 
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="position-relative">
-                <div toolbar showmini="false" showtitle="true" tools="testCtl.tools"
-                     class="btn-group hidden-sm hidden-xs"></div>
-            </div>
-            <div class="space-2"></div>
-        </div>
-        <div class="col-xs-12">
+        <div ui-grid="testCtl.gridOptions"
+             ui-grid-pagination
+             ui-grid-edit
+             ui-grid-selection
+             ui-grid-cellNav
+             class="grid"></div>
 
-            <div ui-grid="testCtl.gridOptions"
-                 ui-grid-pagination
-                 ui-grid-edit
-                 ui-grid-selection
-                 ui-grid-cellNav
-                 class="grid"></div>
-
+    </div>
+    <div class="col-xs-12">
+        <div data-toggle="buttons" class="btn-group btn-group-sm pagination">
+            <label class="btn btn-white btn-primary"
+                   ng-class="{'active':page==testCtl.pagination.pageSize}"
+                   ng-repeat="page in testCtl.pagination.perPageOptions">
+                <input type="radio" value="{{page}}" ng-model="testCtl.pagination.pageSize">
+                {{page}}
+            </label>
         </div>
-        <div class="col-xs-12">
-            <div data-toggle="buttons" class="btn-group btn-group-sm pagination">
-                <label class="btn btn-white btn-primary"
-                       ng-class="{'active':page==testCtl.pagination.pageSize}"
-                       ng-repeat="page in testCtl.pagination.perPageOptions">
-                    <input type="radio" value="{{page}}" ng-model="testCtl.pagination.pageSize">
-                    {{page}}
-                </label>
-            </div>
-            <pagination total-items="testCtl.pagination.totalCount"
-                        items-per-page="testCtl.pagination.pageSize"
-                        ng-model="testCtl.pagination.currentPage"
-                        max-size="testCtl.pagination.maxSize"
-                        ng-change="testCtl.pagination.changeNum()"
-                        rotate="false"
-                        previous-text="&lsaquo;"
-                        next-text="&rsaquo;"
-                        first-text="&laquo;"
-                        last-text="&raquo;"
-                        class="pagination-sm pull-right"
-                        boundary-links="true">
-            </pagination>
-        </div>
+        <pagination total-items="testCtl.pagination.totalCount"
+                    items-per-page="testCtl.pagination.pageSize"
+                    ng-model="testCtl.pagination.currentPage"
+                    max-size="testCtl.pagination.maxSize"
+                    ng-change="testCtl.pagination.changeNum()"
+                    rotate="false"
+                    previous-text="&lsaquo;"
+                    next-text="&rsaquo;"
+                    first-text="&laquo;"
+                    last-text="&raquo;"
+                    class="pagination-sm pull-right"
+                    boundary-links="true">
+        </pagination>
     </div>
 </div>

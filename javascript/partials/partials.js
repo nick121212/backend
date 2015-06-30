@@ -517,7 +517,7 @@ angular.module("javascript/partials/home/home_sidebar.html", []).run(["$template
     "<!--<div class=\"sidebar sidebar-fixed responsive sidebar-scroll\">-->\n" +
     "<div class=\"nav-wrap-up pos-rel\">\n" +
     "    <div class=\"nav-wrap\" style=\"overflow: scroll;\" ng-style=\"{'max-height':$root.size.height}\">\n" +
-    "        <div ng-controller=\"SidebarController as sidebarCtl\" style=\"position: relative; top: 0px; transition-property: top; -webkit-transition-property: top; transition-duration: 0.15s; -webkit-transition-duration: 0.15s;\">\n" +
+    "        <div style=\"position: relative; top: 0px; transition-property: top; -webkit-transition-property: top; transition-duration: 0.15s; -webkit-transition-duration: 0.15s;\">\n" +
     "            <!--快捷键-->\n" +
     "            <!--<div class=\"sidebar-shortcuts\" id=\"sidebar-shortcuts\">-->\n" +
     "                <!--<div class=\"sidebar-shortcuts-large\" id=\"sidebar-shortcuts-large\">-->\n" +
@@ -563,7 +563,7 @@ angular.module("javascript/partials/home/home_sidebar.html", []).run(["$template
 
 angular.module("javascript/partials/home/index.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/home/index.html",
-    "<div class=\"no-skin mob-safari\" ng-controller=\"HomeController as homeCtl\">\n" +
+    "<div class=\"no-skin mob-safari\">\n" +
     "    <!--navbar-->\n" +
     "    <div class=\"navbar navbar-default navbar-fixed-top\">\n" +
     "        <div class=\"navbar-container\">\n" +
@@ -655,7 +655,7 @@ angular.module("javascript/partials/home/welcome.html", []).run(["$templateCache
 
 angular.module("javascript/partials/login/forget_email.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/login/forget_email.html",
-    "<div id=\"forgot-box\" class=\"forgot-box widget-box no-border visible\" ng-controller=\"ForgetEmailController as forgetCtl\">\n" +
+    "<div id=\"forgot-box\" class=\"forgot-box widget-box no-border visible\">\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
     "            <h4 class=\"header red lighter bigger\">\n" +
@@ -706,7 +706,7 @@ angular.module("javascript/partials/login/forget_email.html", []).run(["$templat
 
 angular.module("javascript/partials/login/forget_phone.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/login/forget_phone.html",
-    "<div id=\"forgot-box\" class=\"forgot-box widget-box no-border visible\" ng-controller=\"ForgetPhoneController as forgetCtl\">\n" +
+    "<div id=\"forgot-box\" class=\"forgot-box widget-box no-border visible\">\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
     "            <h4 class=\"header red lighter bigger\">\n" +
@@ -760,7 +760,7 @@ angular.module("javascript/partials/login/forget_phone.html", []).run(["$templat
 
 angular.module("javascript/partials/login/index.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/login/index.html",
-    "<div class=\"main-container\" ng-controller=\"LoginHomeController as loginHomeCtl\">\n" +
+    "<div class=\"main-container\">\n" +
     "    <div class=\"main-content\">\n" +
     "        <div class=\"row\">\n" +
     "            <div class=\"col-sm-10 col-sm-offset-1\">\n" +
@@ -791,8 +791,7 @@ angular.module("javascript/partials/login/index.html", []).run(["$templateCache"
 
 angular.module("javascript/partials/login/login.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/login/login.html",
-    "<div class=\"login-box visible widget-box no-border navbar-fixed-top\"\n" +
-    "     ng-controller=\"LoginController as loginCtl\">\n" +
+    "<div class=\"login-box visible widget-box no-border navbar-fixed-top\">\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
     "            <h4 class=\"header blue lighter bigger\">\n" +
@@ -871,7 +870,7 @@ angular.module("javascript/partials/login/login.html", []).run(["$templateCache"
 
 angular.module("javascript/partials/login/register.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/login/register.html",
-    "<div id=\"signup-box\" class=\"signup-box widget-box no-border visible\" ng-controller=\"RegisterController as regCtl\">\n" +
+    "<div id=\"signup-box\" class=\"signup-box widget-box no-border visible\" >\n" +
     "    <div class=\"widget-body\">\n" +
     "        <div class=\"widget-main\">\n" +
     "            <h4 class=\"header green lighter bigger\">\n" +
@@ -968,390 +967,389 @@ angular.module("javascript/partials/modal/confirm.html", []).run(["$templateCach
 
 angular.module("javascript/partials/pages/test1.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/pages/test1.html",
-    "<div ng-controller=\"Test1Controller as testCtl\">\n" +
-    "    <div class=\"page-header\">\n" +
-    "        <h1>\n" +
-    "            Tables\n" +
-    "            <small>\n" +
-    "                <i class=\"ace-icon fa fa-angle-double-right\"></i>\n" +
-    "                TEST1 tatic &amp; Dynamic Tables\n" +
-    "            </small>\n" +
-    "        </h1>\n" +
+    "<div class=\"page-header\">\n" +
+    "    <h1>\n" +
+    "        Tables\n" +
+    "        <small>\n" +
+    "            <i class=\"ace-icon fa fa-angle-double-right\"></i>\n" +
+    "            TEST1 tatic &amp; Dynamic Tables\n" +
+    "        </small>\n" +
+    "    </h1>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "    <div class=\"col-xs-12\">\n" +
+    "        <div toolbar showmini=\"false\" showtitle=\"true\" tools=\"testCtl.tools\"\n" +
+    "             class=\"btn-group hidden-sm hidden-xs\"></div>\n" +
+    "        <div class=\"space-6\"></div>\n" +
     "    </div>\n" +
-    "    <div class=\"row\">\n" +
-    "        <div class=\"col-xs-12\">\n" +
-    "            <div toolbar showmini=\"false\" showtitle=\"true\" tools=\"testCtl.tools\" class=\"btn-group hidden-sm hidden-xs\"></div>\n" +
-    "            <div class=\"space-6\"></div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-xs-12\">\n" +
-    "            <table id=\"simple-table\" class=\"table table-striped table-bordered table-hover\">\n" +
-    "                <thead>\n" +
-    "                <tr>\n" +
-    "                    <th class=\"center\">\n" +
-    "                        <label class=\"pos-rel\">\n" +
-    "                            <input type=\"checkbox\" class=\"ace\">\n" +
-    "                            <span class=\"lbl\"></span>\n" +
-    "                        </label>\n" +
-    "                    </th>\n" +
-    "                    <th>Domain</th>\n" +
-    "                    <th>Price</th>\n" +
-    "                    <th class=\"hidden-480\">Clicks</th>\n" +
+    "    <div class=\"col-xs-12\">\n" +
+    "        <table id=\"simple-table\" class=\"table table-striped table-bordered table-hover\">\n" +
+    "            <thead>\n" +
+    "            <tr>\n" +
+    "                <th class=\"center\">\n" +
+    "                    <label class=\"pos-rel\">\n" +
+    "                        <input type=\"checkbox\" class=\"ace\">\n" +
+    "                        <span class=\"lbl\"></span>\n" +
+    "                    </label>\n" +
+    "                </th>\n" +
+    "                <th>Domain</th>\n" +
+    "                <th>Price</th>\n" +
+    "                <th class=\"hidden-480\">Clicks</th>\n" +
     "\n" +
-    "                    <th>\n" +
-    "                        <i class=\"ace-icon fa fa-clock-o bigger-110 hidden-480\"></i>\n" +
-    "                        Update\n" +
-    "                    </th>\n" +
-    "                    <th class=\"hidden-480\">Status</th>\n" +
+    "                <th>\n" +
+    "                    <i class=\"ace-icon fa fa-clock-o bigger-110 hidden-480\"></i>\n" +
+    "                    Update\n" +
+    "                </th>\n" +
+    "                <th class=\"hidden-480\">Status</th>\n" +
     "\n" +
-    "                    <th></th>\n" +
-    "                </tr>\n" +
-    "                </thead>\n" +
+    "                <th></th>\n" +
+    "            </tr>\n" +
+    "            </thead>\n" +
     "\n" +
-    "                <tbody>\n" +
-    "                <tr>\n" +
-    "                    <td class=\"center\">\n" +
-    "                        <label class=\"pos-rel\">\n" +
-    "                            <input type=\"checkbox\" class=\"ace\">\n" +
-    "                            <span class=\"lbl\"></span>\n" +
-    "                        </label>\n" +
-    "                    </td>\n" +
+    "            <tbody>\n" +
+    "            <tr>\n" +
+    "                <td class=\"center\">\n" +
+    "                    <label class=\"pos-rel\">\n" +
+    "                        <input type=\"checkbox\" class=\"ace\">\n" +
+    "                        <span class=\"lbl\"></span>\n" +
+    "                    </label>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <a href=\"#\">ace.com</a>\n" +
-    "                    </td>\n" +
-    "                    <td>$45</td>\n" +
-    "                    <td class=\"hidden-480\">3,330</td>\n" +
-    "                    <td>Feb 12</td>\n" +
+    "                <td>\n" +
+    "                    <a href=\"#\">ace.com</a>\n" +
+    "                </td>\n" +
+    "                <td>$45</td>\n" +
+    "                <td class=\"hidden-480\">3,330</td>\n" +
+    "                <td>Feb 12</td>\n" +
     "\n" +
-    "                    <td class=\"hidden-480\">\n" +
-    "                        <span class=\"label label-sm label-warning\">Expiring</span>\n" +
-    "                    </td>\n" +
+    "                <td class=\"hidden-480\">\n" +
+    "                    <span class=\"label label-sm label-warning\">Expiring</span>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <div toolbar showmini=\"false\" showtitle=\"false\" tools=\"testCtl.tools\"\n" +
-    "                             class=\"hidden-sm hidden-xs btn-group\"></div>\n" +
+    "                <td>\n" +
+    "                    <div toolbar showmini=\"false\" showtitle=\"false\" tools=\"testCtl.tools\"\n" +
+    "                         class=\"hidden-sm hidden-xs btn-group\"></div>\n" +
     "\n" +
-    "                        <div class=\"hidden-md hidden-lg\" toolbar showmini=\"true\" showtitle=\"false\"\n" +
-    "                             tools=\"testCtl.tools\"></div>\n" +
+    "                    <div class=\"hidden-md hidden-lg\" toolbar showmini=\"true\" showtitle=\"false\"\n" +
+    "                         tools=\"testCtl.tools\"></div>\n" +
     "\n" +
     "\n" +
-    "                    </td>\n" +
-    "                </tr>\n" +
+    "                </td>\n" +
+    "            </tr>\n" +
     "\n" +
-    "                <tr>\n" +
-    "                    <td class=\"center\">\n" +
-    "                        <label class=\"pos-rel\">\n" +
-    "                            <input type=\"checkbox\" class=\"ace\">\n" +
-    "                            <span class=\"lbl\"></span>\n" +
-    "                        </label>\n" +
-    "                    </td>\n" +
+    "            <tr>\n" +
+    "                <td class=\"center\">\n" +
+    "                    <label class=\"pos-rel\">\n" +
+    "                        <input type=\"checkbox\" class=\"ace\">\n" +
+    "                        <span class=\"lbl\"></span>\n" +
+    "                    </label>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <a href=\"#\">base.com</a>\n" +
-    "                    </td>\n" +
-    "                    <td>$35</td>\n" +
-    "                    <td class=\"hidden-480\">2,595</td>\n" +
-    "                    <td>Feb 18</td>\n" +
+    "                <td>\n" +
+    "                    <a href=\"#\">base.com</a>\n" +
+    "                </td>\n" +
+    "                <td>$35</td>\n" +
+    "                <td class=\"hidden-480\">2,595</td>\n" +
+    "                <td>Feb 18</td>\n" +
     "\n" +
-    "                    <td class=\"hidden-480\">\n" +
-    "                        <span class=\"label label-sm label-success\">Registered</span>\n" +
-    "                    </td>\n" +
+    "                <td class=\"hidden-480\">\n" +
+    "                    <span class=\"label label-sm label-success\">Registered</span>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <div class=\"hidden-sm hidden-xs btn-group\">\n" +
-    "                            <button class=\"btn btn-xs btn-success\">\n" +
-    "                                <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                <td>\n" +
+    "                    <div class=\"hidden-sm hidden-xs btn-group\">\n" +
+    "                        <button class=\"btn btn-xs btn-success\">\n" +
+    "                            <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-info\">\n" +
+    "                            <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-danger\">\n" +
+    "                            <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-warning\">\n" +
+    "                            <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "                    </div>\n" +
+    "\n" +
+    "                    <div class=\"hidden-md hidden-lg\">\n" +
+    "                        <div class=\"inline pos-rel\">\n" +
+    "                            <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
+    "                                    data-position=\"auto\">\n" +
+    "                                <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
     "                            </button>\n" +
     "\n" +
-    "                            <button class=\"btn btn-xs btn-info\">\n" +
-    "                                <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-danger\">\n" +
-    "                                <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-warning\">\n" +
-    "                                <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "                        </div>\n" +
-    "\n" +
-    "                        <div class=\"hidden-md hidden-lg\">\n" +
-    "                            <div class=\"inline pos-rel\">\n" +
-    "                                <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
-    "                                        data-position=\"auto\">\n" +
-    "                                    <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
-    "                                </button>\n" +
-    "\n" +
-    "                                <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"View\">\n" +
+    "                            <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"View\">\n" +
     "																			<span class=\"blue\">\n" +
     "																				<i class=\"ace-icon fa fa-search-plus bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Edit\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Edit\">\n" +
     "																			<span class=\"green\">\n" +
     "																				<i class=\"ace-icon fa fa-pencil-square-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Delete\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Delete\">\n" +
     "                                                <span class=\"red\">\n" +
     "                                                    <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
     "                                                </span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
-    "                                </ul>\n" +
-    "                            </div>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
+    "                            </ul>\n" +
     "                        </div>\n" +
-    "                    </td>\n" +
-    "                </tr>\n" +
+    "                    </div>\n" +
+    "                </td>\n" +
+    "            </tr>\n" +
     "\n" +
-    "                <tr>\n" +
-    "                    <td class=\"center\">\n" +
-    "                        <label class=\"pos-rel\">\n" +
-    "                            <input type=\"checkbox\" class=\"ace\">\n" +
-    "                            <span class=\"lbl\"></span>\n" +
-    "                        </label>\n" +
-    "                    </td>\n" +
+    "            <tr>\n" +
+    "                <td class=\"center\">\n" +
+    "                    <label class=\"pos-rel\">\n" +
+    "                        <input type=\"checkbox\" class=\"ace\">\n" +
+    "                        <span class=\"lbl\"></span>\n" +
+    "                    </label>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <a href=\"#\">max.com</a>\n" +
-    "                    </td>\n" +
-    "                    <td>$60</td>\n" +
-    "                    <td class=\"hidden-480\">4,400</td>\n" +
-    "                    <td>Mar 11</td>\n" +
+    "                <td>\n" +
+    "                    <a href=\"#\">max.com</a>\n" +
+    "                </td>\n" +
+    "                <td>$60</td>\n" +
+    "                <td class=\"hidden-480\">4,400</td>\n" +
+    "                <td>Mar 11</td>\n" +
     "\n" +
-    "                    <td class=\"hidden-480\">\n" +
-    "                        <span class=\"label label-sm label-warning\">Expiring</span>\n" +
-    "                    </td>\n" +
+    "                <td class=\"hidden-480\">\n" +
+    "                    <span class=\"label label-sm label-warning\">Expiring</span>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <div class=\"hidden-sm hidden-xs btn-group\">\n" +
-    "                            <button class=\"btn btn-xs btn-success\">\n" +
-    "                                <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                <td>\n" +
+    "                    <div class=\"hidden-sm hidden-xs btn-group\">\n" +
+    "                        <button class=\"btn btn-xs btn-success\">\n" +
+    "                            <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-info\">\n" +
+    "                            <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-danger\">\n" +
+    "                            <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-warning\">\n" +
+    "                            <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "                    </div>\n" +
+    "\n" +
+    "                    <div class=\"hidden-md hidden-lg\">\n" +
+    "                        <div class=\"inline pos-rel\">\n" +
+    "                            <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
+    "                                    data-position=\"auto\">\n" +
+    "                                <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
     "                            </button>\n" +
     "\n" +
-    "                            <button class=\"btn btn-xs btn-info\">\n" +
-    "                                <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-danger\">\n" +
-    "                                <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-warning\">\n" +
-    "                                <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "                        </div>\n" +
-    "\n" +
-    "                        <div class=\"hidden-md hidden-lg\">\n" +
-    "                            <div class=\"inline pos-rel\">\n" +
-    "                                <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
-    "                                        data-position=\"auto\">\n" +
-    "                                    <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
-    "                                </button>\n" +
-    "\n" +
-    "                                <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"View\">\n" +
+    "                            <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"View\">\n" +
     "																			<span class=\"blue\">\n" +
     "																				<i class=\"ace-icon fa fa-search-plus bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Edit\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Edit\">\n" +
     "																			<span class=\"green\">\n" +
     "																				<i class=\"ace-icon fa fa-pencil-square-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Delete\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Delete\">\n" +
     "																			<span class=\"red\">\n" +
     "																				<i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
-    "                                </ul>\n" +
-    "                            </div>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
+    "                            </ul>\n" +
     "                        </div>\n" +
-    "                    </td>\n" +
-    "                </tr>\n" +
+    "                    </div>\n" +
+    "                </td>\n" +
+    "            </tr>\n" +
     "\n" +
-    "                <tr>\n" +
-    "                    <td class=\"center\">\n" +
-    "                        <label class=\"pos-rel\">\n" +
-    "                            <input type=\"checkbox\" class=\"ace\">\n" +
-    "                            <span class=\"lbl\"></span>\n" +
-    "                        </label>\n" +
-    "                    </td>\n" +
+    "            <tr>\n" +
+    "                <td class=\"center\">\n" +
+    "                    <label class=\"pos-rel\">\n" +
+    "                        <input type=\"checkbox\" class=\"ace\">\n" +
+    "                        <span class=\"lbl\"></span>\n" +
+    "                    </label>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <a href=\"#\">best.com</a>\n" +
-    "                    </td>\n" +
-    "                    <td>$75</td>\n" +
-    "                    <td class=\"hidden-480\">6,500</td>\n" +
-    "                    <td>Apr 03</td>\n" +
+    "                <td>\n" +
+    "                    <a href=\"#\">best.com</a>\n" +
+    "                </td>\n" +
+    "                <td>$75</td>\n" +
+    "                <td class=\"hidden-480\">6,500</td>\n" +
+    "                <td>Apr 03</td>\n" +
     "\n" +
-    "                    <td class=\"hidden-480\">\n" +
-    "                        <span class=\"label label-sm label-inverse arrowed-in\">Flagged</span>\n" +
-    "                    </td>\n" +
+    "                <td class=\"hidden-480\">\n" +
+    "                    <span class=\"label label-sm label-inverse arrowed-in\">Flagged</span>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <div class=\"hidden-sm hidden-xs btn-group\">\n" +
-    "                            <button class=\"btn btn-xs btn-success\">\n" +
-    "                                <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                <td>\n" +
+    "                    <div class=\"hidden-sm hidden-xs btn-group\">\n" +
+    "                        <button class=\"btn btn-xs btn-success\">\n" +
+    "                            <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-info\">\n" +
+    "                            <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-danger\">\n" +
+    "                            <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-warning\">\n" +
+    "                            <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "                    </div>\n" +
+    "\n" +
+    "                    <div class=\"hidden-md hidden-lg\">\n" +
+    "                        <div class=\"inline pos-rel\">\n" +
+    "                            <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
+    "                                    data-position=\"auto\">\n" +
+    "                                <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
     "                            </button>\n" +
     "\n" +
-    "                            <button class=\"btn btn-xs btn-info\">\n" +
-    "                                <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-danger\">\n" +
-    "                                <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-warning\">\n" +
-    "                                <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "                        </div>\n" +
-    "\n" +
-    "                        <div class=\"hidden-md hidden-lg\">\n" +
-    "                            <div class=\"inline pos-rel\">\n" +
-    "                                <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
-    "                                        data-position=\"auto\">\n" +
-    "                                    <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
-    "                                </button>\n" +
-    "\n" +
-    "                                <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"View\">\n" +
+    "                            <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"View\">\n" +
     "																			<span class=\"blue\">\n" +
     "																				<i class=\"ace-icon fa fa-search-plus bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Edit\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Edit\">\n" +
     "																			<span class=\"green\">\n" +
     "																				<i class=\"ace-icon fa fa-pencil-square-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Delete\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Delete\">\n" +
     "																			<span class=\"red\">\n" +
     "																				<i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
-    "                                </ul>\n" +
-    "                            </div>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
+    "                            </ul>\n" +
     "                        </div>\n" +
-    "                    </td>\n" +
-    "                </tr>\n" +
+    "                    </div>\n" +
+    "                </td>\n" +
+    "            </tr>\n" +
     "\n" +
-    "                <tr>\n" +
-    "                    <td class=\"center\">\n" +
-    "                        <label class=\"pos-rel\">\n" +
-    "                            <input type=\"checkbox\" class=\"ace\">\n" +
-    "                            <span class=\"lbl\"></span>\n" +
-    "                        </label>\n" +
-    "                    </td>\n" +
+    "            <tr>\n" +
+    "                <td class=\"center\">\n" +
+    "                    <label class=\"pos-rel\">\n" +
+    "                        <input type=\"checkbox\" class=\"ace\">\n" +
+    "                        <span class=\"lbl\"></span>\n" +
+    "                    </label>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <a href=\"#\">pro.com</a>\n" +
-    "                    </td>\n" +
-    "                    <td>$55</td>\n" +
-    "                    <td class=\"hidden-480\">4,250</td>\n" +
-    "                    <td>Jan 21</td>\n" +
+    "                <td>\n" +
+    "                    <a href=\"#\">pro.com</a>\n" +
+    "                </td>\n" +
+    "                <td>$55</td>\n" +
+    "                <td class=\"hidden-480\">4,250</td>\n" +
+    "                <td>Jan 21</td>\n" +
     "\n" +
-    "                    <td class=\"hidden-480\">\n" +
-    "                        <span class=\"label label-sm label-success\">Registered</span>\n" +
-    "                    </td>\n" +
+    "                <td class=\"hidden-480\">\n" +
+    "                    <span class=\"label label-sm label-success\">Registered</span>\n" +
+    "                </td>\n" +
     "\n" +
-    "                    <td>\n" +
-    "                        <div class=\"hidden-sm hidden-xs btn-group\">\n" +
-    "                            <button class=\"btn btn-xs btn-success\">\n" +
-    "                                <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                <td>\n" +
+    "                    <div class=\"hidden-sm hidden-xs btn-group\">\n" +
+    "                        <button class=\"btn btn-xs btn-success\">\n" +
+    "                            <i class=\"ace-icon fa fa-check bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-info\">\n" +
+    "                            <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-danger\">\n" +
+    "                            <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "\n" +
+    "                        <button class=\"btn btn-xs btn-warning\">\n" +
+    "                            <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
+    "                        </button>\n" +
+    "                    </div>\n" +
+    "\n" +
+    "                    <div class=\"hidden-md hidden-lg\">\n" +
+    "                        <div class=\"inline pos-rel\">\n" +
+    "                            <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
+    "                                    data-position=\"auto\">\n" +
+    "                                <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
     "                            </button>\n" +
     "\n" +
-    "                            <button class=\"btn btn-xs btn-info\">\n" +
-    "                                <i class=\"ace-icon fa fa-pencil bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-danger\">\n" +
-    "                                <i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "\n" +
-    "                            <button class=\"btn btn-xs btn-warning\">\n" +
-    "                                <i class=\"ace-icon fa fa-flag bigger-120\"></i>\n" +
-    "                            </button>\n" +
-    "                        </div>\n" +
-    "\n" +
-    "                        <div class=\"hidden-md hidden-lg\">\n" +
-    "                            <div class=\"inline pos-rel\">\n" +
-    "                                <button class=\"btn btn-minier btn-primary dropdown-toggle\" data-toggle=\"dropdown\"\n" +
-    "                                        data-position=\"auto\">\n" +
-    "                                    <i class=\"ace-icon fa fa-cog icon-only bigger-110\"></i>\n" +
-    "                                </button>\n" +
-    "\n" +
-    "                                <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"View\">\n" +
+    "                            <ul class=\"dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-info\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"View\">\n" +
     "																			<span class=\"blue\">\n" +
     "																				<i class=\"ace-icon fa fa-search-plus bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Edit\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-success\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Edit\">\n" +
     "																			<span class=\"green\">\n" +
     "																				<i class=\"ace-icon fa fa-pencil-square-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
     "\n" +
-    "                                    <li>\n" +
-    "                                        <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
-    "                                           data-original-title=\"Delete\">\n" +
+    "                                <li>\n" +
+    "                                    <a href=\"#\" class=\"tooltip-error\" data-rel=\"tooltip\" title=\"\"\n" +
+    "                                       data-original-title=\"Delete\">\n" +
     "																			<span class=\"red\">\n" +
     "																				<i class=\"ace-icon fa fa-trash-o bigger-120\"></i>\n" +
     "																			</span>\n" +
-    "                                        </a>\n" +
-    "                                    </li>\n" +
-    "                                </ul>\n" +
-    "                            </div>\n" +
+    "                                    </a>\n" +
+    "                                </li>\n" +
+    "                            </ul>\n" +
     "                        </div>\n" +
-    "                    </td>\n" +
-    "                </tr>\n" +
-    "                </tbody>\n" +
-    "            </table>\n" +
-    "        </div>\n" +
+    "                    </div>\n" +
+    "                </td>\n" +
+    "            </tr>\n" +
+    "            </tbody>\n" +
+    "        </table>\n" +
     "    </div>\n" +
     "</div>\n" +
     "");
@@ -1359,58 +1357,57 @@ angular.module("javascript/partials/pages/test1.html", []).run(["$templateCache"
 
 angular.module("javascript/partials/pages/test2.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/pages/test2.html",
-    "<div ng-controller=\"Test2Controller as testCtl\">\n" +
-    "    <div class=\"page-header\">\n" +
-    "        <h1>\n" +
-    "            simpleForm\n" +
-    "            <small>\n" +
-    "                <i class=\"ace-icon fa fa-angle-double-right\"></i>\n" +
-    "                TEST2 simpleForm\n" +
-    "            </small>\n" +
-    "        </h1>\n" +
+    "<div class=\"page-header\">\n" +
+    "    <h1>\n" +
+    "        simpleForm\n" +
+    "        <small>\n" +
+    "            <i class=\"ace-icon fa fa-angle-double-right\"></i>\n" +
+    "            TEST2 simpleForm\n" +
+    "        </small>\n" +
+    "    </h1>\n" +
+    "</div>\n" +
+    "\n" +
+    "<div class=\"row\">\n" +
+    "    <div class=\"col-xs-12\">\n" +
+    "        <div class=\"position-relative\">\n" +
+    "            <div toolbar showmini=\"false\" showtitle=\"true\" tools=\"testCtl.tools\"\n" +
+    "                 class=\"btn-group hidden-sm hidden-xs\"></div>\n" +
+    "        </div>\n" +
+    "        <div class=\"space-2\"></div>\n" +
     "    </div>\n" +
+    "    <div class=\"col-xs-12\">\n" +
     "\n" +
-    "    <div class=\"row\">\n" +
-    "        <div class=\"col-xs-12\">\n" +
-    "            <div class=\"position-relative\">\n" +
-    "                <div toolbar showmini=\"false\" showtitle=\"true\" tools=\"testCtl.tools\"\n" +
-    "                     class=\"btn-group hidden-sm hidden-xs\"></div>\n" +
-    "            </div>\n" +
-    "            <div class=\"space-2\"></div>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-xs-12\">\n" +
+    "        <div ui-grid=\"testCtl.gridOptions\"\n" +
+    "             ui-grid-pagination\n" +
+    "             ui-grid-edit\n" +
+    "             ui-grid-selection\n" +
+    "             ui-grid-cellNav\n" +
+    "             class=\"grid\"></div>\n" +
     "\n" +
-    "            <div ui-grid=\"testCtl.gridOptions\"\n" +
-    "                 ui-grid-pagination\n" +
-    "                 ui-grid-edit\n" +
-    "                 ui-grid-selection\n" +
-    "                 ui-grid-cellNav\n" +
-    "                 class=\"grid\"></div>\n" +
-    "\n" +
-    "        </div>\n" +
-    "        <div class=\"col-xs-12\">\n" +
-    "            <div data-toggle=\"buttons\" class=\"btn-group btn-group-sm pagination\">\n" +
-    "                <label class=\"btn btn-white btn-primary\"\n" +
-    "                       ng-class=\"{'active':page==testCtl.pagination.pageSize}\"\n" +
-    "                       ng-repeat=\"page in testCtl.pagination.perPageOptions\">\n" +
-    "                    <input type=\"radio\" value=\"{{page}}\" ng-model=\"testCtl.pagination.pageSize\">\n" +
-    "                    {{page}}\n" +
-    "                </label>\n" +
-    "            </div>\n" +
-    "            <pagination total-items=\"testCtl.pagination.totalCount\"\n" +
-    "                        items-per-page=\"testCtl.pagination.pageSize\"\n" +
-    "                        ng-model=\"testCtl.pagination.currentPage\"\n" +
-    "                        max-size=\"testCtl.pagination.maxSize\"\n" +
-    "                        ng-change=\"testCtl.pagination.changeNum()\"\n" +
-    "                        rotate=\"false\"\n" +
-    "                        previous-text=\"&lsaquo;\"\n" +
-    "                        next-text=\"&rsaquo;\"\n" +
-    "                        first-text=\"&laquo;\"\n" +
-    "                        last-text=\"&raquo;\"\n" +
-    "                        class=\"pagination-sm pull-right\"\n" +
-    "                        boundary-links=\"true\">\n" +
-    "            </pagination>\n" +
-    "        </div>\n" +
     "    </div>\n" +
-    "</div>");
+    "    <div class=\"col-xs-12\">\n" +
+    "        <div data-toggle=\"buttons\" class=\"btn-group btn-group-sm pagination\">\n" +
+    "            <label class=\"btn btn-white btn-primary\"\n" +
+    "                   ng-class=\"{'active':page==testCtl.pagination.pageSize}\"\n" +
+    "                   ng-repeat=\"page in testCtl.pagination.perPageOptions\">\n" +
+    "                <input type=\"radio\" value=\"{{page}}\" ng-model=\"testCtl.pagination.pageSize\">\n" +
+    "                {{page}}\n" +
+    "            </label>\n" +
+    "        </div>\n" +
+    "        <pagination total-items=\"testCtl.pagination.totalCount\"\n" +
+    "                    items-per-page=\"testCtl.pagination.pageSize\"\n" +
+    "                    ng-model=\"testCtl.pagination.currentPage\"\n" +
+    "                    max-size=\"testCtl.pagination.maxSize\"\n" +
+    "                    ng-change=\"testCtl.pagination.changeNum()\"\n" +
+    "                    rotate=\"false\"\n" +
+    "                    previous-text=\"&lsaquo;\"\n" +
+    "                    next-text=\"&rsaquo;\"\n" +
+    "                    first-text=\"&laquo;\"\n" +
+    "                    last-text=\"&raquo;\"\n" +
+    "                    class=\"pagination-sm pull-right\"\n" +
+    "                    boundary-links=\"true\">\n" +
+    "        </pagination>\n" +
+    "    </div>\n" +
+    "</div>\n" +
+    "");
 }]);

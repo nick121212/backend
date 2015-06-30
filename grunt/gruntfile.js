@@ -68,15 +68,12 @@ module.exports = function (grunt) {
 
         },
         requirejs: {
-            controller: {
-                options: {}
-            },
             compile: {
                 options: {
                     baseUrl: "../javascript",
                     mainConfigFile: "../javascript/main.js",
                     out: "../javascript/optimized.js",
-                    almond: false,
+                    almond: true,
                     paths: {
                         main: '../javascript/main'
                     },

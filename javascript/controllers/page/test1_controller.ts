@@ -12,17 +12,16 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
 
     appModule.controller("Test1Controller", HomeController);
 
-    HomeController.$inject = ['$scope','growl'];
+    HomeController.$inject = ['$scope'];
 
-    function HomeController($scope,growl) {
+    function HomeController($scope) {
         var homeCtl = this;
 
-        homeCtl.now = Date.now();
         homeCtl.doEdit = function () {
-            growl.addSuccessMessage("EDIT");
+            //growl.addSuccessMessage("EDIT");
         };
         homeCtl.doAdd= function () {
-            growl.addSuccessMessage("ADD");
+            //growl.addSuccessMessage("ADD");
         };
         homeCtl.tools = [
             {

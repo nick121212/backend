@@ -152,6 +152,16 @@ define([
                 url: '/',
                 abstract: true,
                 access: { isFree: true },
+                //resolve: {
+                //    authorize: function ($http, passportService) {
+                //        return passportService.getUser().then(function () {
+                //            alert(3);
+                //        }, function () {
+                //            alert(4);
+                //            //$stateProvider.go('login');
+                //        });
+                //    }
+                //},
                 views: {
                     '': {
                         templateUrl: 'javascript/partials/home/index.html',
@@ -160,7 +170,7 @@ define([
                     },
                     'sidebarView@home': {
                         templateUrl: 'javascript/partials/home/home_sidebar.html',
-                        controller: 'SidebarController',
+                        controller: 'SidebarController as sidebarCtl',
                         controllerAs: 'sidebarCtl'
                     },
                     'contentView@home': {
@@ -177,12 +187,12 @@ define([
                 views: {
                     '': {
                         templateUrl: 'javascript/partials/login/index.html',
-                        controller: 'LoginHomeController',
+                        controller: 'LoginHomeController as loginHomeCtl',
                         controllerAs: 'loginHomeCtl'
                     },
                     'contentView@login': {
                         templateUrl: 'javascript/partials/login/login.html',
-                        controller: 'LoginController',
+                        controller: 'LoginController as loginCtl',
                         controllerAs: 'loginCtl'
                     }
                 }
@@ -193,7 +203,7 @@ define([
                 views: {
                     'contentView': {
                         templateUrl: 'javascript/partials/login/forget_email.html',
-                        controller: 'ForgetEmailController',
+                        controller: 'ForgetEmailController as forgetCtl',
                         controllerAs: 'forgetCtl'
                     }
                 }
@@ -204,7 +214,7 @@ define([
                 views: {
                     'contentView': {
                         templateUrl: 'javascript/partials/login/forget_phone.html',
-                        controller: 'ForgetPhoneController',
+                        controller: 'ForgetPhoneController as forgetCtl',
                         controllerAs: 'forgetCtl'
                     }
                 }
@@ -215,8 +225,8 @@ define([
                 views: {
                     'contentView': {
                         templateUrl: 'javascript/partials/login/register.html',
-                        controller: 'RegisterController',
-                        controllerAs: 'registerCtl'
+                        controller: 'RegisterController as regCtl',
+                        controllerAs: 'regCtl'
                     }
                 }
             })
@@ -237,13 +247,13 @@ define([
                         templateUrl: function ($stateParams) {
                             return 'javascript/partials/pages/' + $stateParams.page + '.html';
                         },
-                        controllerProvider: function ($stateParams) {
-                            var page = $stateParams.page.split('');
-                            if (page.length) {
-                                page[0] = page[0].toUpperCase();
-                            }
-                            return page.join('') + 'Controller';
-                        }
+                        controllerProvider: ['$stateParams', function ($stateParams) {
+                                var page = $stateParams.page.split('');
+                                if (page.length) {
+                                    page[0] = page[0].toUpperCase();
+                                }
+                                return page.join('') + 'Controller as testCtl';
+                            }]
                     }
                 }
             });

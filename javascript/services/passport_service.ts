@@ -44,7 +44,7 @@ define([
                 getUser: function () {
                     var promise = $http({
                         method: 'POST',
-                        url: config.api_url + "/get_user?access_token=" + config.app_token,
+                        url: config.api_url + "/get_user?access_token=" + config.access_token,
                     }).success(function (data) {
                         if (data.result_code == 1) {
 
