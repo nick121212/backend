@@ -61,6 +61,7 @@ define([
                         controller: 'ModalAlertCtrl',
                         controllerAs: 'alertCtl',
                         windowClass: windowCls || '',
+                        backdrop: 'static',
                         resolve: {
                             options: function () {
                                 return {

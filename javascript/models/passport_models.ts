@@ -45,6 +45,10 @@ export module Passport {
         public nickname:string;
         //头像
         public avatar_url:string;
+        //手机
+        public phone:string;
+        //邮箱
+        public email:string;
 
         constructor(username?:string, nickname?:string, avatar_url?:string) {
             this.username = username || '';
@@ -58,6 +62,7 @@ export module Passport {
      * */
     export class ForgetModel {
         public username:string;
+        public password:string;
         public new_password:string;
         public new_password_again:string;
         public sms_token:string;

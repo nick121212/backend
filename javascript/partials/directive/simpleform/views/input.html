@@ -1,4 +1,4 @@
-<div class="block" ng-class="{'input-icon-right':field.icon.isRight,'input-icon':field.icon.cls}">
+<div ng-class="{'input-icon-right':field.icon.isRight,'input-icon':field.icon.cls,'block':field.isBlock,'inline':field.isInline}">
     <input class="form-control"
            data-attr="true"
            ng-model="model[key]"
@@ -17,6 +17,7 @@
 
     <div class="toggle none-leave"
          ng-messages="$form[key].$error"
+         ng-if="field.showErrmsg!==false"
          ng-show="(showError || $form[key].$dirty)"
          ng-messages-multiple>
        <span class="help-block"

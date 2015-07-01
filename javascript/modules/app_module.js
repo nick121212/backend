@@ -29,8 +29,10 @@ define([
     'directives/passport_directive',
     'services/httpinterceptor_factory',
     'services/passport_service',
+    'services/passport_form_service',
     'services/config_constant',
     'services/modal_provider',
+    //'angular-pageloading',
     'animations/noneleave_animation',
     'template'], function (angular, dirModule, srvModule, aniModule) {
     var app = angular.module('appModule', [
@@ -49,6 +51,7 @@ define([
         'ui.grid.edit',
         'ui.grid.pagination',
         'ui.grid.selection',
+        //'me-pageloading',
         dirModule.name,
         srvModule.name,
         aniModule.name,
@@ -59,6 +62,7 @@ define([
         '$state',
         '$stateParams',
         function ($rootScope, $state, $stateParams) {
+            //mePageLoading.show('random');
             /*
              * 定义路由的状态和参数
              * */
@@ -151,21 +155,10 @@ define([
                 .state('home', {
                 url: '/',
                 abstract: true,
-                access: { isFree: true },
-                //resolve: {
-                //    authorize: function ($http, passportService) {
-                //        return passportService.getUser().then(function () {
-                //            alert(3);
-                //        }, function () {
-                //            alert(4);
-                //            //$stateProvider.go('login');
-                //        });
-                //    }
-                //},
                 views: {
                     '': {
                         templateUrl: 'javascript/partials/home/index.html',
-                        controller: 'HomeController',
+                        controller: 'HomeController as homeCtl',
                         controllerAs: 'homeCtl'
                     },
                     'sidebarView@home': {
@@ -183,7 +176,6 @@ define([
             })
                 .state('login', {
                 url: '/login',
-                access: { isFree: true },
                 views: {
                     '': {
                         templateUrl: 'javascript/partials/login/index.html',
@@ -199,7 +191,6 @@ define([
             })
                 .state('login.forget_email', {
                 url: '/forget_email',
-                access: { isFree: true },
                 views: {
                     'contentView': {
                         templateUrl: 'javascript/partials/login/forget_email.html',
@@ -210,7 +201,6 @@ define([
             })
                 .state('login.forget_phone', {
                 url: '/forget_phone',
-                access: { isFree: true },
                 views: {
                     'contentView': {
                         templateUrl: 'javascript/partials/login/forget_phone.html',
@@ -221,7 +211,6 @@ define([
             })
                 .state('login.register', {
                 url: '/register',
-                access: { isFree: true },
                 views: {
                     'contentView': {
                         templateUrl: 'javascript/partials/login/register.html',
@@ -232,16 +221,56 @@ define([
             })
                 .state('home.index', {
                 url: 'index',
-                access: { isFree: true },
+                resolve: {
+                    getUser: ['$q', 'passportService', function ($q, passportService) {
+                            var defer = $q.defer();
+                            passportService.getUser().then(function () {
+                                defer.resolve();
+                            }, function () {
+                                defer.reject();
+                            });
+                            return defer.promise;
+                        }]
+                },
                 views: {
                     'pageContentView': {
                         templateUrl: 'javascript/partials/home/welcome.html'
                     }
                 }
             })
+                .state('home.profile', {
+                url: 'profile',
+                views: {
+                    'pageContentView': {
+                        templateUrl: 'javascript/partials/home/profile.html',
+                        controller: 'ProfileController as profileCtl',
+                        controllerAs: 'profileCtl'
+                    }
+                }
+            })
+                .state('home.setting', {
+                url: 'setting',
+                views: {
+                    'pageContentView': {
+                        templateUrl: 'javascript/partials/home/setting.html',
+                        controller: 'SettingController as settingCtl',
+                        controllerAs: 'settingCtl'
+                    }
+                }
+            })
                 .state('home.page', {
                 url: 'page/:page',
-                access: { isFree: false },
+                resolve: {
+                    getUser: ['$q', 'passportService', function ($q, passportService) {
+                            var defer = $q.defer();
+                            passportService.getUser().then(function () {
+                                defer.resolve();
+                            }, function () {
+                                defer.reject();
+                            });
+                            return defer.promise;
+                        }]
+                },
                 views: {
                     'pageContentView': {
                         templateUrl: function ($stateParams) {

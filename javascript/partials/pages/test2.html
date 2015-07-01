@@ -1,33 +1,38 @@
 <div class="page-header">
     <h1>
-        simpleForm
+        TEST-PAGE2
         <small>
-            <i class="ace-icon fa fa-angle-double-right"></i>
-            TEST2 simpleForm
+            测试表格和分页
         </small>
     </h1>
 </div>
-
 <div class="row">
     <div class="col-xs-12">
-        <div class="position-relative">
-            <div toolbar showmini="false" showtitle="true" tools="testCtl.tools"
-                 class="btn-group hidden-sm hidden-xs"></div>
-        </div>
+        <simple-form setting="testCtl.searchFormSettings"
+                     ng-model="testCtl.searchFormData"
+                     submit="testCtl.doSearch"
+                     format="_inline">
+            <div class="form-group">
+                <button class="btn btn-white" type="submit">
+                    <icon class="ace-icon fa fa-search"></icon>
+                    <span>搜索</span>
+                </button>
+            </div>
+        </simple-form>
         <div class="space-2"></div>
     </div>
     <div class="col-xs-12">
-
-        <div ui-grid="testCtl.gridOptions"
-             ui-grid-pagination
-             ui-grid-edit
-             ui-grid-selection
-             ui-grid-cellNav
-             class="grid"></div>
-
+        {{ testCtl.searchFormData }}
     </div>
     <div class="col-xs-12">
-        <div data-toggle="buttons" class="btn-group btn-group-sm pagination">
+        <div ui-grid="testCtl.gridOptions"
+             ui-grid-pagination
+             ui-grid-selection
+             class="grid">
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div data-toggle="buttons" class="btn-group hidden-xs btn-group-sm pagination">
             <label class="btn btn-white btn-primary"
                    ng-class="{'active':page==testCtl.pagination.pageSize}"
                    ng-repeat="page in testCtl.pagination.perPageOptions">

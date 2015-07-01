@@ -1,0 +1,22 @@
+<!--小尺寸下的按钮-->
+<div class="inline pos-rel open"
+     ng-class="{open1:isOpen}">
+    <a class="btn btn-minier btn-primary dropdown-toggle"
+       href="javascript:;"
+       ng-blur="doBlur()"
+       ng-click="doShowMenu()">
+        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+    </a>
+
+    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close none-leave bouncy-scale-in"
+        ng-show="isOpen">
+        <li ng-repeat="tool in tools">
+            <a class="tooltip-info"
+               ng-click="onPreClick(tool)">
+                <span ng-class="tool.color">
+                    <i class="ace-icon fa" ng-class="tool.iconCls"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>

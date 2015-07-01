@@ -14,10 +14,11 @@ define([
     'modules/service_module'
 ], function (angular, svrModule) {
     svrModule.service('passportService', [
+        '$rootScope',
         '$q',
         '$http',
         'config',
-        function ($q, $http, config) {
+        function ($rootScope, $q, $http, config) {
             var service = {
                 loginCheck: function (loginMdl:Passport.LoginModel) {
                     /*
@@ -44,10 +45,11 @@ define([
                 getUser: function () {
                     var promise = $http({
                         method: 'POST',
-                        url: config.api_url + "/get_user?access_token=" + config.access_token,
+                        url: config.api_url + "/get_user",
+                        needToken: true,
                     }).success(function (data) {
                         if (data.result_code == 1) {
-
+                            $rootScope.$emit('userInfo', data);
                         }
                     });
 
@@ -93,7 +95,7 @@ define([
                 },
                 resetPhonePassword: function (forgetModel:Passport.ForgetModel) {
                     /*
-                     * 修改密码
+                     * 重置密码
                      * */
                     var promise = $http({
                         method: 'POST',
@@ -103,6 +105,25 @@ define([
                             new_password: forgetModel.new_password,
                             new_password_again: forgetModel.new_password_again,
                             sms_token: forgetModel.sms_token
+                        }
+                    }).success(function (data) {
+
+                    });
+
+                    return promise;
+                },
+                editPsw: function (forgetModel:Passport.ForgetModel) {
+                    /*
+                     * 修改密码
+                     * */
+                    var promise = $http({
+                        method: 'POST',
+                        url: config.api_url + '/set_password',
+                        needToken: true,
+                        data: {
+                            password: forgetModel.password,
+                            new_password: forgetModel.new_password,
+                            new_password_again: forgetModel.new_password_again,
                         }
                     }).success(function (data) {
 

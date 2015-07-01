@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <a class="btn btn-link btn-sm no-margin pull-right"
+       ng-if="!formCtl.isBusy"
+       ng-click="formCtl.close()">
+        <icon class="ace-icon fa fa-times"></icon>
+    </a>
+
+    <h3 class="smaller lighter no-margin">{{formCtl.formSettings.description}}</h3>
+</div>
+<div class="modal-body">
+    <simple-form setting="formCtl.formSettings"
+                 ng-model="formCtl.formData"
+                 submit="formCtl.submit"
+                 format="_horizontal"
+                 ng-cloak="">
+        <div class="form-group">
+            <div class="col-xs-9 col-xs-offset-3">
+                <button type="submit"
+                        ng-disabled="formCtl.isBusy"
+                        v-busy="formCtl.isBusy"
+                        v-pressable
+                        class="pull-right btn btn-sm btn-success">
+                    <span class="bigger-110">修改密码</span>
+
+                    <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                </button>
+            </div>
+        </div>
+    </simple-form>
+</div>

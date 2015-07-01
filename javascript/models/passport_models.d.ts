@@ -21,9 +21,12 @@ declare module Passport {
         username:string;
         nickname:string;
         avatar_url:string;
+        phone:string;
+        email:string;
     }
     interface ForgetModel {
         username:string;
+        password:string;
         new_password:string;
         new_password_again:string;
         sms_token:string;

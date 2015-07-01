@@ -8,7 +8,10 @@
 ///<reference path="../../typescripts/require.d.ts" />
 ///<reference path="../../typescripts/angular.d.ts" />
 
-define(["angular", "modules/app_module"], function (angular, appModule) {
+define([
+    'angular',
+    'modules/app_module'
+], function (angular, appModule) {
 
     appModule.controller("HomeController", HomeController);
 
@@ -19,17 +22,12 @@ define(["angular", "modules/app_module"], function (angular, appModule) {
 
         //隐藏因为登录引起的body的class
         $rootScope.bodyCls = " ";
-
-        homeCtl.status = {
-            isOpen: false
-        };
-
         //小屏幕下的菜单显示与否
         homeCtl.isShowMenu = false;
         //隐藏/显示菜单
         homeCtl.doEmitMenuShow = function () {
             homeCtl.isShowMenu = !homeCtl.isShowMenu;
-        }
+        };
         //注册切换state事件
         $rootScope.$on('$stateChangeSuccess', function () {
             homeCtl.isShowMenu = false;

@@ -1,5 +1,5 @@
-<div class="form-group has-feedback"
-     ng-class="{'has-error':$form[key].$invalid && (showError || $form[key].$dirty)}">
+<div class="form-group"
+     ng-class="{'has-error':$form[key].$invalid && (showError || $form[key].$dirty),'has-feedback':field.showGlyphicon}">
 
     <label class="control-label col-sm-3 col-lg-3 col-md-3 hidden-xs">
         <span ng-bind="field.label"></span>

@@ -36,8 +36,10 @@ define([
 
         'services/httpinterceptor_factory',
         'services/passport_service',
+        'services/passport_form_service',
         'services/config_constant',
         'services/modal_provider',
+        //'angular-pageloading',
 
         'animations/noneleave_animation',
         'template'],
@@ -59,6 +61,7 @@ define([
                 'ui.grid.edit',
                 'ui.grid.pagination',
                 'ui.grid.selection',
+                //'me-pageloading',
                 dirModule.name,
                 srvModule.name,
                 aniModule.name,
@@ -70,6 +73,8 @@ define([
             '$state',
             '$stateParams',
             function ($rootScope, $state, $stateParams) {
+
+                //mePageLoading.show('random');
 
                 /*
                  * 定义路由的状态和参数
@@ -184,37 +189,16 @@ define([
                         .state('home', {
                             url: '/',
                             abstract: true,
-                            access: {isFree: true},
-                            //resolve: {
-                            //    authorize: function ($http, passportService) {
-                            //        return passportService.getUser().then(function () {
-                            //            alert(3);
-                            //        }, function () {
-                            //            alert(4);
-                            //            //$stateProvider.go('login');
-                            //        });
-                            //    }
-                            //},
                             views: {
                                 '': {
                                     templateUrl: 'javascript/partials/home/index.html',
-                                    controller: 'HomeController',
+                                    controller: 'HomeController as homeCtl',
                                     controllerAs: 'homeCtl',
-                                    //resolve: {
-                                    //    deps: $requireProvider.requireJS([
-                                    //        'controllers/home/home_controller'
-                                    //    ])
-                                    //}
                                 },
                                 'sidebarView@home': {
                                     templateUrl: 'javascript/partials/home/home_sidebar.html',
                                     controller: 'SidebarController as sidebarCtl',
                                     controllerAs: 'sidebarCtl',
-                                    //resolve: {
-                                    //    deps: $requireProvider.requireJS([
-                                    //        'controllers/home/sidebar_controller'
-                                    //    ])
-                                    //}
                                 },
                                 'contentView@home': {
                                     templateUrl: 'javascript/partials/home/home_content.html'
@@ -230,7 +214,6 @@ define([
                          * */
                         .state('login', {
                             url: '/login',
-                            access: {isFree: true},
                             views: {
                                 '': {
                                     templateUrl: 'javascript/partials/login/index.html',
@@ -259,17 +242,11 @@ define([
                          * */
                         .state('login.forget_email', {
                             url: '/forget_email',
-                            access: {isFree: true},
                             views: {
                                 'contentView': {
                                     templateUrl: 'javascript/partials/login/forget_email.html',
                                     controller: 'ForgetEmailController as forgetCtl',
                                     controllerAs: 'forgetCtl',
-                                    //resolve: {
-                                    //    deps: $requireProvider.requireJS([
-                                    //        'controllers/login/forget_email_controller'
-                                    //    ])
-                                    //}
                                 }
                             }
                         })
@@ -278,17 +255,11 @@ define([
                          * */
                         .state('login.forget_phone', {
                             url: '/forget_phone',
-                            access: {isFree: true},
                             views: {
                                 'contentView': {
                                     templateUrl: 'javascript/partials/login/forget_phone.html',
                                     controller: 'ForgetPhoneController as forgetCtl',
                                     controllerAs: 'forgetCtl',
-                                    //resolve: {
-                                    //    deps: $requireProvider.requireJS([
-                                    //        'controllers/login/forget_phone_controller'
-                                    //    ])
-                                    //}
                                 }
                             }
                         })
@@ -297,17 +268,11 @@ define([
                          * */
                         .state('login.register', {
                             url: '/register',
-                            access: {isFree: true},
                             views: {
                                 'contentView': {
                                     templateUrl: 'javascript/partials/login/register.html',
                                     controller: 'RegisterController as regCtl',
                                     controllerAs: 'regCtl',
-                                    //resolve: {
-                                    //    deps: $requireProvider.requireJS([
-                                    //        'controllers/login/register_controller'
-                                    //    ])
-                                    //}
                                 }
                             }
                         })
@@ -317,10 +282,42 @@ define([
                          * */
                         .state('home.index', {
                             url: 'index',
-                            access: {isFree: true},
+                            resolve: {
+                                getUser: ['$q', 'passportService', function ($q, passportService) {
+                                    var defer = $q.defer();
+
+                                    passportService.getUser().then(function () {
+                                        defer.resolve();
+                                    }, function () {
+                                        defer.reject();
+                                    });
+
+                                    return defer.promise;
+                                }]
+                            },
                             views: {
                                 'pageContentView': {
                                     templateUrl: 'javascript/partials/home/welcome.html'
+                                }
+                            }
+                        })
+                        .state('home.profile', {
+                            url: 'profile',
+                            views: {
+                                'pageContentView': {
+                                    templateUrl: 'javascript/partials/home/profile.html',
+                                    controller: 'ProfileController as profileCtl',
+                                    controllerAs: 'profileCtl',
+                                }
+                            }
+                        })
+                        .state('home.setting', {
+                            url: 'setting',
+                            views: {
+                                'pageContentView': {
+                                    templateUrl: 'javascript/partials/home/setting.html',
+                                    controller: 'SettingController as settingCtl',
+                                    controllerAs: 'settingCtl',
                                 }
                             }
                         })
@@ -330,7 +327,19 @@ define([
                          * */
                         .state('home.page', {
                             url: 'page/:page',
-                            access: {isFree: false},
+                            resolve: {
+                                getUser: ['$q', 'passportService', function ($q, passportService) {
+                                    var defer = $q.defer();
+
+                                    passportService.getUser().then(function () {
+                                        defer.resolve();
+                                    }, function () {
+                                        defer.reject();
+                                    });
+
+                                    return defer.promise;
+                                }]
+                            },
                             views: {
                                 'pageContentView': {
                                     templateUrl: function ($stateParams) {
@@ -344,21 +353,6 @@ define([
                                         }
                                         return page.join('') + 'Controller as testCtl';
                                     }]
-                                    //resolve: {
-                                    //    load: [
-                                    //        '$q',
-                                    //        '$stateParams',
-                                    //        '$rootScope',
-                                    //        function ($q, $stateParams, $rootScope) {
-                                    //            var deferred = $q.defer();
-                                    //            require(['controllers/page/' + $stateParams.page + '_controller'], function () {
-                                    //                $rootScope.$apply(function () {
-                                    //                    deferred.resolve();
-                                    //                });
-                                    //            });
-                                    //            return deferred.promise;
-                                    //        }]
-                                    //}
                                 }
                             }
                         });

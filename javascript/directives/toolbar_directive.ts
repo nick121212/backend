@@ -22,16 +22,18 @@ define([
             function ($compile, $templateCache, eventService) {
                 return {
                     restrict: 'A',
-                    templateUrl: 'javascript/partials/directive/toolbar/toolbar.html',
+                    //templateUrl: 'javascript/partials/directive/toolbar/toolbar.html',
                     replace: false,
                     scope: {
                         tools: '=',
                         showtitle: '=',
-                        showmini: '=',
                         datas: '=datas',
-                        onClick: '=onClick'
+                        toolType: '@'
                     },
                     link: function ($scope, $element, $attr, $controller) {
+                        var tmp = $templateCache.get('javascript/partials/directive/toolbar/toolbar' + ($scope.toolType || '') + '.html');
+                        var fieldElement = angular.element(tmp);
+
                         $scope.showtitle == undefined && ($scope.showtitle = true);
                         $scope.onPreClick = function (tool) {
                             angular.isFunction(tool.click) && tool.click($scope.datas);
@@ -42,6 +44,9 @@ define([
                         $scope.doBlur = function () {
                             $scope.isOpen = false;
                         }
+
+                        $element.append(fieldElement);
+                        $compile(fieldElement)($scope);
                     }
                 };
             }]);

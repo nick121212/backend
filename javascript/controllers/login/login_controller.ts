@@ -24,14 +24,14 @@ define([
      * @param $modal ui-bootstrap弹窗模块
      * @param passportService 账号服务
      * */
-    LoginController.$inject = ['$scope', '$modal', 'passportService'];
+    LoginController.$inject = ['$rootScope', '$scope', 'passportService', '$cookieStore'];
 
-    function LoginController($scope, $modal, passportService) {
+    function LoginController($rootScope, $scope, passportService, $cookieStore) {
         var loginCtl = this;
 
         /*
-        * 是否在登录中状态
-        * */
+         * 是否在登录中状态
+         * */
         loginCtl.isBusy = false;
         /*
          * 表单中的数据
@@ -87,16 +87,20 @@ define([
             }
         };
         /*
-        * 登录
-        * form:表单元素
-        * */
+         * 登录
+         * form:表单元素
+         * */
         loginCtl.doLogin = function (form) {
             if (form.$valid) {
                 loginCtl.isBusy = true;
-                passportService.loginCheck(loginCtl.formData).then(function () {
-                    console.log("success", arguments);
-                    loginCtl.isBusy = false;
-                }, function () {
+                passportService.loginCheck(loginCtl.formData).success(function (datas) {
+                    $cookieStore.put('access_token', datas.access_token);
+                    $cookieStore.put('refresh_token', datas.refresh_token);
+
+                    console.log($rootScope.$stateParams);
+
+                    $rootScope.$state.go('home.index');
+                }).finally(function () {
                     loginCtl.isBusy = false;
                 });
             }

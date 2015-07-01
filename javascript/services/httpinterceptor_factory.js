@@ -11,36 +11,47 @@ define([
 ], function (angular, module) {
     //http拦截器服务
     module.factory("httpInterceptor", [
-        "$q", "$injector", "growl", function ($q, $injector, growl) {
+        "$q", "$injector", "growl", '$cookieStore', function ($q, $injector, growl, $cookieStore) {
             var factory = {
+                'request': function (config) {
+                    if (config.needToken === true) {
+                        if (config.url.indexOf('?') > 0) {
+                            config.url += '&access_token=' + $cookieStore.get('access_token');
+                        }
+                        else {
+                            config.url += '?access_token=' + $cookieStore.get('access_token');
+                        }
+                    }
+                    return config;
+                },
                 'responseError': function (response) {
-                    //if (response.status == 401) {
-                    //    var $rootScope = $injector.get("$rootScope"),
-                    //        state = $rootScope / $state.current.name;
-                    //
-                    //    $rootScope.stateBeforLogin = state;
-                    //    $rootScope.$state.go("login");
-                    //} else if (response.status == 404) {
-                    //    growl.addErrorMessage("404", { position: "rb" });
-                    //}
-                    growl.addErrorMessage("404", { position: "rb" });
+                    if (response.status == 401) {
+                    }
+                    else if (response.status == 404) {
+                        growl.addErrorMessage("404", { position: "rb" });
+                    }
+                    //growl.addErrorMessage("404", {position: "rb"});
                     return $q.reject(response);
                 },
                 'response': function (response) {
+                    var $rootScope;
                     if (response.status == 200 && response.data instanceof Object) {
                         if (angular.isNumber(response.data.result_code) && response.data.result_code !== 1) {
+                            $rootScope = $injector.get("$rootScope");
                             switch (response.data.result_code) {
                                 //未登录错误，需要跳转到登陆页面
                                 case -1601:
-                                    var $rootScope = $injector.get("$rootScope");
-                                    $rootScope.$state.go("login");
+                                case -1602:
+                                case -2201:
+                                case -2202:
+                                    $rootScope.$emit("userIntercepted", "notLogin", response);
                                     break;
-                                //默认显示错误信息
                                 default:
-                                    growl.addErrorMessage(response.data.msg, { position: "rb" });
                             }
+                            //默认显示错误信息
+                            growl.addErrorMessage(response.data.msg, { position: "rb" });
+                            return $q.reject(response);
                         }
-                        return $q.reject(response);
                     }
                     return response;
                 }

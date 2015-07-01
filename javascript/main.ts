@@ -65,6 +65,9 @@
             },
             'angular-nicescroll': {
                 deps: ['angular', 'jquery-nicescroll']
+            },
+            'angular-pageloading': {
+                deps: ['angular', 'snap.svg']
             }
         },
         paths: {
@@ -88,7 +91,9 @@
             'angular-touch': './libs/angular-touch/angular-touch',
             'ui-grid': './libs/angular-grid/ui-grid',
             'angular-nicescroll': './libs/angular-nicescroll/angular-nicescroll',
-            'jquery-nicescroll': './libs/angular-nicescroll/jquery-nicescroll'
+            'jquery-nicescroll': './libs/angular-nicescroll/jquery-nicescroll',
+            'angular-pageloading': './libs/angular-pageloading/angular-pageloading',
+            'snap.svg': './libs/angular-pageloading/snap.svg',
         },
         //使得程序可以加载不同版本的模块
         map: {

@@ -1,20 +1,18 @@
-angular.module('template.js', ['javascript/partials/common/grid_toolbar.html', 'javascript/partials/directive/nav/navlist.html', 'javascript/partials/directive/nav/subnavlist.html', 'javascript/partials/directive/simpleform/simpleform.html', 'javascript/partials/directive/simpleform/simpleform_horizontal.html', 'javascript/partials/directive/simpleform/simpleform_inline.html', 'javascript/partials/directive/simpleform/views/checkbox.html', 'javascript/partials/directive/simpleform/views/datetime.html', 'javascript/partials/directive/simpleform/views/input.html', 'javascript/partials/directive/simpleform/views/input_button.html', 'javascript/partials/directive/simpleform/views/radio.html', 'javascript/partials/directive/simpleform/views/simpleform_editor.html', 'javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', 'javascript/partials/directive/simpleform/views/textarea.html', 'javascript/partials/directive/toolbar/toolbar.html', 'javascript/partials/form/testform.html', 'javascript/partials/home/home_content.html', 'javascript/partials/home/home_footer.html', 'javascript/partials/home/home_sidebar.html', 'javascript/partials/home/index.html', 'javascript/partials/home/welcome.html', 'javascript/partials/login/forget_email.html', 'javascript/partials/login/forget_phone.html', 'javascript/partials/login/index.html', 'javascript/partials/login/login.html', 'javascript/partials/login/register.html', 'javascript/partials/modal/alert.html', 'javascript/partials/modal/confirm.html', 'javascript/partials/pages/test1.html', 'javascript/partials/pages/test2.html']);
+angular.module('template.js', ['javascript/partials/common/grid_toolbar.html', 'javascript/partials/directive/nav/navlist.html', 'javascript/partials/directive/nav/subnavlist.html', 'javascript/partials/directive/simpleform/simpleform.html', 'javascript/partials/directive/simpleform/simpleform_horizontal.html', 'javascript/partials/directive/simpleform/simpleform_inline.html', 'javascript/partials/directive/simpleform/views/checkbox.html', 'javascript/partials/directive/simpleform/views/datetime.html', 'javascript/partials/directive/simpleform/views/input.html', 'javascript/partials/directive/simpleform/views/input_button.html', 'javascript/partials/directive/simpleform/views/radio.html', 'javascript/partials/directive/simpleform/views/simpleform_editor.html', 'javascript/partials/directive/simpleform/views/simpleform_editor_inline.html', 'javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html', 'javascript/partials/directive/simpleform/views/textarea.html', 'javascript/partials/directive/toolbar/toolbar.html', 'javascript/partials/directive/toolbar/toolbar_icon_only.html', 'javascript/partials/directive/toolbar/toolbar_phone.html', 'javascript/partials/form/editpsw_form.html', 'javascript/partials/form/testform.html', 'javascript/partials/home/home_content.html', 'javascript/partials/home/home_footer.html', 'javascript/partials/home/home_sidebar.html', 'javascript/partials/home/index.html', 'javascript/partials/home/profile.html', 'javascript/partials/home/setting.html', 'javascript/partials/home/welcome.html', 'javascript/partials/login/forget_email.html', 'javascript/partials/login/forget_phone.html', 'javascript/partials/login/index.html', 'javascript/partials/login/login.html', 'javascript/partials/login/register.html', 'javascript/partials/modal/alert.html', 'javascript/partials/modal/confirm.html', 'javascript/partials/pages/test1.html', 'javascript/partials/pages/test2.html']);
 
 angular.module("javascript/partials/common/grid_toolbar.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/common/grid_toolbar.html",
-    "<div class=\"text-center\">\n" +
+    "<div class=\"text-center navbar-btn\">\n" +
     "    <div toolbar\n" +
-    "         showmini=\"false\"\n" +
-    "         showtitle=\"false\"\n" +
+    "         tool-type=\"_icon_only\"\n" +
     "         tools=\"grid.appScope.tools\"\n" +
     "         datas=\"this\"\n" +
-    "         class=\"hidden-sm hidden-xs btn-group\"></div>\n" +
+    "         class=\"hidden-sm hidden-xs action-buttons\"></div>\n" +
     "    <div class=\"hidden-md hidden-lg\"\n" +
     "         toolbar\n" +
-    "         showmini=\"true\"\n" +
-    "         showtitle=\"false\"\n" +
-    "         ng-model=\"$data\"\n" +
-    "         tools=\"COL_FIELD CUSTOM_FILTERS\"></div>\n" +
+    "         tool-type=\"_phone\"\n" +
+    "         datas=\"$data\"\n" +
+    "         tools=\"grid.appScope.tools\"></div>\n" +
     "</div>");
 }]);
 
@@ -143,7 +141,7 @@ angular.module("javascript/partials/directive/simpleform/views/datetime.html", [
 
 angular.module("javascript/partials/directive/simpleform/views/input.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/directive/simpleform/views/input.html",
-    "<div class=\"block\" ng-class=\"{'input-icon-right':field.icon.isRight,'input-icon':field.icon.cls}\">\n" +
+    "<div ng-class=\"{'input-icon-right':field.icon.isRight,'input-icon':field.icon.cls,'block':field.isBlock,'inline':field.isInline}\">\n" +
     "    <input class=\"form-control\"\n" +
     "           data-attr=\"true\"\n" +
     "           ng-model=\"model[key]\"\n" +
@@ -162,6 +160,7 @@ angular.module("javascript/partials/directive/simpleform/views/input.html", []).
     "\n" +
     "    <div class=\"toggle none-leave\"\n" +
     "         ng-messages=\"$form[key].$error\"\n" +
+    "         ng-if=\"field.showErrmsg!==false\"\n" +
     "         ng-show=\"(showError || $form[key].$dirty)\"\n" +
     "         ng-messages-multiple>\n" +
     "       <span class=\"help-block\"\n" +
@@ -226,8 +225,8 @@ angular.module("javascript/partials/directive/simpleform/views/radio.html", []).
 
 angular.module("javascript/partials/directive/simpleform/views/simpleform_editor.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/directive/simpleform/views/simpleform_editor.html",
-    "<div class=\"form-group has-feedback\"\n" +
-    "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty)}\">\n" +
+    "<div class=\"form-group\"\n" +
+    "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty),'has-feedback':field.showGlyphicon}\">\n" +
     "\n" +
     "    <label class=\"control-label col-sm-3 col-lg-3 col-md-3 hidden-xs\">\n" +
     "        <span ng-bind=\"field.label\"></span>\n" +
@@ -247,10 +246,31 @@ angular.module("javascript/partials/directive/simpleform/views/simpleform_editor
     "</div>");
 }]);
 
+angular.module("javascript/partials/directive/simpleform/views/simpleform_editor_inline.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/simpleform/views/simpleform_editor_inline.html",
+    "<div class=\"form-group\"\n" +
+    "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty),'has-feedback':field.showGlyphicon}\">\n" +
+    "\n" +
+    "    <label>\n" +
+    "        <span ng-bind=\"field.label\"></span>\n" +
+    "        <i ng-if=\"field.required\"\n" +
+    "           class=\"glyphicon blue glyphicon-info-sign\"\n" +
+    "           title=\"必填项\"></i>\n" +
+    "    </label>\n" +
+    "\n" +
+    "    <simple-form-field key=\"key\"\n" +
+    "                       show-error=\"showError\"\n" +
+    "                       $form=\"$form\"\n" +
+    "                       field=\"field\"\n" +
+    "                       ng-model=\"model\">\n" +
+    "    </simple-form-field>\n" +
+    "</div>");
+}]);
+
 angular.module("javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("javascript/partials/directive/simpleform/views/simpleform_editor_no_label.html",
-    "<div class=\"form-group has-feedback\"\n" +
-    "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty)}\">\n" +
+    "<div class=\"form-group\"\n" +
+    "     ng-class=\"{'has-error':$form[key].$invalid && (showError || $form[key].$dirty),'has-feedback':field.showGlyphicon}\">\n" +
     "\n" +
     "    <label class=\"sr-only\">\n" +
     "        <span ng-bind=\"field.label\"></span>\n" +
@@ -302,7 +322,6 @@ angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$
   $templateCache.put("javascript/partials/directive/toolbar/toolbar.html",
     "<!--普通状态的按钮-->\n" +
     "<a class=\"btn\"\n" +
-    "   ng-if=\"!showmini\"\n" +
     "   ng-repeat=\"tool in tools\"\n" +
     "   ng-class=\"tool.level\"\n" +
     "   ng-click=\"onPreClick(tool)\"\n" +
@@ -314,11 +333,29 @@ angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$
     "       ng-if=\"tool.iconCls\"\n" +
     "       ng-class=\"tool.iconCls\"></i>\n" +
     "    <span ng-bind=\"tool.title\" ng-if=\"showtitle\"></span>\n" +
-    "</a>\n" +
-    "\n" +
+    "</a>");
+}]);
+
+angular.module("javascript/partials/directive/toolbar/toolbar_icon_only.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/toolbar/toolbar_icon_only.html",
+    "<!--只有icon的button-->\n" +
+    "<a ng-repeat=\"tool in tools\"\n" +
+    "   ng-class=\"tool.color\"\n" +
+    "   ng-click=\"onPreClick(tool)\"\n" +
+    "   tooltip=\"{{ tool.title }}\"\n" +
+    "   tooltip-trigger=\"mouseenter\"\n" +
+    "   tooltip-placement=\"top\"\n" +
+    "   tooltip-append-to-body=\"true\">\n" +
+    "    <i class=\"ace-icon fa bigger-130\"\n" +
+    "       ng-if=\"tool.iconCls\"\n" +
+    "       ng-class=\"tool.iconCls\"></i>\n" +
+    "</a>");
+}]);
+
+angular.module("javascript/partials/directive/toolbar/toolbar_phone.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/directive/toolbar/toolbar_phone.html",
     "<!--小尺寸下的按钮-->\n" +
     "<div class=\"inline pos-rel open\"\n" +
-    "     ng-if=\"showmini\"\n" +
     "     ng-class=\"{open1:isOpen}\">\n" +
     "    <a class=\"btn btn-minier btn-primary dropdown-toggle\"\n" +
     "       href=\"javascript:;\"\n" +
@@ -340,6 +377,40 @@ angular.module("javascript/partials/directive/toolbar/toolbar.html", []).run(["$
     "    </ul>\n" +
     "</div>\n" +
     "");
+}]);
+
+angular.module("javascript/partials/form/editpsw_form.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/form/editpsw_form.html",
+    "<div class=\"modal-header\">\n" +
+    "    <a class=\"btn btn-link btn-sm no-margin pull-right\"\n" +
+    "       ng-if=\"!formCtl.isBusy\"\n" +
+    "       ng-click=\"formCtl.close()\">\n" +
+    "        <icon class=\"ace-icon fa fa-times\"></icon>\n" +
+    "    </a>\n" +
+    "\n" +
+    "    <h3 class=\"smaller lighter no-margin\">{{formCtl.formSettings.description}}</h3>\n" +
+    "</div>\n" +
+    "<div class=\"modal-body\">\n" +
+    "    <simple-form setting=\"formCtl.formSettings\"\n" +
+    "                 ng-model=\"formCtl.formData\"\n" +
+    "                 submit=\"formCtl.submit\"\n" +
+    "                 format=\"_horizontal\"\n" +
+    "                 ng-cloak=\"\">\n" +
+    "        <div class=\"form-group\">\n" +
+    "            <div class=\"col-xs-9 col-xs-offset-3\">\n" +
+    "                <button type=\"submit\"\n" +
+    "                        ng-disabled=\"formCtl.isBusy\"\n" +
+    "                        v-busy=\"formCtl.isBusy\"\n" +
+    "                        v-pressable\n" +
+    "                        class=\"pull-right btn btn-sm btn-success\">\n" +
+    "                    <span class=\"bigger-110\">修改密码</span>\n" +
+    "\n" +
+    "                    <i class=\"ace-icon fa fa-arrow-right icon-on-right\"></i>\n" +
+    "                </button>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </simple-form>\n" +
+    "</div>");
 }]);
 
 angular.module("javascript/partials/form/testform.html", []).run(["$templateCache", function($templateCache) {
@@ -368,131 +439,10 @@ angular.module("javascript/partials/home/home_content.html", []).run(["$template
   $templateCache.put("javascript/partials/home/home_content.html",
     "<!--主内容-->\n" +
     "<div class=\"main-content-inner\">\n" +
-    "\n" +
     "    <!--面包屑导航-->\n" +
     "    <!--<div ui-view=\"breadcrumbsView\" class=\"breadcrumbs breadcrumbs-fixed slide-top\"></div>-->\n" +
     "    <!--页面内容-->\n" +
     "    <div ui-view=\"pageContentView\" class=\"page-content bouncy-scale-in none-leave\"></div>\n" +
-    "\n" +
-    "    <!--<div class=\"modal aside aside-right aside-vc aside-fixed navbar-offset no-backdrop in\"-->\n" +
-    "         <!--style=\"display: block; position: fixed; padding-right: 0px;\">-->\n" +
-    "        <!--<div class=\"modal-dialog\">-->\n" +
-    "            <!--<div class=\"modal-content\" style=\"overflow: auto;\">-->\n" +
-    "                <!--<div class=\"modal-header sidebar-fixed fixed no-padding\">-->\n" +
-    "                    <!--<div class=\"table-header\">-->\n" +
-    "                        <!--<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">-->\n" +
-    "                            <!--<span class=\"white\">×</span>-->\n" +
-    "                        <!--</button>-->\n" +
-    "                        <!--Based on Modal boxes-->\n" +
-    "                    <!--</div>-->\n" +
-    "                <!--</div>-->\n" +
-    "\n" +
-    "                <!--<div class=\"modal-body\">-->\n" +
-    "                    <!--<h3 class=\"lighter\">Custom Elements and Content</h3>-->\n" +
-    "\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--With no modal backdrop-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--1-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--2-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--<br>-->\n" +
-    "                    <!--3-->\n" +
-    "                <!--</div>-->\n" +
-    "            <!--</div>-->\n" +
-    "        <!--</div>-->\n" +
-    "\n" +
-    "        <!--<button class=\"aside-trigger btn btn-info btn-app btn-xs ace-settings-btn open\" type=\"button\">-->\n" +
-    "            <!--<i data-icon1=\"fa-plus\" data-icon2=\"fa-minus\" class=\"ace-icon fa bigger-110 icon-only fa-minus\"></i>-->\n" +
-    "        <!--</button>-->\n" +
-    "    <!--</div>-->\n" +
-    "    <!--<div class=\"modal aside aside-bottom aside-hz aside-fixed aside-dark no-backdrop in\">-->\n" +
-    "        <!--<div class=\"modal-dialog\">-->\n" +
-    "            <!--<div class=\"modal-content\">-->\n" +
-    "                <!--<div class=\"scroll-content\">-->\n" +
-    "                    <!--<div class=\"modal-body container\">-->\n" +
-    "                        <!--<div class=\"row\">-->\n" +
-    "                            <!--<div class=\"col-sm-5 col-sm-offset-1 white\">-->\n" +
-    "                                <!--<h3 class=\"lighter\">Bootstrap Grid &amp; Elements</h3>-->\n" +
-    "                                <!--With dark modal backdrop-->\n" +
-    "                            <!--</div>-->\n" +
-    "                        <!--</div>-->\n" +
-    "                    <!--</div>-->\n" +
-    "                <!--</div>-->\n" +
-    "            <!--</div>-->\n" +
-    "            <!--<button class=\"btn btn-yellow btn-sm btn-app btn-xs ace-settings-btn aside-trigger\" data-target=\"#bottom-menu\"-->\n" +
-    "                    <!--data-toggle=\"modal\" type=\"button\">-->\n" +
-    "                <!--<i data-icon2=\"fa-chevron-down\" data-icon1=\"fa-chevron-up\"-->\n" +
-    "                   <!--class=\"ace-icon fa bigger-110 icon-only fa-chevron-up\"></i>-->\n" +
-    "            <!--</button>-->\n" +
-    "        <!--</div>-->\n" +
-    "    <!--</div>-->\n" +
-    "    <!--<div class=\"modal aside aside-top aside-hz aside-fixed aside-dark no-backdrop in\">-->\n" +
-    "        <!--<div class=\"modal-dialog\">-->\n" +
-    "            <!--<div class=\"modal-content\">-->\n" +
-    "                <!--<div class=\"scroll-content\">-->\n" +
-    "                    <!--<div class=\"modal-body container\">-->\n" +
-    "                        <!--<div class=\"row\">-->\n" +
-    "                            <!--<div class=\"col-sm-5 col-sm-offset-1 white\">-->\n" +
-    "                                <!--<h3 class=\"lighter\">Bootstrap Grid &amp; Elements</h3>-->\n" +
-    "                                <!--With dark modal backdrop-->\n" +
-    "                            <!--</div>-->\n" +
-    "                        <!--</div>-->\n" +
-    "                    <!--</div>-->\n" +
-    "                <!--</div>-->\n" +
-    "            <!--</div>-->\n" +
-    "            <!--<button class=\"btn btn-yellow btn-sm btn-app btn-xs ace-settings-btn aside-trigger\" data-target=\"#bottom-menu\"-->\n" +
-    "                    <!--data-toggle=\"modal\" type=\"button\">-->\n" +
-    "                <!--<i data-icon2=\"fa-chevron-down\" data-icon1=\"fa-chevron-up\"-->\n" +
-    "                   <!--class=\"ace-icon fa bigger-110 icon-only fa-chevron-up\"></i>-->\n" +
-    "            <!--</button>-->\n" +
-    "        <!--</div>-->\n" +
-    "    <!--</div>-->\n" +
-    "\n" +
     "</div>\n" +
     "");
 }]);
@@ -517,22 +467,18 @@ angular.module("javascript/partials/home/home_sidebar.html", []).run(["$template
     "<!--<div class=\"sidebar sidebar-fixed responsive sidebar-scroll\">-->\n" +
     "<div class=\"nav-wrap-up pos-rel\">\n" +
     "    <div class=\"nav-wrap\" style=\"overflow: scroll;\" ng-style=\"{'max-height':$root.size.height}\">\n" +
-    "        <div style=\"position: relative; top: 0px; transition-property: top; -webkit-transition-property: top; transition-duration: 0.15s; -webkit-transition-duration: 0.15s;\">\n" +
     "            <!--快捷键-->\n" +
     "            <!--<div class=\"sidebar-shortcuts\" id=\"sidebar-shortcuts\">-->\n" +
     "                <!--<div class=\"sidebar-shortcuts-large\" id=\"sidebar-shortcuts-large\">-->\n" +
     "                    <!--<button class=\"btn btn-success\">-->\n" +
     "                        <!--<i class=\"ace-icon fa fa-signal\"></i>-->\n" +
     "                    <!--</button>-->\n" +
-    "\n" +
     "                    <!--<button class=\"btn btn-info\">-->\n" +
     "                        <!--<i class=\"ace-icon fa fa-pencil\"></i>-->\n" +
     "                    <!--</button>-->\n" +
-    "\n" +
     "                    <!--<button class=\"btn btn-warning\">-->\n" +
     "                        <!--<i class=\"ace-icon fa fa-users\"></i>-->\n" +
     "                    <!--</button>-->\n" +
-    "\n" +
     "                    <!--<button class=\"btn btn-danger\">-->\n" +
     "                        <!--<i class=\"ace-icon fa fa-cogs\"></i>-->\n" +
     "                    <!--</button>-->\n" +
@@ -540,17 +486,13 @@ angular.module("javascript/partials/home/home_sidebar.html", []).run(["$template
     "\n" +
     "                <!--<div class=\"sidebar-shortcuts-mini\" id=\"sidebar-shortcuts-mini\">-->\n" +
     "                    <!--<span class=\"btn btn-success\"></span>-->\n" +
-    "\n" +
     "                    <!--<span class=\"btn btn-info\"></span>-->\n" +
-    "\n" +
     "                    <!--<span class=\"btn btn-warning\"></span>-->\n" +
-    "\n" +
     "                    <!--<span class=\"btn btn-danger\"></span>-->\n" +
     "                <!--</div>-->\n" +
     "            <!--</div>-->\n" +
     "            <!--菜单按钮-->\n" +
     "            <navlist children=\"sidebarCtl.sidebarDatas\"></navlist>\n" +
-    "        </div>\n" +
     "    </div>\n" +
     "</div>\n" +
     "<!--侧边栏最小化还原按钮-->\n" +
@@ -588,23 +530,24 @@ angular.module("javascript/partials/home/index.html", []).run(["$templateCache",
     "                <ul class=\"nav ace-nav\">\n" +
     "                    <li class=\"light-blue\" dropdown>\n" +
     "                        <a class=\"dropdown-toggle\" dropdown-toggle>\n" +
-    "                            <img class=\"nav-user-photo\" src=\"images/avatars/user.jpg\" alt=\"Jason's Photo\">\n" +
+    "                            <img class=\"nav-user-photo\" ng-src=\"{{$root.user.avatar_url}}\"\n" +
+    "                                 src=\"images/avatars/user.jpg\">\n" +
     "								<span class=\"user-info\">\n" +
-    "									<small>欢迎您,</small>\n" +
-    "									NICK\n" +
+    "									<small>欢迎您，</small>\n" +
+    "									<span ng-bind=\"$root.user.nickname\"></span>\n" +
     "								</span>\n" +
     "\n" +
     "                            <i class=\"ace-icon fa fa-caret-down\"></i>\n" +
     "                        </a>\n" +
     "                        <ul class=\"user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close\">\n" +
     "                            <li>\n" +
-    "                                <a href=\"#\">\n" +
+    "                                <a ui-sref=\"home.setting\" href=\"#\">\n" +
     "                                    <i class=\"ace-icon fa fa-cog\"></i>\n" +
     "                                    设置\n" +
     "                                </a>\n" +
     "                            </li>\n" +
     "                            <li>\n" +
-    "                                <a href=\"#\">\n" +
+    "                                <a ui-sref=\"home.profile\" href=\"#\">\n" +
     "                                    <i class=\"ace-icon fa fa-user\"></i>\n" +
     "                                    个人主页\n" +
     "                                </a>\n" +
@@ -627,7 +570,8 @@ angular.module("javascript/partials/home/index.html", []).run(["$templateCache",
     "    <div class=\"main-container main-container-fixed-top\">\n" +
     "\n" +
     "        <!--侧边栏-->\n" +
-    "        <div id=\"sidebar\" class=\"sidebar sidebar-fixed responsive sidebar-scroll\" ng-class=\"{'display':homeCtl.isShowMenu}\">\n" +
+    "        <div id=\"sidebar\" class=\"sidebar sidebar-fixed responsive sidebar-scroll\"\n" +
+    "             ng-class=\"{'display':homeCtl.isShowMenu}\">\n" +
     "            <div ui-view=\"sidebarView\"></div>\n" +
     "        </div>\n" +
     "        <!--主要内容-->\n" +
@@ -641,6 +585,235 @@ angular.module("javascript/partials/home/index.html", []).run(["$templateCache",
     "\n" +
     "    </div>\n" +
     "</div>");
+}]);
+
+angular.module("javascript/partials/home/profile.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/profile.html",
+    "<div class=\"page-header\">\n" +
+    "    <h1>\n" +
+    "        <i class=\"ace-icon fa fa-user\"></i>\n" +
+    "        个人主页\n" +
+    "    </h1>\n" +
+    "</div>\n" +
+    "<div class=\"space-20\"></div>\n" +
+    "<div class=\"user-profile row\">\n" +
+    "    <div class=\"col-xs-12 col-sm-3 center\">\n" +
+    "        <div>\n" +
+    "            <span class=\"profile-picture\">\n" +
+    "                <img id=\"avatar\"\n" +
+    "                     class=\"editable img-responsive editable-click editable-empty\"\n" +
+    "                     alt=\"Alex's Avatar\" src=\"images/avatars/profile-pic.jpg\">\n" +
+    "            </span>\n" +
+    "\n" +
+    "            <div class=\"space-4\"></div>\n" +
+    "\n" +
+    "            <div class=\"width-80 label label-info label-xlg arrowed-in arrowed-in-right\">\n" +
+    "                <div class=\"inline position-relative\" dropdown>\n" +
+    "                    <a href=\"javascript:;\"\n" +
+    "                       dropdown-toggle\n" +
+    "                       class=\"user-title-label dropdown-toggle\">\n" +
+    "                        <span class=\"white\">NICK 此处可点击</span>\n" +
+    "                    </a>\n" +
+    "                    <ul class=\"align-left dropdown-menu dropdown-caret dropdown-lighter\">\n" +
+    "                        <!--<li class=\"dropdown-header\"> Change Status </li>-->\n" +
+    "                        <li>\n" +
+    "                            <a href=\"javascript:;\" ng-click=\"profileCtl.doEditPsw()\">\n" +
+    "                                <!--<i class=\"ace-icon fa fa-circle green\"></i>-->\n" +
+    "                                &nbsp;\n" +
+    "                                <span class=\"green\">修改密码</span>\n" +
+    "                            </a>\n" +
+    "                        </li>\n" +
+    "                    </ul>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "\n" +
+    "        <div class=\"space-6\"></div>\n" +
+    "\n" +
+    "        <div class=\"profile-contact-info\">\n" +
+    "\n" +
+    "            <div class=\"space-6\"></div>\n" +
+    "\n" +
+    "            <div class=\"profile-social-links align-center action-buttons\">\n" +
+    "                <a href=\"#\" class=\"tooltip-info\" title=\"\">\n" +
+    "                    <i class=\"middle ace-icon fa fa-qq fa-2x blue\"></i>\n" +
+    "                </a>\n" +
+    "\n" +
+    "                <a href=\"#\" class=\"tooltip-info\" title=\"\">\n" +
+    "                    <i class=\"middle ace-icon fa fa-weixin fa-2x light-blue\"></i>\n" +
+    "                </a>\n" +
+    "\n" +
+    "                <a href=\"#\" class=\"tooltip-error\" title=\"\">\n" +
+    "                    <i class=\"middle ace-icon fa fa-weibo fa-2x red\"></i>\n" +
+    "                </a>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "\n" +
+    "        <div class=\"hr hr12 dotted\"></div>\n" +
+    "\n" +
+    "        <div class=\"clearfix\">\n" +
+    "            <div class=\"grid2\">\n" +
+    "                <span class=\"bigger-175 blue\">25</span>\n" +
+    "                <br>\n" +
+    "                粉丝\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"grid2\">\n" +
+    "                <span class=\"bigger-175 blue\">12</span>\n" +
+    "                <br>\n" +
+    "                关注\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "\n" +
+    "        <div class=\"hr hr16 dotted\"></div>\n" +
+    "    </div>\n" +
+    "\n" +
+    "    <div class=\"col-xs-12 col-sm-9\">\n" +
+    "        <div class=\"center\">\n" +
+    "            <span class=\"btn btn-app btn-sm btn-light no-hover\">\n" +
+    "                <span class=\"line-height-1 bigger-170 blue\"> 1,411 </span>\n" +
+    "\n" +
+    "                <br>\n" +
+    "                <span class=\"line-height-1 smaller-90\"> Views </span>\n" +
+    "            </span>\n" +
+    "\n" +
+    "            <span class=\"btn btn-app btn-sm btn-yellow no-hover\">\n" +
+    "                <span class=\"line-height-1 bigger-170\"> 32 </span>\n" +
+    "\n" +
+    "                <br>\n" +
+    "                <span class=\"line-height-1 smaller-90\"> Followers </span>\n" +
+    "            </span>\n" +
+    "\n" +
+    "            <span class=\"btn btn-app btn-sm btn-pink no-hover\">\n" +
+    "                <span class=\"line-height-1 bigger-170\"> 4 </span>\n" +
+    "\n" +
+    "                <br>\n" +
+    "                <span class=\"line-height-1 smaller-90\"> Projects </span>\n" +
+    "            </span>\n" +
+    "\n" +
+    "            <span class=\"btn btn-app btn-sm btn-grey no-hover\">\n" +
+    "                <span class=\"line-height-1 bigger-170\"> 23 </span>\n" +
+    "\n" +
+    "                <br>\n" +
+    "                <span class=\"line-height-1 smaller-90\"> Reviews </span>\n" +
+    "            </span>\n" +
+    "\n" +
+    "            <span class=\"btn btn-app btn-sm btn-success no-hover\">\n" +
+    "                <span class=\"line-height-1 bigger-170\"> 7 </span>\n" +
+    "\n" +
+    "                <br>\n" +
+    "                <span class=\"line-height-1 smaller-90\"> Albums </span>\n" +
+    "            </span>\n" +
+    "\n" +
+    "            <span class=\"btn btn-app btn-sm btn-primary no-hover\">\n" +
+    "                <span class=\"line-height-1 bigger-170\"> 55 </span>\n" +
+    "\n" +
+    "                <br>\n" +
+    "                <span class=\"line-height-1 smaller-90\"> Contacts </span>\n" +
+    "            </span>\n" +
+    "        </div>\n" +
+    "\n" +
+    "        <div class=\"space-12\"></div>\n" +
+    "\n" +
+    "        <div class=\"profile-user-info profile-user-info-striped\">\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 用户昵称</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">NICK</span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 所在位置</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <i class=\"fa fa-map-marker light-orange bigger-110\"></i>\n" +
+    "                    <span class=\"editable editable-click\">上海</span>\n" +
+    "                    <span class=\"editable editable-click\">闸北</span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 年龄</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">29</span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 加入时间</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">2010/06/20</span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 最后一次登录</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">3小时前</span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 个人简介</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">派趣科技 补丁娱乐</span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "\n" +
+    "        <div class=\"space-10\"></div>\n" +
+    "\n" +
+    "        <div class=\"profile-user-info profile-user-info-striped\">\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 手机号码</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">135****8667</span>\n" +
+    "                     <span class=\"editable\">\n" +
+    "                        <a class=\"btn btn-white btn-link\">绑定手机</a>\n" +
+    "                    </span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div class=\"profile-info-row\">\n" +
+    "                <div class=\"profile-info-name\"> 邮箱</div>\n" +
+    "\n" +
+    "                <div class=\"profile-info-value\">\n" +
+    "                    <span class=\"editable editable-click\">nick******@126.com</span>\n" +
+    "                    <span class=\"editable\">\n" +
+    "                        <a class=\"btn btn-white btn-link\">修改邮箱</a>\n" +
+    "                    </span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "\n" +
+    "        </div>\n" +
+    "\n" +
+    "    </div>\n" +
+    "</div>\n" +
+    "<!--<div class=\"message-loading-overlay\">-->\n" +
+    "    <!--<i class=\"ace-icon fa fa-spinner fa-spin orange bigger-300\"></i>-->\n" +
+    "<!--</div>-->\n" +
+    "");
+}]);
+
+angular.module("javascript/partials/home/setting.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("javascript/partials/home/setting.html",
+    "<!DOCTYPE html>\n" +
+    "<html lang=\"en\">\n" +
+    "<head>\n" +
+    "    <meta charset=\"UTF-8\">\n" +
+    "    <title></title>\n" +
+    "</head>\n" +
+    "<body>\n" +
+    "\n" +
+    "</body>\n" +
+    "</html>");
 }]);
 
 angular.module("javascript/partials/home/welcome.html", []).run(["$templateCache", function($templateCache) {
@@ -837,11 +1010,11 @@ angular.module("javascript/partials/login/login.html", []).run(["$templateCache"
     "                    <i class=\"ace-icon fa fa-qq\"></i>\n" +
     "                </a>\n" +
     "\n" +
-    "                <a class=\"btn btn-info\">\n" +
+    "                <a class=\"btn btn-danger\">\n" +
     "                    <i class=\"ace-icon fa fa-weibo\"></i>\n" +
     "                </a>\n" +
     "\n" +
-    "                <a class=\"btn btn-danger\">\n" +
+    "                <a class=\"btn btn-success\">\n" +
     "                    <i class=\"ace-icon fa fa-weixin\"></i>\n" +
     "                </a>\n" +
     "            </div>\n" +
@@ -1359,34 +1532,39 @@ angular.module("javascript/partials/pages/test2.html", []).run(["$templateCache"
   $templateCache.put("javascript/partials/pages/test2.html",
     "<div class=\"page-header\">\n" +
     "    <h1>\n" +
-    "        simpleForm\n" +
+    "        TEST-PAGE2\n" +
     "        <small>\n" +
-    "            <i class=\"ace-icon fa fa-angle-double-right\"></i>\n" +
-    "            TEST2 simpleForm\n" +
+    "            测试表格和分页\n" +
     "        </small>\n" +
     "    </h1>\n" +
     "</div>\n" +
-    "\n" +
     "<div class=\"row\">\n" +
     "    <div class=\"col-xs-12\">\n" +
-    "        <div class=\"position-relative\">\n" +
-    "            <div toolbar showmini=\"false\" showtitle=\"true\" tools=\"testCtl.tools\"\n" +
-    "                 class=\"btn-group hidden-sm hidden-xs\"></div>\n" +
-    "        </div>\n" +
+    "        <simple-form setting=\"testCtl.searchFormSettings\"\n" +
+    "                     ng-model=\"testCtl.searchFormData\"\n" +
+    "                     submit=\"testCtl.doSearch\"\n" +
+    "                     format=\"_inline\">\n" +
+    "            <div class=\"form-group\">\n" +
+    "                <button class=\"btn btn-white\" type=\"submit\">\n" +
+    "                    <icon class=\"ace-icon fa fa-search\"></icon>\n" +
+    "                    <span>搜索</span>\n" +
+    "                </button>\n" +
+    "            </div>\n" +
+    "        </simple-form>\n" +
     "        <div class=\"space-2\"></div>\n" +
     "    </div>\n" +
     "    <div class=\"col-xs-12\">\n" +
-    "\n" +
-    "        <div ui-grid=\"testCtl.gridOptions\"\n" +
-    "             ui-grid-pagination\n" +
-    "             ui-grid-edit\n" +
-    "             ui-grid-selection\n" +
-    "             ui-grid-cellNav\n" +
-    "             class=\"grid\"></div>\n" +
-    "\n" +
+    "        {{ testCtl.searchFormData }}\n" +
     "    </div>\n" +
     "    <div class=\"col-xs-12\">\n" +
-    "        <div data-toggle=\"buttons\" class=\"btn-group btn-group-sm pagination\">\n" +
+    "        <div ui-grid=\"testCtl.gridOptions\"\n" +
+    "             ui-grid-pagination\n" +
+    "             ui-grid-selection\n" +
+    "             class=\"grid\">\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-xs-12\">\n" +
+    "        <div data-toggle=\"buttons\" class=\"btn-group hidden-xs btn-group-sm pagination\">\n" +
     "            <label class=\"btn btn-white btn-primary\"\n" +
     "                   ng-class=\"{'active':page==testCtl.pagination.pageSize}\"\n" +
     "                   ng-repeat=\"page in testCtl.pagination.perPageOptions\">\n" +

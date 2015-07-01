@@ -9,8 +9,9 @@
 
 define([
     'controllers/home/home_controller',
-    'controllers/home/main_controller',
+    //'controllers/home/main_controller',
     'controllers/home/sidebar_controller',
+    'controllers/home/profile_controller',
 
     'controllers/login/forget_email_controller',
     'controllers/login/forget_phone_controller',
@@ -20,6 +21,8 @@ define([
 
     'controllers/page/test1_controller',
     'controllers/page/test2_controller',
+
+    'controllers/form/editpsw_controller'
 
 ], function () {
 

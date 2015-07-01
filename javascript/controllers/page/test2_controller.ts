@@ -63,7 +63,7 @@ define([
             ]);
         };
         homeCtl.showForm = function () {
-            var controller = ['eventService', '$modalInstance', function con(eventService, $modalInstance) {
+            var controller = ['eventService', '$modalInstance', function (eventService, $modalInstance) {
                 var con = this;
 
                 console.log($modalInstance);
@@ -229,7 +229,6 @@ define([
             }];
             fxmodal.form('javascript/partials/form/testform.html', controller);
         }
-
         homeCtl.getData = function () {
             var datas = [];
 
@@ -249,21 +248,21 @@ define([
         homeCtl.tools = [
             {
                 iconCls: "fa-pencil bigger-110",
-                level: "btn-primary btn-xs",
+                level: "btn-primary",
                 title: "showConfirm",
                 color: 'red',
                 click: homeCtl.showConfirm
             },
             {
                 iconCls: "fa-trash-o bigger-110",
-                level: "btn-danger btn-xs",
+                level: "btn-danger",
                 color: 'blue',
                 title: "showForm",
                 click: homeCtl.showForm
             },
             {
                 iconCls: "fa-lock bigger-110",
-                level: "btn-warning btn-xs",
+                level: "btn-warning",
                 title: "showAlert",
                 color: 'orange',
                 click: homeCtl.showAlert
@@ -310,6 +309,56 @@ define([
             ],
             onRegisterApi: function (gridApi) {
                 homeCtl.gridApi = gridApi;
+            }
+        };
+
+        //搜索用属性
+        homeCtl.searchFormSettings = {
+            name: 'searchForm',
+            type: 'form',
+            description: '登录验证',
+            format: '_horizontal',
+            showError: false,
+            editorType: '_inline',
+            fields: {
+                email: {
+                    element: 'input',
+                    type: 'email',
+                    label: '邮箱：',
+                    placeholder: '请输入邮箱地址',
+                    readonly: false,
+                    disabled: false,
+                    required: false,
+                    showGlyphicon: false,
+                    showErrmsg: false,
+                    isInline: true,
+                    icon: {
+                        cls: 'fa-envelope-o',
+                        isRight: false
+                    }
+                },
+                email1: {
+                    element: 'input',
+                    type: 'email',
+                    label: '邮箱：',
+                    placeholder: '请输入邮箱地址',
+                    readonly: false,
+                    disabled: false,
+                    required: false,
+                    showGlyphicon: false,
+                    showErrmsg: false,
+                    isInline: true,
+                    icon: {
+                        cls: 'fa-envelope-o',
+                        isRight: true
+                    }
+                },
+            }
+        };
+        homeCtl.searchFormData = {};
+        homeCtl.doSearch = function (form) {
+            if (form.$valid) {
+                alert(4);
             }
         };
     }

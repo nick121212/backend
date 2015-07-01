@@ -142,7 +142,7 @@ define([
                     $cookieStore.put('sendLeft', 60);
                     forgetPhoneCtl.doStartSendLeft();
                     forgetPhoneCtl.formSettings.fields.username.button.isBusy = false;
-                }, function () {
+                }).finally(function () {
                     forgetPhoneCtl.formSettings.fields.username.button.isBusy = false;
                 });
             }

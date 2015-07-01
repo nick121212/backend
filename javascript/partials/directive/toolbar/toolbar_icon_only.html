@@ -1,14 +1,12 @@
-<!--普通状态的按钮-->
-<a class="btn"
-   ng-repeat="tool in tools"
-   ng-class="tool.level"
+<!--只有icon的button-->
+<a ng-repeat="tool in tools"
+   ng-class="tool.color"
    ng-click="onPreClick(tool)"
    tooltip="{{ tool.title }}"
    tooltip-trigger="mouseenter"
    tooltip-placement="top"
    tooltip-append-to-body="true">
-    <i class="ace-icon fa"
+    <i class="ace-icon fa bigger-130"
        ng-if="tool.iconCls"
        ng-class="tool.iconCls"></i>
-    <span ng-bind="tool.title" ng-if="showtitle"></span>
 </a>

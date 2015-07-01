@@ -1,0 +1,210 @@
+<div class="page-header">
+    <h1>
+        <i class="ace-icon fa fa-user"></i>
+        个人主页
+    </h1>
+</div>
+<div class="space-20"></div>
+<div class="user-profile row">
+    <div class="col-xs-12 col-sm-3 center">
+        <div>
+            <span class="profile-picture">
+                <img id="avatar"
+                     class="editable img-responsive editable-click editable-empty"
+                     alt="Alex's Avatar" src="images/avatars/profile-pic.jpg">
+            </span>
+
+            <div class="space-4"></div>
+
+            <div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
+                <div class="inline position-relative" dropdown>
+                    <a href="javascript:;"
+                       dropdown-toggle
+                       class="user-title-label dropdown-toggle">
+                        <span class="white">NICK 此处可点击</span>
+                    </a>
+                    <ul class="align-left dropdown-menu dropdown-caret dropdown-lighter">
+                        <!--<li class="dropdown-header"> Change Status </li>-->
+                        <li>
+                            <a href="javascript:;" ng-click="profileCtl.doEditPsw()">
+                                <!--<i class="ace-icon fa fa-circle green"></i>-->
+                                &nbsp;
+                                <span class="green">修改密码</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-6"></div>
+
+        <div class="profile-contact-info">
+
+            <div class="space-6"></div>
+
+            <div class="profile-social-links align-center action-buttons">
+                <a href="#" class="tooltip-info" title="">
+                    <i class="middle ace-icon fa fa-qq fa-2x blue"></i>
+                </a>
+
+                <a href="#" class="tooltip-info" title="">
+                    <i class="middle ace-icon fa fa-weixin fa-2x light-blue"></i>
+                </a>
+
+                <a href="#" class="tooltip-error" title="">
+                    <i class="middle ace-icon fa fa-weibo fa-2x red"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hr hr12 dotted"></div>
+
+        <div class="clearfix">
+            <div class="grid2">
+                <span class="bigger-175 blue">25</span>
+                <br>
+                粉丝
+            </div>
+
+            <div class="grid2">
+                <span class="bigger-175 blue">12</span>
+                <br>
+                关注
+            </div>
+        </div>
+
+        <div class="hr hr16 dotted"></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-9">
+        <div class="center">
+            <span class="btn btn-app btn-sm btn-light no-hover">
+                <span class="line-height-1 bigger-170 blue"> 1,411 </span>
+
+                <br>
+                <span class="line-height-1 smaller-90"> Views </span>
+            </span>
+
+            <span class="btn btn-app btn-sm btn-yellow no-hover">
+                <span class="line-height-1 bigger-170"> 32 </span>
+
+                <br>
+                <span class="line-height-1 smaller-90"> Followers </span>
+            </span>
+
+            <span class="btn btn-app btn-sm btn-pink no-hover">
+                <span class="line-height-1 bigger-170"> 4 </span>
+
+                <br>
+                <span class="line-height-1 smaller-90"> Projects </span>
+            </span>
+
+            <span class="btn btn-app btn-sm btn-grey no-hover">
+                <span class="line-height-1 bigger-170"> 23 </span>
+
+                <br>
+                <span class="line-height-1 smaller-90"> Reviews </span>
+            </span>
+
+            <span class="btn btn-app btn-sm btn-success no-hover">
+                <span class="line-height-1 bigger-170"> 7 </span>
+
+                <br>
+                <span class="line-height-1 smaller-90"> Albums </span>
+            </span>
+
+            <span class="btn btn-app btn-sm btn-primary no-hover">
+                <span class="line-height-1 bigger-170"> 55 </span>
+
+                <br>
+                <span class="line-height-1 smaller-90"> Contacts </span>
+            </span>
+        </div>
+
+        <div class="space-12"></div>
+
+        <div class="profile-user-info profile-user-info-striped">
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 用户昵称</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">NICK</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 所在位置</div>
+
+                <div class="profile-info-value">
+                    <i class="fa fa-map-marker light-orange bigger-110"></i>
+                    <span class="editable editable-click">上海</span>
+                    <span class="editable editable-click">闸北</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 年龄</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">29</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 加入时间</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">2010/06/20</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 最后一次登录</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">3小时前</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 个人简介</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">派趣科技 补丁娱乐</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-10"></div>
+
+        <div class="profile-user-info profile-user-info-striped">
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 手机号码</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">135****8667</span>
+                     <span class="editable">
+                        <a class="btn btn-white btn-link">绑定手机</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> 邮箱</div>
+
+                <div class="profile-info-value">
+                    <span class="editable editable-click">nick******@126.com</span>
+                    <span class="editable">
+                        <a class="btn btn-white btn-link">修改邮箱</a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--<div class="message-loading-overlay">-->
+    <!--<i class="ace-icon fa fa-spinner fa-spin orange bigger-300"></i>-->
+<!--</div>-->
